@@ -1,0 +1,25 @@
+{
+	"GeneralSettings": {
+		"connectURL": "http://vela111.bpainc.com:48080/connect/",
+		"endeavourURL": "http://vela111.bpainc.com:48080/endeavour/"
+
+	},
+	"Connect": {
+		"username": "Joe",
+		"password": "joe1234"
+	},
+	"Endeavour": {
+		"username": "Joe",
+		"password": "joe123"
+	},
+	"IncorrectCredentials": {
+		"username": "ghjdsvdadfvsd",
+		"password": "dvdsvsdsdvsdv"
+	},
+	
+	"DriverConfig": {
+	   "_comment":	"//To run the test locally, set environment to localHub and to run on Docker, set environment to remoteHub",
+	   "browser": "chrome",
+	   "environment": "localHub"
+	   }
+}
