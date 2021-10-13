@@ -12,7 +12,7 @@ Feature: Add,Search,Edit,Enable,Disable,Export Users records
   Scenario: Add a User
     When User clicks on Users menu option
     And User clicks on Add button to add User
-    And User Enters required detais to add User
+    And User Enters required detais to add User[0]
     And User clicks on Save button to add User
     Then User record is created successfully
 
@@ -53,10 +53,9 @@ Feature: Add,Search,Edit,Enable,Disable,Export Users records
     And User clicks on Search button to search User
     Then User should be displayed in search results
     When User clicks on Edit option to edit user
-    And User changes user details
+    And User changes user[1] details
     And User clicks on Save button to save User details
-    Then Verify user details updated successfully
-    
+     Then Verify user[1] details updated successfully
     
   @C41526346 @Export
   Scenario: Export User records to XML file

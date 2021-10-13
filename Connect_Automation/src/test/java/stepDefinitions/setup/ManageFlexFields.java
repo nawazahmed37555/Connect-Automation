@@ -144,24 +144,20 @@ public class ManageFlexFields extends DriverFactory {
 		//Dates starting with 0(for ex :01-01-2021) needs to be stripped to match the fileName
 				String currentDate = basePage.getCURRENTDate_initialZeroStripped("M-d-yyyy");
 				String FileName = "flexField_export_"+currentDate+".xml";
-				Assert.assertEquals(true, basePage.isFileDownloaded(utils.Constant.downloadDirectory, FileName, 60));
+				Assert.assertEquals(basePage.isFileDownloaded(utils.Constant.downloadDirectory, FileName, 300),true);
 				
 			}
-
-
 	@When("^User clicks on Delete option to delete Flex Field$")
 	public void userClicksOnDeleteOptionToDeleteFlexField() {
 		flexFieldsPageObjects.contextMenuBtn.click();
 		flexFieldsPageObjects.contextMenu_Delete_Btn.click();
 	}
-
-
 	@Then("^Verify Flex_Field\\[(\\d+)\\] deleted successfully$")
 	public void verifyFlex_FieldDeletedSuccessfully(int index)  {
 		Assert.assertEquals(driver.findElement(By.xpath("//*[@id='unique_id']/tbody/tr[2]/td")).getText().trim(),"No Results Found");
 		
 	}
-	}
+}
 
 
 

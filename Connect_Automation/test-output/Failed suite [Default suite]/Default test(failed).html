@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test(failed)</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>9/14/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Aug 02 15:56:46 IST 2021</td>
+<td>Started on:</td><td>Sun Oct 10 05:41:46 CDT 2021</td>
 </tr>
-<tr><td>Total time:</td><td>104 seconds (104396 ms)</td>
+<tr><td>Total time:</td><td>1220 seconds (1220475 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,19 +75,1183 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runner.Runner.runScenario()'><b>runScenario</b><br>Test class: runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Edit a Responsibility", "Add,Search,Edit,Enable,Disable,Export responsibilities"</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.manage()&quot; because &quot;utils.DriverFactory.driver&quot; is null
-	at utils.DriverFactory.createDriver(DriverFactory.java:90)
-	at utils.DriverFactory.getDriver(DriverFactory.java:27)
-	at stepDefinitions.hook.MasterHook.setup(MasterHook.java:21)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2089636626", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2089636626'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.manage()&quot; because &quot;utils.DriverFactory.driver&quot; is null
-	at utils.DriverFactory.createDriver(DriverFactory.java:90)
-	at utils.DriverFactory.getDriver(DriverFactory.java:27)
-	at stepDefinitions.hook.MasterHook.setup(MasterHook.java:21)
+<td title='runner.Runner.runScenario()'><b>runScenario</b><br>Test class: runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Lookup functions properly", "Optional[Add,Search,Edit,Export,Delete Lookups]"</td>
+<td><div><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Service message: Error in PurchaseOrderLineDAO
+DAO message: Error executing: select * from (SELECT 
+poll.line_location_id POL_key,
+1 POL_erpCode,
+DECODE(epoa.status, NULL, &apos;New&apos;, &apos;New&apos;, &apos;New&apos;, DECODE(epoa.po_price, poll.price_override, DECODE(TRUNC(epoa.po_promised_date), TRUNC(NVL(poll.promised_date, poll.need_by_date)),DECODE(epoa.po_quantity, poll.quantity,DECODE(epoa.po_item_revision, pol.item_revision, epoa.status, &apos;Revised&apos;), &apos;Revised&apos;), &apos;Revised&apos;), &apos;Revised&apos;)) POLS_status,
+epoa.mrp_status POLS_mrpStatus,
+poll.promised_date POL_promisedDate,
+poll.price_override POL_price,
+epoa.attachments POLS_attachments,
+epoa.invoice_tran_fail POLS_invoiceTranFail,
+epoa.ship_tran_fail POLS_shipTranFail,
+poh.vendor_site_id||&apos;:&apos;||poh.org_id POL_vendorLocationKey,
+poll.quantity POL_quantity,
+poll.closed_code POL_closedCode,
+DECODE(NVL(poll.closed_code, &apos;OPEN&apos;),&apos;CLOSED&apos;, &apos;Closed&apos;, &apos;CLOSED FOR RECEIVING&apos;, &apos;Closed&apos;, &apos;FINALLY CLOSED&apos;, &apos;Closed&apos;, DECODE(poh.frozen_flag, &apos;Y&apos;, &apos;Pending&apos;, DECODE(DECODE(por.po_release_id,NULL,poh.authorization_status,por.authorization_status),&apos;REQUIRES REAPPROVAL&apos;,&apos;Pending&apos;, &apos;IN PROCESS&apos;, &apos;Pending&apos;, &apos;PRE-APPROVED&apos;,&apos;Pending&apos;, &apos;Open&apos;))) POL_erpPoStatusCode,
+XXXL_IS_PO_BLIND(poh.po_header_id, por.po_release_id) POL_maskData,
+poh.type_lookup_code POL_poType,
+poh.segment1 POL_poNumber,
+por.release_num POL_releaseNumber,
+pol.line_num POL_lineNumber,
+poll.shipment_num POL_shipmentNumber,
+end_erp_shared.get_printable_qty(poll.line_location_id,poll.quantity_received, epoa.quantity, epoa.shipped_quantity)  POL_printableQuantity,
+haou2.attribute14 POL_businessCode,
+pol.vendor_product_num POL_polVendorProductNum,
+end_erp_shared.invoicable_quantity(poll.line_location_id,cqc.value) POL_invoicable,
+poh.attribute14 POL_businessName,
+DECODE(SIGN(poll.quantity - NVL(poll.quantity_received, 0) - NVL(poll.quantity_cancelled, 0)),-1,0,0,0,1,poll.quantity - NVL(poll.quantity_received, 0) - NVL(poll.quantity_cancelled, 0)) POL_quantityOpen,
+poll.need_by_date POL_needByDate,
+(SELECT pa.full_name FROM po_distributions_all pda, po_line_locations_all lineloc, per_all_people_f pa WHERE pa.person_id = pda.deliver_to_person_id AND pa.effective_end_date &gt; SYSDATE AND pda.line_location_id = lineloc.line_location_id AND poll.line_location_id = lineloc.line_location_id AND rownum = 1) POL_requestor,
+end_erp_shared.get_project_number(poll.line_location_id) POL_erpProjectNumber,
+end_erp_shared.is_open_sdr_exists(poll.line_location_id) POL_openSDR,
+pol.item_description POL_lineDescription,
+pol.attribute3 POL_poLineType,
+pv.segment1 POL_vendorNumber,
+epoa.created_by_name POLS_createdByName,
+pv.vendor_name V_name,
+pvsa.attribute16 VL_locationNumber,
+papfb.full_name PO_buyerName,
+pvsa.vendor_site_code VL_name,
+pol.po_line_id POL_poLineId,
+poh.po_header_id POL_poHeaderId,
+poh.po_header_id PO_key,
+poh.org_id POL_hostId 
+, poll.line_location_id, epoa.status, epoa.approval_id, epoa.po_price, epoa.po_promised_date, epoa.po_quantity, epoa.po_item_revision, epoa.po_update_date, poll.price_override, NVL(poll.promised_date, poll.need_by_date), poll.quantity, NVL(pol.item_revision, (SELECT MAX(mir.revision) FROM mtl_item_revisions mir WHERE mir.inventory_item_id = pol.item_id AND mir.organization_id = poll.ship_to_organization_id AND msi.revision_qty_control_code = 2)), poll.last_update_date,
+COUNT(1) OVER() as totalSearchCount, row_number() over (  ORDER BY poh.type_lookup_code,
+poh.segment1,
+por.release_num,
+pol.line_num,
+poll.shipment_num,
+end_erp_shared.get_printable_qty(poll.line_location_id,poll.quantity_received, epoa.quantity, epoa.shipped_quantity) ,
+DECODE(NVL(poll.closed_code, &apos;OPEN&apos;),&apos;CLOSED&apos;, &apos;Closed&apos;, &apos;CLOSED FOR RECEIVING&apos;, &apos;Closed&apos;, &apos;FINALLY CLOSED&apos;, &apos;Closed&apos;, DECODE(poh.frozen_flag, &apos;Y&apos;, &apos;Pending&apos;, DECODE(DECODE(por.po_release_id,NULL,poh.authorization_status,por.authorization_status),&apos;REQUIRES REAPPROVAL&apos;,&apos;Pending&apos;, &apos;IN PROCESS&apos;, &apos;Pending&apos;, &apos;PRE-APPROVED&apos;,&apos;Pending&apos;, &apos;Open&apos;))),
+DECODE(epoa.status, NULL, &apos;New&apos;, &apos;New&apos;, &apos;New&apos;, DECODE(epoa.po_price, poll.price_override, DECODE(TRUNC(epoa.po_promised_date), TRUNC(NVL(poll.promised_date, poll.need_by_date)),DECODE(epoa.po_quantity, poll.quantity,DECODE(epoa.po_item_revision, pol.item_revision, epoa.status, &apos;Revised&apos;), &apos;Revised&apos;), &apos;Revised&apos;), &apos;Revised&apos;)),
+haou2.attribute14,
+pol.vendor_product_num,
+end_erp_shared.invoicable_quantity(poll.line_location_id,cqc.value),
+poh.attribute14,
+poll.quantity,
+DECODE(SIGN(poll.quantity - NVL(poll.quantity_received, 0) - NVL(poll.quantity_cancelled, 0)),-1,0,0,0,1,poll.quantity - NVL(poll.quantity_received, 0) - NVL(poll.quantity_cancelled, 0)),
+poll.need_by_date,
+(SELECT pa.full_name FROM po_distributions_all pda, po_line_locations_all lineloc, per_all_people_f pa WHERE pa.person_id = pda.deliver_to_person_id AND pa.effective_end_date &gt; SYSDATE AND pda.line_location_id = lineloc.line_location_id AND poll.line_location_id = lineloc.line_location_id AND rownum = 1),
+end_erp_shared.get_project_number(poll.line_location_id),
+end_erp_shared.is_open_sdr_exists(poll.line_location_id),
+pol.item_description,
+pol.attribute3,
+pv.segment1,
+epoa.created_by_name,
+pv.vendor_name,
+pvsa.attribute16,
+papfb.full_name,
+pvsa.vendor_site_code,
+poll.line_location_id,
+1,
+DECODE(epoa.status, NULL, &apos;New&apos;, &apos;New&apos;, &apos;New&apos;, DECODE(epoa.po_price, poll.price_override, DECODE(TRUNC(epoa.po_promised_date), TRUNC(NVL(poll.promised_date, poll.need_by_date)),DECODE(epoa.po_quantity, poll.quantity,DECODE(epoa.po_item_revision, pol.item_revision, epoa.status, &apos;Revised&apos;), &apos;Revised&apos;), &apos;Revised&apos;), &apos;Revised&apos;)),
+epoa.mrp_status,
+poll.promised_date,
+poll.price_override,
+epoa.attachments,
+epoa.invoice_tran_fail,
+epoa.ship_tran_fail,
+poh.vendor_site_id||&apos;:&apos;||poh.org_id,
+poll.quantity,
+poll.closed_code,
+DECODE(NVL(poll.closed_code, &apos;OPEN&apos;),&apos;CLOSED&apos;, &apos;Closed&apos;, &apos;CLOSED FOR RECEIVING&apos;, &apos;Closed&apos;, &apos;FINALLY CLOSED&apos;, &apos;Closed&apos;, DECODE(poh.frozen_flag, &apos;Y&apos;, &apos;Pending&apos;, DECODE(DECODE(por.po_release_id,NULL,poh.authorization_status,por.authorization_status),&apos;REQUIRES REAPPROVAL&apos;,&apos;Pending&apos;, &apos;IN PROCESS&apos;, &apos;Pending&apos;, &apos;PRE-APPROVED&apos;,&apos;Pending&apos;, &apos;Open&apos;))),
+XXXL_IS_PO_BLIND(poh.po_header_id, por.po_release_id) ) as row_number FROM ap_terms apt,end_poc_ora_approvals epoa,end_poc_ora_header_status epohs,mtl_system_items_b_kfv msi,hr_all_organization_units haou,hr_all_organization_units haou2,(SELECT * 
+   FROM (SELECT ROW_NUMBER() OVER (PARTITION BY person_id ORDER BY effective_start_date DESC) AS record_num_desc, 
+           papfb.* 
+      FROM per_all_people_f papfb) 
+     WHERE record_num_desc = 1) papfb,po_headers_all poh,po_line_locations_all poll,po_lines_all pol,po_releases_all por,rcv_parameters rcv,po_vendor_contacts pvc,po_vendors pv,po_vendor_sites_all pvsa,
+       ap_tax_codes_all atc, (SELECT &apos;N&apos; value FROM dual) cqc WHERE poh.terms_id=apt.term_id(+) AND poll.po_release_id=por.po_release_id(+) AND poh.vendor_contact_id=pvc.vendor_contact_id(+) AND poh.vendor_site_id=pvc.vendor_site_id(+) AND NVL(por.agent_id, poh.agent_id) = papfb.person_id AND poll.po_line_id=pol.po_line_id AND poll.po_header_id=poh.po_header_id AND rcv.organization_id=poll.ship_to_organization_id AND msi.inventory_item_id(+)=pol.item_id AND poll.ship_to_organization_id = NVL(msi.organization_id, poll.ship_to_organization_id) AND haou.organization_id=poll.ship_to_organization_id AND haou2.organization_id=poh.org_id AND poll.line_location_id=epoa.po_line_location_id(+) AND poh.po_header_id=epohs.po_header_id(+) AND poh.vendor_id=pv.vendor_id AND pvsa.vendor_site_id=poh.vendor_site_id AND pvsa.vendor_id=pv.vendor_id AND poh.authorization_status in (&apos;APPROVED&apos;, &apos;REQUIRES REAPPROVAL&apos;, &apos;IN PROCESS&apos;, &apos;PRE-APPROVED&apos;) AND NVL(por.authorization_status,&apos;APPROVED&apos;) in (&apos;APPROVED&apos;, &apos;REQUIRES REAPPROVAL&apos;, &apos;IN PROCESS&apos;, &apos;PRE-APPROVED&apos;) AND poh.type_lookup_code IN (&apos;STANDARD&apos;, &apos;BLANKET&apos;, &apos;PLANNED&apos;) AND NVL(poll.approved_flag, &apos;N&apos;) IN (&apos;Y&apos;, &apos;R&apos;, &apos;N&apos;) AND poll.shipment_type IN (&apos;STANDARD&apos;, &apos;BLANKET&apos;, &apos;SCHEDULED&apos;)
+   AND atc.tax_id(+)=poll.tax_code_id AND poh.org_id=poll.org_id AND pol.org_id=poll.org_id AND por.org_id(+)=poll.org_id
+   AND (poll.org_id IN (?,?)) AND  ROWNUM &lt;= 10001 ) where row_number between 1 and 26 order by row_number
+Message: ORA-00904: &quot;PVSA&quot;.&quot;ATTRIBUTE16&quot;: invalid identifier
+
+Message: ORA-00904: &quot;PVSA&quot;.&quot;ATTRIBUTE16&quot;: invalid identifier
+
+}
+  (Session info: chrome=94.0.4606.71): Service message: Error in PurchaseOrderLineDAO
+DAO message: Error executing: select * from (SELECT 
+poll.line_location_id POL_key,
+1 POL_erpCode,
+DECODE(epoa.status, NULL, &apos;New&apos;, &apos;New&apos;, &apos;New&apos;, DECODE(epoa.po_price, poll.price_override, DECODE(TRUNC(epoa.po_promised_date), TRUNC(NVL(poll.promised_date, poll.need_by_date)),DECODE(epoa.po_quantity, poll.quantity,DECODE(epoa.po_item_revision, pol.item_revision, epoa.status, &apos;Revised&apos;), &apos;Revised&apos;), &apos;Revised&apos;), &apos;Revised&apos;)) POLS_status,
+epoa.mrp_status POLS_mrpStatus,
+poll.promised_date POL_promisedDate,
+poll.price_override POL_price,
+epoa.attachments POLS_attachments,
+epoa.invoice_tran_fail POLS_invoiceTranFail,
+epoa.ship_tran_fail POLS_shipTranFail,
+poh.vendor_site_id||&apos;:&apos;||poh.org_id POL_vendorLocationKey,
+poll.quantity POL_quantity,
+poll.closed_code POL_closedCode,
+DECODE(NVL(poll.closed_code, &apos;OPEN&apos;),&apos;CLOSED&apos;, &apos;Closed&apos;, &apos;CLOSED FOR RECEIVING&apos;, &apos;Closed&apos;, &apos;FINALLY CLOSED&apos;, &apos;Closed&apos;, DECODE(poh.frozen_flag, &apos;Y&apos;, &apos;Pending&apos;, DECODE(DECODE(por.po_release_id,NULL,poh.authorization_status,por.authorization_status),&apos;REQUIRES REAPPROVAL&apos;,&apos;Pending&apos;, &apos;IN PROCESS&apos;, &apos;Pending&apos;, &apos;PRE-APPROVED&apos;,&apos;Pending&apos;, &apos;Open&apos;))) POL_erpPoStatusCode,
+XXXL_IS_PO_BLIND(poh.po_header_id, por.po_release_id) POL_maskData,
+poh.type_lookup_code POL_poType,
+poh.segment1 POL_poNumber,
+por.release_num POL_releaseNumber,
+pol.line_num POL_lineNumber,
+poll.shipment_num POL_shipmentNumber,
+end_erp_shared.get_printable_qty(poll.line_location_id,poll.quantity_received, epoa.quantity, epoa.shipped_quantity)  POL_printableQuantity,
+haou2.attribute14 POL_businessCode,
+pol.vendor_product_num POL_polVendorProductNum,
+end_erp_shared.invoicable_quantity(poll.line_location_id,cqc.value) POL_invoicable,
+poh.attribute14 POL_businessName,
+DECODE(SIGN(poll.quantity - NVL(poll.quantity_received, 0) - NVL(poll.quantity_cancelled, 0)),-1,0,0,0,1,poll.quantity - NVL(poll.quantity_received, 0) - NVL(poll.quantity_cancelled, 0)) POL_quantityOpen,
+poll.need_by_date POL_needByDate,
+(SELECT pa.full_name FROM po_distributions_all pda, po_line_locations_all lineloc, per_all_people_f pa WHERE pa.person_id = pda.deliver_to_person_id AND pa.effective_end_date &gt; SYSDATE AND pda.line_location_id = lineloc.line_location_id AND poll.line_location_id = lineloc.line_location_id AND rownum = 1) POL_requestor,
+end_erp_shared.get_project_number(poll.line_location_id) POL_erpProjectNumber,
+end_erp_shared.is_open_sdr_exists(poll.line_location_id) POL_openSDR,
+pol.item_description POL_lineDescription,
+pol.attribute3 POL_poLineType,
+pv.segment1 POL_vendorNumber,
+epoa.created_by_name POLS_createdByName,
+pv.vendor_name V_name,
+pvsa.attribute16 VL_locationNumber,
+papfb.full_name PO_buyerName,
+pvsa.vendor_site_code VL_name,
+pol.po_line_id POL_poLineId,
+poh.po_header_id POL_poHeaderId,
+poh.po_header_id PO_key,
+poh.org_id POL_hostId 
+, poll.line_location_id, epoa.status, epoa.approval_id, epoa.po_price, epoa.po_promised_date, epoa.po_quantity, epoa.po_item_revision, epoa.po_update_date, poll.price_override, NVL(poll.promised_date, poll.need_by_date), poll.quantity, NVL(pol.item_revision, (SELECT MAX(mir.revision) FROM mtl_item_revisions mir WHERE mir.inventory_item_id = pol.item_id AND mir.organization_id = poll.ship_to_organization_id AND msi.revision_qty_control_code = 2)), poll.last_update_date,
+COUNT(1) OVER() as totalSearchCount, row_number() over (  ORDER BY poh.type_lookup_code,
+poh.segment1,
+por.release_num,
+pol.line_num,
+poll.shipment_num,
+end_erp_shared.get_printable_qty(poll.line_location_id,poll.quantity_received, epoa.quantity, epoa.shipped_quantity) ,
+DECODE(NVL(poll.closed_code, &apos;OPEN&apos;),&apos;CLOSED&apos;, &apos;Closed&apos;, &apos;CLOSED FOR RECEIVING&apos;, &apos;Closed&apos;, &apos;FINALLY CLOSED&apos;, &apos;Closed&apos;, DECODE(poh.frozen_flag, &apos;Y&apos;, &apos;Pending&apos;, DECODE(DECODE(por.po_release_id,NULL,poh.authorization_status,por.authorization_status),&apos;REQUIRES REAPPROVAL&apos;,&apos;Pending&apos;, &apos;IN PROCESS&apos;, &apos;Pending&apos;, &apos;PRE-APPROVED&apos;,&apos;Pending&apos;, &apos;Open&apos;))),
+DECODE(epoa.status, NULL, &apos;New&apos;, &apos;New&apos;, &apos;New&apos;, DECODE(epoa.po_price, poll.price_override, DECODE(TRUNC(epoa.po_promised_date), TRUNC(NVL(poll.promised_date, poll.need_by_date)),DECODE(epoa.po_quantity, poll.quantity,DECODE(epoa.po_item_revision, pol.item_revision, epoa.status, &apos;Revised&apos;), &apos;Revised&apos;), &apos;Revised&apos;), &apos;Revised&apos;)),
+haou2.attribute14,
+pol.vendor_product_num,
+end_erp_shared.invoicable_quantity(poll.line_location_id,cqc.value),
+poh.attribute14,
+poll.quantity,
+DECODE(SIGN(poll.quantity - NVL(poll.quantity_received, 0) - NVL(poll.quantity_cancelled, 0)),-1,0,0,0,1,poll.quantity - NVL(poll.quantity_received, 0) - NVL(poll.quantity_cancelled, 0)),
+poll.need_by_date,
+(SELECT pa.full_name FROM po_distributions_all pda, po_line_locations_all lineloc, per_all_people_f pa WHERE pa.person_id = pda.deliver_to_person_id AND pa.effective_end_date &gt; SYSDATE AND pda.line_location_id = lineloc.line_location_id AND poll.line_location_id = lineloc.line_location_id AND rownum = 1),
+end_erp_shared.get_project_number(poll.line_location_id),
+end_erp_shared.is_open_sdr_exists(poll.line_location_id),
+pol.item_description,
+pol.attribute3,
+pv.segment1,
+epoa.created_by_name,
+pv.vendor_name,
+pvsa.attribute16,
+papfb.full_name,
+pvsa.vendor_site_code,
+poll.line_location_id,
+1,
+DECODE(epoa.status, NULL, &apos;New&apos;, &apos;New&apos;, &apos;New&apos;, DECODE(epoa.po_price, poll.price_override, DECODE(TRUNC(epoa.po_promised_date), TRUNC(NVL(poll.promised_date, poll.need_by_date)),DECODE(epoa.po_quantity, poll.quantity,DECODE(epoa.po_item_revision, pol.item_revision, epoa.status, &apos;Revised&apos;), &apos;Revised&apos;), &apos;Revised&apos;), &apos;Revised&apos;)),
+epoa.mrp_status,
+poll.promised_date,
+poll.price_override,
+epoa.attachments,
+epoa.invoice_tran_fail,
+epoa.ship_tran_fail,
+poh.vendor_site_id||&apos;:&apos;||poh.org_id,
+poll.quantity,
+poll.closed_code,
+DECODE(NVL(poll.closed_code, &apos;OPEN&apos;),&apos;CLOSED&apos;, &apos;Closed&apos;, &apos;CLOSED FOR RECEIVING&apos;, &apos;Closed&apos;, &apos;FINALLY CLOSED&apos;, &apos;Closed&apos;, DECODE(poh.frozen_flag, &apos;Y&apos;, &apos;Pending&apos;, DECODE(DECODE(por.po_release_id,NULL,poh.authorization_status,por.authorization_status),&apos;REQUIRES REAPPROVAL&apos;,&apos;Pending&apos;, &apos;IN PROCESS&apos;, &apos;Pending&apos;, &apos;PRE-APPROVED&apos;,&apos;Pending&apos;, &apos;Open&apos;))),
+XXXL_IS_PO_BLIND(poh.po_header_id, por.po_release_id) ) as row_number FROM ap_terms apt,end_poc_ora_approvals epoa,end_poc_ora_header_status epohs,mtl_system_items_b_kfv msi,hr_all_organization_units haou,hr_all_organization_units haou2,(SELECT * 
+   FROM (SELECT ROW_NUMBER() OVER (PARTITION BY person_id ORDER BY effective_start_date DESC) AS record_num_desc, 
+           papfb.* 
+      FROM per_all_people_f papfb) 
+     WHERE record_num_desc = 1) papfb,po_headers_all poh,po_line_locations_all poll,po_lines_all pol,po_releases_all por,rcv_parameters rcv,po_vendor_contacts pvc,po_vendors pv,po_vendor_sites_all pvsa,
+       ap_tax_codes_all atc, (SELECT &apos;N&apos; value FROM dual) cqc WHERE poh.terms_id=apt.term_id(+) AND poll.po_release_id=por.po_release_id(+) AND poh.vendor_contact_id=pvc.vendor_contact_id(+) AND poh.vendor_site_id=pvc.vendor_site_id(+) AND NVL(por.agent_id, poh.agent_id) = papfb.person_id AND poll.po_line_id=pol.po_line_id AND poll.po_header_id=poh.po_header_id AND rcv.organization_id=poll.ship_to_organization_id AND msi.inventory_item_id(+)=pol.item_id AND poll.ship_to_organization_id = NVL(msi.organization_id, poll.ship_to_organization_id) AND haou.organization_id=poll.ship_to_organization_id AND haou2.organization_id=poh.org_id AND poll.line_location_id=epoa.po_line_location_id(+) AND poh.po_header_id=epohs.po_header_id(+) AND poh.vendor_id=pv.vendor_id AND pvsa.vendor_site_id=poh.vendor_site_id AND pvsa.vendor_id=pv.vendor_id AND poh.authorization_status in (&apos;APPROVED&apos;, &apos;REQUIRES REAPPROVAL&apos;, &apos;IN PROCESS&apos;, &apos;PRE-APPROVED&apos;) AND NVL(por.authorization_status,&apos;APPROVED&apos;) in (&apos;APPROVED&apos;, &apos;REQUIRES REAPPROVAL&apos;, &apos;IN PROCESS&apos;, &apos;PRE-APPROVED&apos;) AND poh.type_lookup_code IN (&apos;STANDARD&apos;, &apos;BLANKET&apos;, &apos;PLANNED&apos;) AND NVL(poll.approved_flag, &apos;N&apos;) IN (&apos;Y&apos;, &apos;R&apos;, &apos;N&apos;) AND poll.shipment_type IN (&apos;STANDARD&apos;, &apos;BLANKET&apos;, &apos;SCHEDULED&apos;)
+   AND atc.tax_id(+)=poll.tax_code_id AND poh.org_id=poll.org_id AND pol.org_id=poll.org_id AND por.org_id(+)=poll.org_id
+   AND (poll.org_id IN (?,?)) AND  ROWNUM &lt;= 10001 ) where row_number between 1 and 26 order by row_number
+Message: ORA-00904: &quot;PVSA&quot;.&quot;ATTRIBUTE16&quot;: invalid identifier
+
+Message: ORA-00904: &quot;PVSA&quot;.&quot;ATTRIBUTE16&quot;: invalid identifier
+
+
+Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
+System info: host: &apos;JUMPBOX-WIN2016&apos;, ip: &apos;10.228.0.127&apos;, os.name: &apos;Windows Server 2016&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57416}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e5fb5a59462c5d9e83e0e1c1032a0338
+*** Element info: {Using=xpath, value=//*[@id=&apos;searchResultsFormId&apos;]/table[1]/tbody/tr[1]/td/table/tbody/tr/td[3]}
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:123)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:396)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at stepDefinitions.EndeavourCommonSteps.totalSearchResultsShouldBeAsPerTheLookup(EndeavourCommonSteps.java:50)
+	at ?.Total search results should be as per the lookup(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/setup/ManageLookups.feature:85)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1556004794", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1556004794'><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Service message: Error in PurchaseOrderLineDAO
+DAO message: Error executing: select * from (SELECT 
+poll.line_location_id POL_key,
+1 POL_erpCode,
+DECODE(epoa.status, NULL, &apos;New&apos;, &apos;New&apos;, &apos;New&apos;, DECODE(epoa.po_price, poll.price_override, DECODE(TRUNC(epoa.po_promised_date), TRUNC(NVL(poll.promised_date, poll.need_by_date)),DECODE(epoa.po_quantity, poll.quantity,DECODE(epoa.po_item_revision, pol.item_revision, epoa.status, &apos;Revised&apos;), &apos;Revised&apos;), &apos;Revised&apos;), &apos;Revised&apos;)) POLS_status,
+epoa.mrp_status POLS_mrpStatus,
+poll.promised_date POL_promisedDate,
+poll.price_override POL_price,
+epoa.attachments POLS_attachments,
+epoa.invoice_tran_fail POLS_invoiceTranFail,
+epoa.ship_tran_fail POLS_shipTranFail,
+poh.vendor_site_id||&apos;:&apos;||poh.org_id POL_vendorLocationKey,
+poll.quantity POL_quantity,
+poll.closed_code POL_closedCode,
+DECODE(NVL(poll.closed_code, &apos;OPEN&apos;),&apos;CLOSED&apos;, &apos;Closed&apos;, &apos;CLOSED FOR RECEIVING&apos;, &apos;Closed&apos;, &apos;FINALLY CLOSED&apos;, &apos;Closed&apos;, DECODE(poh.frozen_flag, &apos;Y&apos;, &apos;Pending&apos;, DECODE(DECODE(por.po_release_id,NULL,poh.authorization_status,por.authorization_status),&apos;REQUIRES REAPPROVAL&apos;,&apos;Pending&apos;, &apos;IN PROCESS&apos;, &apos;Pending&apos;, &apos;PRE-APPROVED&apos;,&apos;Pending&apos;, &apos;Open&apos;))) POL_erpPoStatusCode,
+XXXL_IS_PO_BLIND(poh.po_header_id, por.po_release_id) POL_maskData,
+poh.type_lookup_code POL_poType,
+poh.segment1 POL_poNumber,
+por.release_num POL_releaseNumber,
+pol.line_num POL_lineNumber,
+poll.shipment_num POL_shipmentNumber,
+end_erp_shared.get_printable_qty(poll.line_location_id,poll.quantity_received, epoa.quantity, epoa.shipped_quantity)  POL_printableQuantity,
+haou2.attribute14 POL_businessCode,
+pol.vendor_product_num POL_polVendorProductNum,
+end_erp_shared.invoicable_quantity(poll.line_location_id,cqc.value) POL_invoicable,
+poh.attribute14 POL_businessName,
+DECODE(SIGN(poll.quantity - NVL(poll.quantity_received, 0) - NVL(poll.quantity_cancelled, 0)),-1,0,0,0,1,poll.quantity - NVL(poll.quantity_received, 0) - NVL(poll.quantity_cancelled, 0)) POL_quantityOpen,
+poll.need_by_date POL_needByDate,
+(SELECT pa.full_name FROM po_distributions_all pda, po_line_locations_all lineloc, per_all_people_f pa WHERE pa.person_id = pda.deliver_to_person_id AND pa.effective_end_date &gt; SYSDATE AND pda.line_location_id = lineloc.line_location_id AND poll.line_location_id = lineloc.line_location_id AND rownum = 1) POL_requestor,
+end_erp_shared.get_project_number(poll.line_location_id) POL_erpProjectNumber,
+end_erp_shared.is_open_sdr_exists(poll.line_location_id) POL_openSDR,
+pol.item_description POL_lineDescription,
+pol.attribute3 POL_poLineType,
+pv.segment1 POL_vendorNumber,
+epoa.created_by_name POLS_createdByName,
+pv.vendor_name V_name,
+pvsa.attribute16 VL_locationNumber,
+papfb.full_name PO_buyerName,
+pvsa.vendor_site_code VL_name,
+pol.po_line_id POL_poLineId,
+poh.po_header_id POL_poHeaderId,
+poh.po_header_id PO_key,
+poh.org_id POL_hostId 
+, poll.line_location_id, epoa.status, epoa.approval_id, epoa.po_price, epoa.po_promised_date, epoa.po_quantity, epoa.po_item_revision, epoa.po_update_date, poll.price_override, NVL(poll.promised_date, poll.need_by_date), poll.quantity, NVL(pol.item_revision, (SELECT MAX(mir.revision) FROM mtl_item_revisions mir WHERE mir.inventory_item_id = pol.item_id AND mir.organization_id = poll.ship_to_organization_id AND msi.revision_qty_control_code = 2)), poll.last_update_date,
+COUNT(1) OVER() as totalSearchCount, row_number() over (  ORDER BY poh.type_lookup_code,
+poh.segment1,
+por.release_num,
+pol.line_num,
+poll.shipment_num,
+end_erp_shared.get_printable_qty(poll.line_location_id,poll.quantity_received, epoa.quantity, epoa.shipped_quantity) ,
+DECODE(NVL(poll.closed_code, &apos;OPEN&apos;),&apos;CLOSED&apos;, &apos;Closed&apos;, &apos;CLOSED FOR RECEIVING&apos;, &apos;Closed&apos;, &apos;FINALLY CLOSED&apos;, &apos;Closed&apos;, DECODE(poh.frozen_flag, &apos;Y&apos;, &apos;Pending&apos;, DECODE(DECODE(por.po_release_id,NULL,poh.authorization_status,por.authorization_status),&apos;REQUIRES REAPPROVAL&apos;,&apos;Pending&apos;, &apos;IN PROCESS&apos;, &apos;Pending&apos;, &apos;PRE-APPROVED&apos;,&apos;Pending&apos;, &apos;Open&apos;))),
+DECODE(epoa.status, NULL, &apos;New&apos;, &apos;New&apos;, &apos;New&apos;, DECODE(epoa.po_price, poll.price_override, DECODE(TRUNC(epoa.po_promised_date), TRUNC(NVL(poll.promised_date, poll.need_by_date)),DECODE(epoa.po_quantity, poll.quantity,DECODE(epoa.po_item_revision, pol.item_revision, epoa.status, &apos;Revised&apos;), &apos;Revised&apos;), &apos;Revised&apos;), &apos;Revised&apos;)),
+haou2.attribute14,
+pol.vendor_product_num,
+end_erp_shared.invoicable_quantity(poll.line_location_id,cqc.value),
+poh.attribute14,
+poll.quantity,
+DECODE(SIGN(poll.quantity - NVL(poll.quantity_received, 0) - NVL(poll.quantity_cancelled, 0)),-1,0,0,0,1,poll.quantity - NVL(poll.quantity_received, 0) - NVL(poll.quantity_cancelled, 0)),
+poll.need_by_date,
+(SELECT pa.full_name FROM po_distributions_all pda, po_line_locations_all lineloc, per_all_people_f pa WHERE pa.person_id = pda.deliver_to_person_id AND pa.effective_end_date &gt; SYSDATE AND pda.line_location_id = lineloc.line_location_id AND poll.line_location_id = lineloc.line_location_id AND rownum = 1),
+end_erp_shared.get_project_number(poll.line_location_id),
+end_erp_shared.is_open_sdr_exists(poll.line_location_id),
+pol.item_description,
+pol.attribute3,
+pv.segment1,
+epoa.created_by_name,
+pv.vendor_name,
+pvsa.attribute16,
+papfb.full_name,
+pvsa.vendor_site_code,
+poll.line_location_id,
+1,
+DECODE(epoa.status, NULL, &apos;New&apos;, &apos;New&apos;, &apos;New&apos;, DECODE(epoa.po_price, poll.price_override, DECODE(TRUNC(epoa.po_promised_date), TRUNC(NVL(poll.promised_date, poll.need_by_date)),DECODE(epoa.po_quantity, poll.quantity,DECODE(epoa.po_item_revision, pol.item_revision, epoa.status, &apos;Revised&apos;), &apos;Revised&apos;), &apos;Revised&apos;), &apos;Revised&apos;)),
+epoa.mrp_status,
+poll.promised_date,
+poll.price_override,
+epoa.attachments,
+epoa.invoice_tran_fail,
+epoa.ship_tran_fail,
+poh.vendor_site_id||&apos;:&apos;||poh.org_id,
+poll.quantity,
+poll.closed_code,
+DECODE(NVL(poll.closed_code, &apos;OPEN&apos;),&apos;CLOSED&apos;, &apos;Closed&apos;, &apos;CLOSED FOR RECEIVING&apos;, &apos;Closed&apos;, &apos;FINALLY CLOSED&apos;, &apos;Closed&apos;, DECODE(poh.frozen_flag, &apos;Y&apos;, &apos;Pending&apos;, DECODE(DECODE(por.po_release_id,NULL,poh.authorization_status,por.authorization_status),&apos;REQUIRES REAPPROVAL&apos;,&apos;Pending&apos;, &apos;IN PROCESS&apos;, &apos;Pending&apos;, &apos;PRE-APPROVED&apos;,&apos;Pending&apos;, &apos;Open&apos;))),
+XXXL_IS_PO_BLIND(poh.po_header_id, por.po_release_id) ) as row_number FROM ap_terms apt,end_poc_ora_approvals epoa,end_poc_ora_header_status epohs,mtl_system_items_b_kfv msi,hr_all_organization_units haou,hr_all_organization_units haou2,(SELECT * 
+   FROM (SELECT ROW_NUMBER() OVER (PARTITION BY person_id ORDER BY effective_start_date DESC) AS record_num_desc, 
+           papfb.* 
+      FROM per_all_people_f papfb) 
+     WHERE record_num_desc = 1) papfb,po_headers_all poh,po_line_locations_all poll,po_lines_all pol,po_releases_all por,rcv_parameters rcv,po_vendor_contacts pvc,po_vendors pv,po_vendor_sites_all pvsa,
+       ap_tax_codes_all atc, (SELECT &apos;N&apos; value FROM dual) cqc WHERE poh.terms_id=apt.term_id(+) AND poll.po_release_id=por.po_release_id(+) AND poh.vendor_contact_id=pvc.vendor_contact_id(+) AND poh.vendor_site_id=pvc.vendor_site_id(+) AND NVL(por.agent_id, poh.agent_id) = papfb.person_id AND poll.po_line_id=pol.po_line_id AND poll.po_header_id=poh.po_header_id AND rcv.organization_id=poll.ship_to_organization_id AND msi.inventory_item_id(+)=pol.item_id AND poll.ship_to_organization_id = NVL(msi.organization_id, poll.ship_to_organization_id) AND haou.organization_id=poll.ship_to_organization_id AND haou2.organization_id=poh.org_id AND poll.line_location_id=epoa.po_line_location_id(+) AND poh.po_header_id=epohs.po_header_id(+) AND poh.vendor_id=pv.vendor_id AND pvsa.vendor_site_id=poh.vendor_site_id AND pvsa.vendor_id=pv.vendor_id AND poh.authorization_status in (&apos;APPROVED&apos;, &apos;REQUIRES REAPPROVAL&apos;, &apos;IN PROCESS&apos;, &apos;PRE-APPROVED&apos;) AND NVL(por.authorization_status,&apos;APPROVED&apos;) in (&apos;APPROVED&apos;, &apos;REQUIRES REAPPROVAL&apos;, &apos;IN PROCESS&apos;, &apos;PRE-APPROVED&apos;) AND poh.type_lookup_code IN (&apos;STANDARD&apos;, &apos;BLANKET&apos;, &apos;PLANNED&apos;) AND NVL(poll.approved_flag, &apos;N&apos;) IN (&apos;Y&apos;, &apos;R&apos;, &apos;N&apos;) AND poll.shipment_type IN (&apos;STANDARD&apos;, &apos;BLANKET&apos;, &apos;SCHEDULED&apos;)
+   AND atc.tax_id(+)=poll.tax_code_id AND poh.org_id=poll.org_id AND pol.org_id=poll.org_id AND por.org_id(+)=poll.org_id
+   AND (poll.org_id IN (?,?)) AND  ROWNUM &lt;= 10001 ) where row_number between 1 and 26 order by row_number
+Message: ORA-00904: &quot;PVSA&quot;.&quot;ATTRIBUTE16&quot;: invalid identifier
+
+Message: ORA-00904: &quot;PVSA&quot;.&quot;ATTRIBUTE16&quot;: invalid identifier
+
+}
+  (Session info: chrome=94.0.4606.71): Service message: Error in PurchaseOrderLineDAO
+DAO message: Error executing: select * from (SELECT 
+poll.line_location_id POL_key,
+1 POL_erpCode,
+DECODE(epoa.status, NULL, &apos;New&apos;, &apos;New&apos;, &apos;New&apos;, DECODE(epoa.po_price, poll.price_override, DECODE(TRUNC(epoa.po_promised_date), TRUNC(NVL(poll.promised_date, poll.need_by_date)),DECODE(epoa.po_quantity, poll.quantity,DECODE(epoa.po_item_revision, pol.item_revision, epoa.status, &apos;Revised&apos;), &apos;Revised&apos;), &apos;Revised&apos;), &apos;Revised&apos;)) POLS_status,
+epoa.mrp_status POLS_mrpStatus,
+poll.promised_date POL_promisedDate,
+poll.price_override POL_price,
+epoa.attachments POLS_attachments,
+epoa.invoice_tran_fail POLS_invoiceTranFail,
+epoa.ship_tran_fail POLS_shipTranFail,
+poh.vendor_site_id||&apos;:&apos;||poh.org_id POL_vendorLocationKey,
+poll.quantity POL_quantity,
+poll.closed_code POL_closedCode,
+DECODE(NVL(poll.closed_code, &apos;OPEN&apos;),&apos;CLOSED&apos;, &apos;Closed&apos;, &apos;CLOSED FOR RECEIVING&apos;, &apos;Closed&apos;, &apos;FINALLY CLOSED&apos;, &apos;Closed&apos;, DECODE(poh.frozen_flag, &apos;Y&apos;, &apos;Pending&apos;, DECODE(DECODE(por.po_release_id,NULL,poh.authorization_status,por.authorization_status),&apos;REQUIRES REAPPROVAL&apos;,&apos;Pending&apos;, &apos;IN PROCESS&apos;, &apos;Pending&apos;, &apos;PRE-APPROVED&apos;,&apos;Pending&apos;, &apos;Open&apos;))) POL_erpPoStatusCode,
+XXXL_IS_PO_BLIND(poh.po_header_id, por.po_release_id) POL_maskData,
+poh.type_lookup_code POL_poType,
+poh.segment1 POL_poNumber,
+por.release_num POL_releaseNumber,
+pol.line_num POL_lineNumber,
+poll.shipment_num POL_shipmentNumber,
+end_erp_shared.get_printable_qty(poll.line_location_id,poll.quantity_received, epoa.quantity, epoa.shipped_quantity)  POL_printableQuantity,
+haou2.attribute14 POL_businessCode,
+pol.vendor_product_num POL_polVendorProductNum,
+end_erp_shared.invoicable_quantity(poll.line_location_id,cqc.value) POL_invoicable,
+poh.attribute14 POL_businessName,
+DECODE(SIGN(poll.quantity - NVL(poll.quantity_received, 0) - NVL(poll.quantity_cancelled, 0)),-1,0,0,0,1,poll.quantity - NVL(poll.quantity_received, 0) - NVL(poll.quantity_cancelled, 0)) POL_quantityOpen,
+poll.need_by_date POL_needByDate,
+(SELECT pa.full_name FROM po_distributions_all pda, po_line_locations_all lineloc, per_all_people_f pa WHERE pa.person_id = pda.deliver_to_person_id AND pa.effective_end_date &gt; SYSDATE AND pda.line_location_id = lineloc.line_location_id AND poll.line_location_id = lineloc.line_location_id AND rownum = 1) POL_requestor,
+end_erp_shared.get_project_number(poll.line_location_id) POL_erpProjectNumber,
+end_erp_shared.is_open_sdr_exists(poll.line_location_id) POL_openSDR,
+pol.item_description POL_lineDescription,
+pol.attribute3 POL_poLineType,
+pv.segment1 POL_vendorNumber,
+epoa.created_by_name POLS_createdByName,
+pv.vendor_name V_name,
+pvsa.attribute16 VL_locationNumber,
+papfb.full_name PO_buyerName,
+pvsa.vendor_site_code VL_name,
+pol.po_line_id POL_poLineId,
+poh.po_header_id POL_poHeaderId,
+poh.po_header_id PO_key,
+poh.org_id POL_hostId 
+, poll.line_location_id, epoa.status, epoa.approval_id, epoa.po_price, epoa.po_promised_date, epoa.po_quantity, epoa.po_item_revision, epoa.po_update_date, poll.price_override, NVL(poll.promised_date, poll.need_by_date), poll.quantity, NVL(pol.item_revision, (SELECT MAX(mir.revision) FROM mtl_item_revisions mir WHERE mir.inventory_item_id = pol.item_id AND mir.organization_id = poll.ship_to_organization_id AND msi.revision_qty_control_code = 2)), poll.last_update_date,
+COUNT(1) OVER() as totalSearchCount, row_number() over (  ORDER BY poh.type_lookup_code,
+poh.segment1,
+por.release_num,
+pol.line_num,
+poll.shipment_num,
+end_erp_shared.get_printable_qty(poll.line_location_id,poll.quantity_received, epoa.quantity, epoa.shipped_quantity) ,
+DECODE(NVL(poll.closed_code, &apos;OPEN&apos;),&apos;CLOSED&apos;, &apos;Closed&apos;, &apos;CLOSED FOR RECEIVING&apos;, &apos;Closed&apos;, &apos;FINALLY CLOSED&apos;, &apos;Closed&apos;, DECODE(poh.frozen_flag, &apos;Y&apos;, &apos;Pending&apos;, DECODE(DECODE(por.po_release_id,NULL,poh.authorization_status,por.authorization_status),&apos;REQUIRES REAPPROVAL&apos;,&apos;Pending&apos;, &apos;IN PROCESS&apos;, &apos;Pending&apos;, &apos;PRE-APPROVED&apos;,&apos;Pending&apos;, &apos;Open&apos;))),
+DECODE(epoa.status, NULL, &apos;New&apos;, &apos;New&apos;, &apos;New&apos;, DECODE(epoa.po_price, poll.price_override, DECODE(TRUNC(epoa.po_promised_date), TRUNC(NVL(poll.promised_date, poll.need_by_date)),DECODE(epoa.po_quantity, poll.quantity,DECODE(epoa.po_item_revision, pol.item_revision, epoa.status, &apos;Revised&apos;), &apos;Revised&apos;), &apos;Revised&apos;), &apos;Revised&apos;)),
+haou2.attribute14,
+pol.vendor_product_num,
+end_erp_shared.invoicable_quantity(poll.line_location_id,cqc.value),
+poh.attribute14,
+poll.quantity,
+DECODE(SIGN(poll.quantity - NVL(poll.quantity_received, 0) - NVL(poll.quantity_cancelled, 0)),-1,0,0,0,1,poll.quantity - NVL(poll.quantity_received, 0) - NVL(poll.quantity_cancelled, 0)),
+poll.need_by_date,
+(SELECT pa.full_name FROM po_distributions_all pda, po_line_locations_all lineloc, per_all_people_f pa WHERE pa.person_id = pda.deliver_to_person_id AND pa.effective_end_date &gt; SYSDATE AND pda.line_location_id = lineloc.line_location_id AND poll.line_location_id = lineloc.line_location_id AND rownum = 1),
+end_erp_shared.get_project_number(poll.line_location_id),
+end_erp_shared.is_open_sdr_exists(poll.line_location_id),
+pol.item_description,
+pol.attribute3,
+pv.segment1,
+epoa.created_by_name,
+pv.vendor_name,
+pvsa.attribute16,
+papfb.full_name,
+pvsa.vendor_site_code,
+poll.line_location_id,
+1,
+DECODE(epoa.status, NULL, &apos;New&apos;, &apos;New&apos;, &apos;New&apos;, DECODE(epoa.po_price, poll.price_override, DECODE(TRUNC(epoa.po_promised_date), TRUNC(NVL(poll.promised_date, poll.need_by_date)),DECODE(epoa.po_quantity, poll.quantity,DECODE(epoa.po_item_revision, pol.item_revision, epoa.status, &apos;Revised&apos;), &apos;Revised&apos;), &apos;Revised&apos;), &apos;Revised&apos;)),
+epoa.mrp_status,
+poll.promised_date,
+poll.price_override,
+epoa.attachments,
+epoa.invoice_tran_fail,
+epoa.ship_tran_fail,
+poh.vendor_site_id||&apos;:&apos;||poh.org_id,
+poll.quantity,
+poll.closed_code,
+DECODE(NVL(poll.closed_code, &apos;OPEN&apos;),&apos;CLOSED&apos;, &apos;Closed&apos;, &apos;CLOSED FOR RECEIVING&apos;, &apos;Closed&apos;, &apos;FINALLY CLOSED&apos;, &apos;Closed&apos;, DECODE(poh.frozen_flag, &apos;Y&apos;, &apos;Pending&apos;, DECODE(DECODE(por.po_release_id,NULL,poh.authorization_status,por.authorization_status),&apos;REQUIRES REAPPROVAL&apos;,&apos;Pending&apos;, &apos;IN PROCESS&apos;, &apos;Pending&apos;, &apos;PRE-APPROVED&apos;,&apos;Pending&apos;, &apos;Open&apos;))),
+XXXL_IS_PO_BLIND(poh.po_header_id, por.po_release_id) ) as row_number FROM ap_terms apt,end_poc_ora_approvals epoa,end_poc_ora_header_status epohs,mtl_system_items_b_kfv msi,hr_all_organization_units haou,hr_all_organization_units haou2,(SELECT * 
+   FROM (SELECT ROW_NUMBER() OVER (PARTITION BY person_id ORDER BY effective_start_date DESC) AS record_num_desc, 
+           papfb.* 
+      FROM per_all_people_f papfb) 
+     WHERE record_num_desc = 1) papfb,po_headers_all poh,po_line_locations_all poll,po_lines_all pol,po_releases_all por,rcv_parameters rcv,po_vendor_contacts pvc,po_vendors pv,po_vendor_sites_all pvsa,
+       ap_tax_codes_all atc, (SELECT &apos;N&apos; value FROM dual) cqc WHERE poh.terms_id=apt.term_id(+) AND poll.po_release_id=por.po_release_id(+) AND poh.vendor_contact_id=pvc.vendor_contact_id(+) AND poh.vendor_site_id=pvc.vendor_site_id(+) AND NVL(por.agent_id, poh.agent_id) = papfb.person_id AND poll.po_line_id=pol.po_line_id AND poll.po_header_id=poh.po_header_id AND rcv.organization_id=poll.ship_to_organization_id AND msi.inventory_item_id(+)=pol.item_id AND poll.ship_to_organization_id = NVL(msi.organization_id, poll.ship_to_organization_id) AND haou.organization_id=poll.ship_to_organization_id AND haou2.organization_id=poh.org_id AND poll.line_location_id=epoa.po_line_location_id(+) AND poh.po_header_id=epohs.po_header_id(+) AND poh.vendor_id=pv.vendor_id AND pvsa.vendor_site_id=poh.vendor_site_id AND pvsa.vendor_id=pv.vendor_id AND poh.authorization_status in (&apos;APPROVED&apos;, &apos;REQUIRES REAPPROVAL&apos;, &apos;IN PROCESS&apos;, &apos;PRE-APPROVED&apos;) AND NVL(por.authorization_status,&apos;APPROVED&apos;) in (&apos;APPROVED&apos;, &apos;REQUIRES REAPPROVAL&apos;, &apos;IN PROCESS&apos;, &apos;PRE-APPROVED&apos;) AND poh.type_lookup_code IN (&apos;STANDARD&apos;, &apos;BLANKET&apos;, &apos;PLANNED&apos;) AND NVL(poll.approved_flag, &apos;N&apos;) IN (&apos;Y&apos;, &apos;R&apos;, &apos;N&apos;) AND poll.shipment_type IN (&apos;STANDARD&apos;, &apos;BLANKET&apos;, &apos;SCHEDULED&apos;)
+   AND atc.tax_id(+)=poll.tax_code_id AND poh.org_id=poll.org_id AND pol.org_id=poll.org_id AND por.org_id(+)=poll.org_id
+   AND (poll.org_id IN (?,?)) AND  ROWNUM &lt;= 10001 ) where row_number between 1 and 26 order by row_number
+Message: ORA-00904: &quot;PVSA&quot;.&quot;ATTRIBUTE16&quot;: invalid identifier
+
+Message: ORA-00904: &quot;PVSA&quot;.&quot;ATTRIBUTE16&quot;: invalid identifier
+
+
+Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
+System info: host: &apos;JUMPBOX-WIN2016&apos;, ip: &apos;10.228.0.127&apos;, os.name: &apos;Windows Server 2016&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57416}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e5fb5a59462c5d9e83e0e1c1032a0338
+*** Element info: {Using=xpath, value=//*[@id=&apos;searchResultsFormId&apos;]/table[1]/tbody/tr[1]/td/table/tbody/tr/td[3]}
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:123)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:396)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at stepDefinitions.EndeavourCommonSteps.totalSearchResultsShouldBeAsPerTheLookup(EndeavourCommonSteps.java:50)
+	at ?.Total search results should be as per the lookup(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/setup/ManageLookups.feature:85)
 </pre></div></td>
-<td>103</td>
-<td>runner.Runner@4f6f416f</td></tr>
+<td>13</td>
+<td>runner.Runner@e57b96d</td></tr>
+<tr>
+<td title='runner.Runner.runScenario()'><b>runScenario</b><br>Test class: runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Export Printer recods", "Optional[Add,Search,Edit,Export,Delete Printers]"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;input[value=Search]&quot;}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
+System info: host: &apos;JUMPBOX-WIN2016&apos;, ip: &apos;10.228.0.127&apos;, os.name: &apos;Windows Server 2016&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57380}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b5f107e1fea7fb46916e1958e5b0bc50
+*** Element info: {Using=css selector, value=input[value=Search]}
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:435)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:496)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.click(Unknown Source)
+	at stepDefinitions.devices.ManagePrinters.userClicksOnSearchButtonToSearchPrinters(ManagePrinters.java:141)
+	at ?.User clicks on Search button to search Printers(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/devices/ManagePrinters.feature:58)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace43402513", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace43402513'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;input[value=Search]&quot;}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
+System info: host: &apos;JUMPBOX-WIN2016&apos;, ip: &apos;10.228.0.127&apos;, os.name: &apos;Windows Server 2016&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57380}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b5f107e1fea7fb46916e1958e5b0bc50
+*** Element info: {Using=css selector, value=input[value=Search]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:435)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:496)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.click(Unknown Source)
+	at stepDefinitions.devices.ManagePrinters.userClicksOnSearchButtonToSearchPrinters(ManagePrinters.java:141)
+	at ?.User clicks on Search button to search Printers(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/devices/ManagePrinters.feature:58)
+</pre></div></td>
+<td>35</td>
+<td>runner.Runner@e57b96d</td></tr>
+<tr>
+<td title='runner.Runner.runScenario()'><b>runScenario</b><br>Test class: runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Disable a Company", "Optional[Add,Edit,Enable,Disable,Export Companies records]"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;unique_id&apos;]/tbody/tr[2]/td[3]&quot;}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
+System info: host: &apos;JUMPBOX-WIN2016&apos;, ip: &apos;10.228.0.127&apos;, os.name: &apos;Windows Server 2016&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59987}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 266f5dcfb792baf4e363b56642694819
+*** Element info: {Using=xpath, value=//*[@id=&apos;unique_id&apos;]/tbody/tr[2]/td[3]}
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:396)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.getText(Unknown Source)
+	at stepDefinitions.ManageCompanies.companyShouldBeDisplayedInSearchResults(ManageCompanies.java:84)
+	at ?.Company should be displayed in search results(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/ManageCompanies.feature:31)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2023501911", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2023501911'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;unique_id&apos;]/tbody/tr[2]/td[3]&quot;}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
+System info: host: &apos;JUMPBOX-WIN2016&apos;, ip: &apos;10.228.0.127&apos;, os.name: &apos;Windows Server 2016&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59987}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 266f5dcfb792baf4e363b56642694819
+*** Element info: {Using=xpath, value=//*[@id=&apos;unique_id&apos;]/tbody/tr[2]/td[3]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:396)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.getText(Unknown Source)
+	at stepDefinitions.ManageCompanies.companyShouldBeDisplayedInSearchResults(ManageCompanies.java:84)
+	at ?.Company should be displayed in search results(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/ManageCompanies.feature:31)
+</pre></div></td>
+<td>40</td>
+<td>runner.Runner@e57b96d</td></tr>
+<tr>
+<td title='runner.Runner.runScenario()'><b>runScenario</b><br>Test class: runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search a Printer", "Optional[Add,Search,Edit,Export,Delete Printers]"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;search_name&apos;]&quot;}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
+System info: host: &apos;JUMPBOX-WIN2016&apos;, ip: &apos;10.228.0.127&apos;, os.name: &apos;Windows Server 2016&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52052}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e102a4cc5f7a4ddff4783bcec2357e6c
+*** Element info: {Using=name, value=search_name}
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:415)
+	at org.openqa.selenium.By$ByName.findElement(By.java:313)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.clear(Unknown Source)
+	at stepDefinitions.devices.ManagePrinters.userEntersPrinter_nameToSearchAPrinter(ManagePrinters.java:101)
+	at ?.User enters Printer_name[0] to search a Printer(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/devices/ManagePrinters.feature:32)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1331441841", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1331441841'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;search_name&apos;]&quot;}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
+System info: host: &apos;JUMPBOX-WIN2016&apos;, ip: &apos;10.228.0.127&apos;, os.name: &apos;Windows Server 2016&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52052}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e102a4cc5f7a4ddff4783bcec2357e6c
+*** Element info: {Using=name, value=search_name}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:415)
+	at org.openqa.selenium.By$ByName.findElement(By.java:313)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.clear(Unknown Source)
+	at stepDefinitions.devices.ManagePrinters.userEntersPrinter_nameToSearchAPrinter(ManagePrinters.java:101)
+	at ?.User enters Printer_name[0] to search a Printer(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/devices/ManagePrinters.feature:32)
+</pre></div></td>
+<td>35</td>
+<td>runner.Runner@e57b96d</td></tr>
+<tr>
+<td title='runner.Runner.runScenario()'><b>runScenario</b><br>Test class: runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Export Field recods", "Optional[Add,Search,Edit,Export,Delete Fields]"</td>
+<td><div><pre>java.lang.AssertionError: expected [false] but found [true]
+	at stepDefinitions.setup.ManageFields.verifyThatTheFieldRecordsXmlFileWasSuccessfullyDownloaded(ManageFields.java:235)
+	at ?.Verify that the Field records xml file was successfully downloaded(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/setup/ManageFields.feature:79)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace814387812", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace814387812'><pre>java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:819)
+	at org.testng.Assert.assertEquals(Assert.java:829)
+	at stepDefinitions.setup.ManageFields.verifyThatTheFieldRecordsXmlFileWasSuccessfullyDownloaded(ManageFields.java:235)
+	at ?.Verify that the Field records xml file was successfully downloaded(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/setup/ManageFields.feature:79)
+</pre></div></td>
+<td>675</td>
+<td>runner.Runner@e57b96d</td></tr>
+<tr>
+<td title='runner.Runner.runScenario()'><b>runScenario</b><br>Test class: runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Delete Namespace", "Optional[Add,Search,Edit,Export,Delete Namespaces]"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;unique_id&apos;]/tbody/tr[2]/td[3]&quot;}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
+System info: host: &apos;JUMPBOX-WIN2016&apos;, ip: &apos;10.228.0.127&apos;, os.name: &apos;Windows Server 2016&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57392}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a60239149323a748d673177f3113eac4
+*** Element info: {Using=xpath, value=//*[@id=&apos;unique_id&apos;]/tbody/tr[2]/td[3]}
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:396)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.getText(Unknown Source)
+	at stepDefinitions.setup.ManageNamespaces.namespaceWithNamespace_nameShouldBeDisplayedInSearchResults(ManageNamespaces.java:76)
+	at ?.Namespace with Namespace_name[1] should be displayed in search results(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/setup/ManageNamespaces.feature:47)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace602229898", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace602229898'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;unique_id&apos;]/tbody/tr[2]/td[3]&quot;}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
+System info: host: &apos;JUMPBOX-WIN2016&apos;, ip: &apos;10.228.0.127&apos;, os.name: &apos;Windows Server 2016&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57392}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a60239149323a748d673177f3113eac4
+*** Element info: {Using=xpath, value=//*[@id=&apos;unique_id&apos;]/tbody/tr[2]/td[3]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:396)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.getText(Unknown Source)
+	at stepDefinitions.setup.ManageNamespaces.namespaceWithNamespace_nameShouldBeDisplayedInSearchResults(ManageNamespaces.java:76)
+	at ?.Namespace with Namespace_name[1] should be displayed in search results(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/setup/ManageNamespaces.feature:47)
+</pre></div></td>
+<td>35</td>
+<td>runner.Runner@e57b96d</td></tr>
+<tr>
+<td title='runner.Runner.runScenario()'><b>runScenario</b><br>Test class: runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Edit a Namespace", "Optional[Add,Search,Edit,Export,Delete Namespaces]"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;unique_id&apos;]/tbody/tr[2]/td[3]&quot;}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
+System info: host: &apos;JUMPBOX-WIN2016&apos;, ip: &apos;10.228.0.127&apos;, os.name: &apos;Windows Server 2016&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54385}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 143d5ad8fba57a6cef0895950e1a257b
+*** Element info: {Using=xpath, value=//*[@id=&apos;unique_id&apos;]/tbody/tr[2]/td[3]}
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:396)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.getText(Unknown Source)
+	at stepDefinitions.setup.ManageNamespaces.namespaceWithNamespace_nameShouldBeDisplayedInSearchResults(ManageNamespaces.java:76)
+	at ?.Namespace with Namespace_name[0] should be displayed in search results(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/setup/ManageNamespaces.feature:35)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace19496184", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace19496184'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;unique_id&apos;]/tbody/tr[2]/td[3]&quot;}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
+System info: host: &apos;JUMPBOX-WIN2016&apos;, ip: &apos;10.228.0.127&apos;, os.name: &apos;Windows Server 2016&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54385}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 143d5ad8fba57a6cef0895950e1a257b
+*** Element info: {Using=xpath, value=//*[@id=&apos;unique_id&apos;]/tbody/tr[2]/td[3]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:396)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.getText(Unknown Source)
+	at stepDefinitions.setup.ManageNamespaces.namespaceWithNamespace_nameShouldBeDisplayedInSearchResults(ManageNamespaces.java:76)
+	at ?.Namespace with Namespace_name[0] should be displayed in search results(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/setup/ManageNamespaces.feature:35)
+</pre></div></td>
+<td>36</td>
+<td>runner.Runner@e57b96d</td></tr>
+<tr>
+<td title='runner.Runner.runScenario()'><b>runScenario</b><br>Test class: runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Delete Printer", "Optional[Add,Search,Edit,Export,Delete Printers]"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;search_name&apos;]&quot;}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
+System info: host: &apos;JUMPBOX-WIN2016&apos;, ip: &apos;10.228.0.127&apos;, os.name: &apos;Windows Server 2016&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60854}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4c75cf170d40f97b656a47746534eae9
+*** Element info: {Using=name, value=search_name}
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:415)
+	at org.openqa.selenium.By$ByName.findElement(By.java:313)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.clear(Unknown Source)
+	at stepDefinitions.devices.ManagePrinters.userEntersPrinter_nameToSearchAPrinter(ManagePrinters.java:101)
+	at ?.User enters Printer_name[1] to search a Printer(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/devices/ManagePrinters.feature:71)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace32777062", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace32777062'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;search_name&apos;]&quot;}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
+System info: host: &apos;JUMPBOX-WIN2016&apos;, ip: &apos;10.228.0.127&apos;, os.name: &apos;Windows Server 2016&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60854}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4c75cf170d40f97b656a47746534eae9
+*** Element info: {Using=name, value=search_name}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:415)
+	at org.openqa.selenium.By$ByName.findElement(By.java:313)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.clear(Unknown Source)
+	at stepDefinitions.devices.ManagePrinters.userEntersPrinter_nameToSearchAPrinter(ManagePrinters.java:101)
+	at ?.User enters Printer_name[1] to search a Printer(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/devices/ManagePrinters.feature:71)
+</pre></div></td>
+<td>36</td>
+<td>runner.Runner@e57b96d</td></tr>
+<tr>
+<td title='runner.Runner.runScenario()'><b>runScenario</b><br>Test class: runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add a Printer", "Optional[Add,Search,Edit,Export,Delete Printers]"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;input[value=Add]&quot;}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
+System info: host: &apos;JUMPBOX-WIN2016&apos;, ip: &apos;10.228.0.127&apos;, os.name: &apos;Windows Server 2016&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61199}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5330ed877b91175ddf7cd4054e1037e3
+*** Element info: {Using=css selector, value=input[value=Add]}
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:435)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:496)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.click(Unknown Source)
+	at stepDefinitions.devices.ManagePrinters.userClicksOnAddButtonToAddPrinter(ManagePrinters.java:40)
+	at ?.User clicks on Add button to add Printer(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/devices/ManagePrinters.feature:17)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace67883256", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace67883256'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;input[value=Add]&quot;}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
+System info: host: &apos;JUMPBOX-WIN2016&apos;, ip: &apos;10.228.0.127&apos;, os.name: &apos;Windows Server 2016&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61199}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5330ed877b91175ddf7cd4054e1037e3
+*** Element info: {Using=css selector, value=input[value=Add]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:435)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:496)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.click(Unknown Source)
+	at stepDefinitions.devices.ManagePrinters.userClicksOnAddButtonToAddPrinter(ManagePrinters.java:40)
+	at ?.User clicks on Add button to add Printer(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/devices/ManagePrinters.feature:17)
+</pre></div></td>
+<td>37</td>
+<td>runner.Runner@e57b96d</td></tr>
+<tr>
+<td title='runner.Runner.runScenario()'><b>runScenario</b><br>Test class: runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search for namespace belonging to a specific class", "Optional[Add,Search,Edit,Export,Delete Namespaces]"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;unique_id&apos;]/tbody/tr[2]/td[4]&quot;}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
+System info: host: &apos;JUMPBOX-WIN2016&apos;, ip: &apos;10.228.0.127&apos;, os.name: &apos;Windows Server 2016&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50838}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 958297b75d68e84830b6eefcb68bca8b
+*** Element info: {Using=xpath, value=//*[@id=&apos;unique_id&apos;]/tbody/tr[2]/td[4]}
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:396)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at stepDefinitions.setup.ManageNamespaces.namespaceWithClass_nameShouldBeDisplayedInSearchResults(ManageNamespaces.java:89)
+	at ?.Namespace with Class_name[0] should be displayed in search results(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/setup/ManageNamespaces.feature:29)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2105634098", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2105634098'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;unique_id&apos;]/tbody/tr[2]/td[4]&quot;}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
+System info: host: &apos;JUMPBOX-WIN2016&apos;, ip: &apos;10.228.0.127&apos;, os.name: &apos;Windows Server 2016&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50838}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 958297b75d68e84830b6eefcb68bca8b
+*** Element info: {Using=xpath, value=//*[@id=&apos;unique_id&apos;]/tbody/tr[2]/td[4]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:396)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at stepDefinitions.setup.ManageNamespaces.namespaceWithClass_nameShouldBeDisplayedInSearchResults(ManageNamespaces.java:89)
+	at ?.Namespace with Class_name[0] should be displayed in search results(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/setup/ManageNamespaces.feature:29)
+</pre></div></td>
+<td>35</td>
+<td>runner.Runner@e57b96d</td></tr>
+<tr>
+<td title='runner.Runner.runScenario()'><b>runScenario</b><br>Test class: runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add a Namespace", "Optional[Add,Search,Edit,Export,Delete Namespaces]"</td>
+<td><div><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Message: A namespace with that name already exists
+}
+  (Session info: chrome=94.0.4606.71): Message: A namespace with that name already exists
+
+Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
+System info: host: &apos;JUMPBOX-WIN2016&apos;, ip: &apos;10.228.0.127&apos;, os.name: &apos;Windows Server 2016&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57829}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3d385dcb2aaa243707ec440458fb8fd9
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:123)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.defaultContent(RemoteWebDriver.java:993)
+	at stepDefinitions.setup.ManageNamespaces.userEntersNamespace_nameToSearchANamespace(ManageNamespaces.java:63)
+	at ?.User enters Namespace_name[0] to search a Namespace(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/setup/ManageNamespaces.feature:21)
+</pre></div><a href='#' onClick='toggleBox("stack-trace858872101", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace858872101'><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Message: A namespace with that name already exists
+}
+  (Session info: chrome=94.0.4606.71): Message: A namespace with that name already exists
+
+Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
+System info: host: &apos;JUMPBOX-WIN2016&apos;, ip: &apos;10.228.0.127&apos;, os.name: &apos;Windows Server 2016&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57829}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3d385dcb2aaa243707ec440458fb8fd9
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:123)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.defaultContent(RemoteWebDriver.java:993)
+	at stepDefinitions.setup.ManageNamespaces.userEntersNamespace_nameToSearchANamespace(ManageNamespaces.java:63)
+	at ?.User enters Namespace_name[0] to search a Namespace(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/setup/ManageNamespaces.feature:21)
+</pre></div></td>
+<td>6</td>
+<td>runner.Runner@e57b96d</td></tr>
+<tr>
+<td title='runner.Runner.runScenario()'><b>runScenario</b><br>Test class: runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Edit a User", "Optional[Add,Search,Edit,Enable,Disable,Export Users records]"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;unique_id&apos;]/tbody/tr[2]/td[3]&quot;}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
+System info: host: &apos;JUMPBOX-WIN2016&apos;, ip: &apos;10.228.0.127&apos;, os.name: &apos;Windows Server 2016&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56778}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e218145d6326f4c68bbf2e0133124ff3
+*** Element info: {Using=xpath, value=//*[@id=&apos;unique_id&apos;]/tbody/tr[2]/td[3]}
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:396)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.getText(Unknown Source)
+	at stepDefinitions.ManageUsers.userShouldBeDisplayedInSearchResults(ManageUsers.java:87)
+	at ?.User should be displayed in search results(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/ManageUsers.feature:54)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace489200959", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace489200959'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;unique_id&apos;]/tbody/tr[2]/td[3]&quot;}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
+System info: host: &apos;JUMPBOX-WIN2016&apos;, ip: &apos;10.228.0.127&apos;, os.name: &apos;Windows Server 2016&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56778}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e218145d6326f4c68bbf2e0133124ff3
+*** Element info: {Using=xpath, value=//*[@id=&apos;unique_id&apos;]/tbody/tr[2]/td[3]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:396)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.getText(Unknown Source)
+	at stepDefinitions.ManageUsers.userShouldBeDisplayedInSearchResults(ManageUsers.java:87)
+	at ?.User should be displayed in search results(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/ManageUsers.feature:54)
+</pre></div></td>
+<td>36</td>
+<td>runner.Runner@e57b96d</td></tr>
+<tr>
+<td title='runner.Runner.runScenario()'><b>runScenario</b><br>Test class: runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Enable a Company", "Optional[Add,Edit,Enable,Disable,Export Companies records]"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;unique_id&apos;]/tbody/tr[2]/td[3]&quot;}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
+System info: host: &apos;JUMPBOX-WIN2016&apos;, ip: &apos;10.228.0.127&apos;, os.name: &apos;Windows Server 2016&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65018}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b63790d0e98740facc9fcfe8bb81b553
+*** Element info: {Using=xpath, value=//*[@id=&apos;unique_id&apos;]/tbody/tr[2]/td[3]}
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:396)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.getText(Unknown Source)
+	at stepDefinitions.ManageCompanies.companyShouldBeDisplayedInSearchResults(ManageCompanies.java:84)
+	at ?.Company should be displayed in search results(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/ManageCompanies.feature:42)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace388973844", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace388973844'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;unique_id&apos;]/tbody/tr[2]/td[3]&quot;}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
+System info: host: &apos;JUMPBOX-WIN2016&apos;, ip: &apos;10.228.0.127&apos;, os.name: &apos;Windows Server 2016&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65018}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b63790d0e98740facc9fcfe8bb81b553
+*** Element info: {Using=xpath, value=//*[@id=&apos;unique_id&apos;]/tbody/tr[2]/td[3]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:396)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.getText(Unknown Source)
+	at stepDefinitions.ManageCompanies.companyShouldBeDisplayedInSearchResults(ManageCompanies.java:84)
+	at ?.Company should be displayed in search results(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/ManageCompanies.feature:42)
+</pre></div></td>
+<td>38</td>
+<td>runner.Runner@e57b96d</td></tr>
+<tr>
+<td title='runner.Runner.runScenario()'><b>runScenario</b><br>Test class: runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Edit a Printer", "Optional[Add,Search,Edit,Export,Delete Printers]"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;search_name&apos;]&quot;}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
+System info: host: &apos;JUMPBOX-WIN2016&apos;, ip: &apos;10.228.0.127&apos;, os.name: &apos;Windows Server 2016&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55353}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 420862c81d0104f7ae1060b48e0edd51
+*** Element info: {Using=name, value=search_name}
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:415)
+	at org.openqa.selenium.By$ByName.findElement(By.java:313)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.clear(Unknown Source)
+	at stepDefinitions.devices.ManagePrinters.userEntersPrinter_nameToSearchAPrinter(ManagePrinters.java:101)
+	at ?.User enters Printer_name[0] to search a Printer(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/devices/ManagePrinters.feature:40)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1086811994", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1086811994'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;search_name&apos;]&quot;}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
+System info: host: &apos;JUMPBOX-WIN2016&apos;, ip: &apos;10.228.0.127&apos;, os.name: &apos;Windows Server 2016&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55353}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 420862c81d0104f7ae1060b48e0edd51
+*** Element info: {Using=name, value=search_name}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:415)
+	at org.openqa.selenium.By$ByName.findElement(By.java:313)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.clear(Unknown Source)
+	at stepDefinitions.devices.ManagePrinters.userEntersPrinter_nameToSearchAPrinter(ManagePrinters.java:101)
+	at ?.User enters Printer_name[0] to search a Printer(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/devices/ManagePrinters.feature:40)
+</pre></div></td>
+<td>35</td>
+<td>runner.Runner@e57b96d</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.Runner.runScenario()'><b>runScenario</b><br>Test class: runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search a Folder", "Optional[Add,Search,Edit,Export,Delete Folders]"</td>
+<td></td>
+<td>7</td>
+<td>runner.Runner@e57b96d</td></tr>
+<tr>
+<td title='runner.Runner.runScenario()'><b>runScenario</b><br>Test class: runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Copy folder", "Optional[Add,Search,Edit,Export,Delete Folders]"</td>
+<td></td>
+<td>9</td>
+<td>runner.Runner@e57b96d</td></tr>
+<tr>
+<td title='runner.Runner.runScenario()'><b>runScenario</b><br>Test class: runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify folder is seen in Endeavour", "Optional[Add,Search,Edit,Export,Delete Folders]"</td>
+<td></td>
+<td>13</td>
+<td>runner.Runner@e57b96d</td></tr>
+<tr>
+<td title='runner.Runner.runScenario()'><b>runScenario</b><br>Test class: runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Delete copy of the Folder", "Optional[Add,Search,Edit,Export,Delete Folders]"</td>
+<td></td>
+<td>9</td>
+<td>runner.Runner@e57b96d</td></tr>
+<tr>
+<td title='runner.Runner.runScenario()'><b>runScenario</b><br>Test class: runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Assign a Buyer company to a Folder", "Optional[Add,Search,Edit,Export,Delete Folders]"</td>
+<td></td>
+<td>18</td>
+<td>runner.Runner@e57b96d</td></tr>
+<tr>
+<td title='runner.Runner.runScenario()'><b>runScenario</b><br>Test class: runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Edit a Folder", "Optional[Add,Search,Edit,Export,Delete Folders]"</td>
+<td></td>
+<td>12</td>
+<td>runner.Runner@e57b96d</td></tr>
+<tr>
+<td title='runner.Runner.runScenario()'><b>runScenario</b><br>Test class: runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add a Folder", "Optional[Add,Search,Edit,Export,Delete Folders]"</td>
+<td></td>
+<td>17</td>
+<td>runner.Runner@e57b96d</td></tr>
+<tr>
+<td title='runner.Runner.runScenario()'><b>runScenario</b><br>Test class: runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Delete Folder", "Optional[Add,Search,Edit,Export,Delete Folders]"</td>
+<td></td>
+<td>9</td>
+<td>runner.Runner@e57b96d</td></tr>
+<tr>
+<td title='runner.Runner.runScenario()'><b>runScenario</b><br>Test class: runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Assign a Supplier company to  a Folder", "Optional[Add,Search,Edit,Export,Delete Folders]"</td>
+<td></td>
+<td>18</td>
+<td>runner.Runner@e57b96d</td></tr>
 </table><p>
 </body>
 </html>

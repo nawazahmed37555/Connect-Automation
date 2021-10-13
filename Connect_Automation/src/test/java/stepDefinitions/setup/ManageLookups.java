@@ -204,7 +204,7 @@ public class ManageLookups extends DriverFactory{
 		//Dates starting with 0(for ex :01-01-2021) needs to be stripped to match the fileName
 		String currentDate = basePage.getCURRENTDate_initialZeroStripped("M-d-yyyy");
 		String FileName = "lookup_export_"+currentDate+".xml";
-		Assert.assertEquals(basePage.isFileDownloaded(utils.Constant.downloadDirectory, FileName, 120), true);
+		Assert.assertEquals(basePage.isFileDownloaded(utils.Constant.downloadDirectory, FileName, 300), true);
 	}
 
 

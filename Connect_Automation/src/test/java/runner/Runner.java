@@ -9,7 +9,7 @@ import io.cucumber.testng.CucumberOptions;
  	 features = "src/test/resources/features/",
  		 glue = "stepDefinitions",  
  		 monochrome = true,
- 		 tags = "@Attributes",
+ 		 tags = "",
  		 plugin = {"pretty", "html:target/cucumber/report.html", "json:target/cucumber.json", "html:target/selenium-reports/selenium-reports.html"}
 )
 public class Runner extends AbstractTestNGCucumberTests {	 

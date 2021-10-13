@@ -19,7 +19,9 @@ public class Constant {
 	
 	// Strings 
 	
-	public final static String downloadDirectory="C:\\Users\\admin\\Downloads\\";
+	//public final static String downloadDirectory="C:\\Users\\admin\\Downloads\\";
+	public final static String downloadDirectory="C:\\Users\\jumpboxadmin\\Downloads\\";
+	
 	
 	
 	//Password fields messages

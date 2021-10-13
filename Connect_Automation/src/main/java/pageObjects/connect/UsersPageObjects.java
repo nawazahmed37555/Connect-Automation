@@ -53,10 +53,10 @@ public class UsersPageObjects  extends BasePage{
 	
 	
 	//Strings used as test data
-	public final  String[] userName = {"Automated_User","Automated_User_Updated"};
+	public final  String[] userName = {"Automated_User1","Automated_User2"};
 	public final  String[] passWord = {"test1234","updated1234"};
 	public final  String[] userType = {"User","Supplier","Buyer"}; 
-	public final  String[] contactName = {"test_contactName","updated_contactName"};
+	public final  String[] contactName = {"Automated_contactName","Automated_contactName"};
 	public final  String[] contactPhone = {"123456789","9876543210"};
 	public final  String[] contactEmail = {"test@gmail.com","updated@gmail.com"};
 	public final  String[] contactFax = {"+13235551234","+13235551233"};

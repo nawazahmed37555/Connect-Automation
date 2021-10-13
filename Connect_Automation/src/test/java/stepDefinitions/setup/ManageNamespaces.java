@@ -12,7 +12,7 @@ import pageObjects.connect.setup.NamespacesPageObjects;
 import utils.DriverFactory;
 
 public class ManageNamespaces extends DriverFactory{
-	public String[] nameSpace_name = {"Auto_NameSpace1","Auto_NameSpace2"};
+	public String[] nameSpace_name = {"Automated_NameSpace123","Automated_NameSpace223"};
 	public String[] className = {"Automated_className_1","Automated_className_2"};
 	public String[] description = {"Automated Desciption 1","Automated Description 2"};
 	

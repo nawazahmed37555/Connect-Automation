@@ -15,8 +15,8 @@ Feature: Add,Search,Edit,Export,Delete Folders
   Scenario: Add a Folder
     And User clicks on Add button to add Folder
     And User enters Folder_name[0] on Folder Details panel
-    And User selects Application_Name[1] on Folder Details panel
-    And User selects Page_Name[1] on Folder Details panel
+    And User selects Application_Name[10] on Folder Details panel
+    And User selects Page_Name[3] on Folder Details panel
     And User selects a Namespace[1] on Folder Details panel
     And User selects Field[1] on Folder Details panel
     And User clicks on Assign button to assign fields to the Folder
@@ -33,8 +33,10 @@ Feature: Add,Search,Edit,Export,Delete Folders
   Scenario: Verify folder is seen in Endeavour
     Given User Navigates to Endeavour URL
     And Endeavour Home Page is displayed
-    And User clicks on Accounts Payable menu option
-    And User clicks on Search Invoices menu option
+    #And User clicks on Accounts Payable menu option
+    #And User clicks on Search Invoices menu option
+    And User clicks on Purchase Orders menu option
+    And User clicks on Search Orders menu option
     And User clicks on Search folder dropdown
     Then Folder with Folder_name[0] should be displayed in the Search folder dropdown 
    

@@ -72,6 +72,7 @@ Feature: Add,Search,Edit,Export,Delete Pages
     And User selects Export as XML on Pages page
     And User clicks on Go button on Pages page
     Then Verify that the Page records xml file was successfully downloaded
+    And User deletes the "page_export" file
 
   @T1720110332
   Scenario: Delete Page

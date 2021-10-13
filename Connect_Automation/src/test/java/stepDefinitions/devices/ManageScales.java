@@ -156,7 +156,7 @@ public class ManageScales extends DriverFactory {
 		//Dates starting with 0(for ex :01-01-2021) needs to be stripped to match the fileName
 				String currentDate = basePage.getCURRENTDate_initialZeroStripped("M-d-yyyy");
 				String FileName = "scale_export_"+currentDate+".xml";
-				Assert.assertEquals(basePage.isFileDownloaded("C:\\Users\\admin\\Downloads", FileName, 20),true);
+				Assert.assertEquals(basePage.isFileDownloaded(utils.Constant.downloadDirectory, FileName, 120),true);
 			}
 
 	@When("^User clicks on Delete option to delete Scale$")

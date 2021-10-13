@@ -37,21 +37,20 @@ public class ManageUsers extends DriverFactory{
 	}
 	
 
-	@And("^User Enters required detais to add User$")
-	public void userEntersRequiredDetaisToAddUser() {
+	@And("^User Enters required detais to add User\\[(\\d+)\\]$")
+	public void userEntersRequiredDetaisToAddUser(int index) {
 		//Enter Username
-		usersPageObjects.edit_userName.sendKeys(usersPageObjects.userName[0]);
-		//Enter Password
-		usersPageObjects.edit_password.sendKeys(usersPageObjects.passWord[0]);
-		/*//Select User type
-		Select userTypeDropDown = new Select (usersPageObjects.choose_userType);
-		userTypeDropDown.selectByVisibleText(usersPageObjects.userType[0]);
-		*/
-		//Select Company
-		Select companyDropDown = new Select (usersPageObjects.choose_company);
-		companyDropDown.selectByVisibleText(usersPageObjects.company[0]);
-				
-	}
+				usersPageObjects.edit_userName.sendKeys(usersPageObjects.userName[index]);
+				//Enter Password
+				usersPageObjects.edit_password.sendKeys(usersPageObjects.passWord[index]);
+				/*//Select User type
+				Select userTypeDropDown = new Select (usersPageObjects.choose_userType);
+				userTypeDropDown.selectByIndex(index+1);
+				*/
+				//Select Company
+				Select companyDropDown = new Select (usersPageObjects.choose_company);
+				companyDropDown.selectByIndex(index+1);
+				}
 
 	@And("^User clicks on Save button to add User$")
 	public void userClicksOnSaveButtonToAddUser() throws InterruptedException {
@@ -118,44 +117,38 @@ public class ManageUsers extends DriverFactory{
 		usersPageObjects.contextMenuBtn.click();
 		usersPageObjects.contextMenu_Edit_Btn.click();
 	}
-	@And("^User changes user details$")
-	public void userChangesUserDetails() {
+	@And("^User changes user\\[(\\d+)\\] details$")
+	public void userChangesUserDetails(int index)  {
+	
 		//Change Username
-		usersPageObjects.edit_userName.clear();
-		usersPageObjects.edit_userName.sendKeys(usersPageObjects.userName[1]);
-		
-		//Change Password
-		usersPageObjects.edit_password.clear();
-		usersPageObjects.edit_password.sendKeys(usersPageObjects.passWord[1]);
-		//Change User type
-		Select userTypeDropDown = new Select (usersPageObjects.choose_userType);
-		userTypeDropDown.selectByVisibleText(usersPageObjects.userType[1]);
-		//Change Company
-		Select companyDropDown = new Select (usersPageObjects.choose_company);
-		companyDropDown.selectByVisibleText(usersPageObjects.company[1]);
-		
+				usersPageObjects.edit_userName.clear();
+				usersPageObjects.edit_userName.sendKeys(usersPageObjects.userName[index]);
+				
+				//Change Password
+				usersPageObjects.edit_password.clear();
+				usersPageObjects.edit_password.sendKeys(usersPageObjects.passWord[index]);
+				//Change User type
+				Select userTypeDropDown = new Select (usersPageObjects.choose_userType);
+				userTypeDropDown.selectByIndex(index+1);
+				//Change Company
+				Select companyDropDown = new Select (usersPageObjects.choose_company);
+				companyDropDown.selectByIndex(index+1);
 	}
+
+
 	@And("^User clicks on Save button to save User details$")
 	public void userClicksOnSaveButtonToSaveUserDetails(){
 		usersPageObjects.saveBtn.click();
 	}
 
-
-	
-	@Then("^Verify user details updated successfully$")
-	public void verifyUserDetailsUpdatedSuccessfully() {
+	@Then("^Verify user\\[(\\d+)\\] details updated successfully$")
+	public void verifyUserDetailsUpdatedSuccessfully(int index)  {
 		//Verify Username updated successfully
- 		Assert.assertEquals(usersPageObjects.userName[1], usersPageObjects.edit_userName.getAttribute("value"));
- 		
-		/*//Verify User type updated successfully
-		Select userTypeDropDown = new Select (usersPageObjects.choose_userType);
-		Assert.assertEquals(usersPageObjects.userType[1],userTypeDropDown.getFirstSelectedOption().getText());
-		*/
+ 		Assert.assertEquals(usersPageObjects.edit_userName.getAttribute("value"),usersPageObjects.userName[index]);
+ 
 		//Verify Company updated successfully
 		Select companyDropDown = new Select (usersPageObjects.choose_company);
-		Assert.assertEquals(usersPageObjects.company[1],companyDropDown.getFirstSelectedOption().getText());
-		
-		
+		Assert.assertEquals(companyDropDown.getFirstSelectedOption().getText(),usersPageObjects.company[index]);
 	}
 
 	@Then("^All Users should be displayed in search results$")
@@ -194,8 +187,11 @@ public class ManageUsers extends DriverFactory{
 		//Dates starting with 0 needs to be stripped to match the fileName
 		String currentDate = basePage.getCURRENTDate_initialZeroStripped("M-d-yyyy");
 		String FileName = "user_export_"+currentDate+".xml";
-		Assert.assertEquals(true, basePage.isFileDownloaded(utils.Constant.downloadDirectory, FileName, 60));	
+		Assert.assertEquals(true, basePage.isFileDownloaded(utils.Constant.downloadDirectory, FileName, 300));	
 	}
 
-	
+
+
+
+
 }

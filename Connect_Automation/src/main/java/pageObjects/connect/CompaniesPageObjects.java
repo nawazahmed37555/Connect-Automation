@@ -48,7 +48,7 @@ public class CompaniesPageObjects extends BasePage {
 	public @FindBy (name= "edit_companyPrintToPDF") WebElement edit_companyPrintToPDF;
 	
 	
-	public final String[] company_name = {"test","test2"};
+	public final String[] company_name = {"Automated_company1","Automated_company2"};
 	public final  String[] company_code = {"test1","test2"};
 	
 }

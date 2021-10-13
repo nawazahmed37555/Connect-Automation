@@ -92,7 +92,9 @@ public class ManageFields extends DriverFactory {
 	@And("^User selects Field_LOV_Type\\[(\\d+)\\] on Field Details panel$")
 	public void userSelectsField_LOV_TypeOnFieldDetailsPanel(int index) {
 		Select fieldLOVType_dropDown = new Select(fieldsPageObjects.edit_fieldLOVType_drpDown);
+		if(fieldLOVType_dropDown.getOptions().size()>index) {
 		fieldLOVType_dropDown.selectByIndex(index);
+		}
 	}
 
 	@And("^User clicks on Save button to save Field details$")
@@ -174,7 +176,7 @@ public class ManageFields extends DriverFactory {
 	@Then("^Field with Field_name\\[(\\d+)\\] should be displayed in search results$")
 	public void fieldWithField_nameShouldBeDisplayedInSearchResults(int index)  {
 		Assert.assertEquals(fieldsPageObjects.searchResult.getText().trim(), field_name[index]);
-	}
+		}
 
 	@When("^User clicks on Edit option to edit Field$")
 	public void userClicksOnEditOptionToEditField()  {
@@ -202,7 +204,8 @@ public class ManageFields extends DriverFactory {
 	}
 
 	@When("^User clicks on checkbox to select all Fields under search results$")
-	public void userClicksOnCheckboxToSelectAllFieldsUnderSearchResults()  {
+	public void userClicksOnCheckboxToSelectAllFieldsUnderSearchResults() throws InterruptedException  {
+		Thread.sleep(60000);	
 		fieldsPageObjects.selectAll_checkbox.click();
 	}
 
@@ -229,7 +232,7 @@ public class ManageFields extends DriverFactory {
 		//Dates starting with 0(for ex :01-01-2021) needs to be stripped to match the fileName
 		String currentDate = basePage.getCURRENTDate_initialZeroStripped("M-d-yyyy");
 		String FileName = "field_export_"+currentDate+".xml";
-		Assert.assertEquals(true, basePage.isFileDownloaded(utils.Constant.downloadDirectory, FileName, 60));
+		Assert.assertEquals(true, basePage.isFileDownloaded(utils.Constant.downloadDirectory, FileName, 600));
 	}
 
 	@When("^User clicks on Delete option to delete Field$")

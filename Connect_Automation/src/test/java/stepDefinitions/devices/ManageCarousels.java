@@ -60,9 +60,6 @@ public class ManageCarousels extends DriverFactory {
 		carouselsPageObjects.saveBtn.click();
 		
 	}
-
-	
-
 	@Then("Verify Carousel is created successfully")
 	public void verify_Carousel_is_created_successfully() {
 	  Assert.assertEquals(carouselsPageObjects.edit_CarouselName.getAttribute("value"), carouselsPageObjects.carousel_name[0]);
@@ -78,6 +75,8 @@ public class ManageCarousels extends DriverFactory {
 
 	@And("^User clicks on Search button to search Carousel$")
 	public void userClicksOnSearchButtonToSearchCarousel()  {
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame(commonPageLocators.body_frame);
 		carouselsPageObjects.searchBtn.click();
 	}
 
@@ -94,18 +93,18 @@ public class ManageCarousels extends DriverFactory {
 		
 	}
 
-	@And("^User changes Carousel details$")
-	public void userChangesCarouselDetails()  {
+	@And("^User changes Carousel\\[(\\d+)\\] details$")
+	public void userChangesCarouselDetails(int index)  {
 		carouselsPageObjects.edit_CarouselName.clear();
-		carouselsPageObjects.edit_CarouselName.sendKeys(carouselsPageObjects.carousel_name[1]);
+		carouselsPageObjects.edit_CarouselName.sendKeys(carouselsPageObjects.carousel_name[index]);
 		carouselsPageObjects.edit_host.clear();
-		carouselsPageObjects.edit_host.sendKeys(carouselsPageObjects.hostIP[1]);
+		carouselsPageObjects.edit_host.sendKeys(carouselsPageObjects.hostIP[index]);
 		carouselsPageObjects.edit_port.clear();
-		carouselsPageObjects.edit_port.sendKeys(carouselsPageObjects.port[1]);
+		carouselsPageObjects.edit_port.sendKeys(carouselsPageObjects.port[index]);
 		Select deviceDriver_dropDown = new Select(carouselsPageObjects.edit_drpDown_deviceDriver);
-		deviceDriver_dropDown.selectByIndex(2);
+		deviceDriver_dropDown.selectByIndex(index+1);
 		Select company_drpDown = new Select (carouselsPageObjects.edit_drpDown_company);
-		company_drpDown.selectByIndex(2);
+		company_drpDown.selectByIndex(index+1);
 		
 		
 	}
@@ -209,10 +208,5 @@ public class ManageCarousels extends DriverFactory {
 
 	}
 
-
-
-	
-
-	
 	
 }

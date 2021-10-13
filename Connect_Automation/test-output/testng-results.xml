@@ -1,20 +1,1159 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="108" passed="95" failed="13" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-09-25T08:23:50 IST" name="Default suite" finished-at="2021-09-25T08:26:24 IST" duration-ms="153960">
+  <suite started-at="2021-10-13T00:18:20 CDT" name="Default suite" finished-at="2021-10-13T00:50:03 CDT" duration-ms="1902943">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@65b104b9]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2021-09-25T08:23:50 IST" name="Default test" finished-at="2021-09-25T08:26:24 IST" duration-ms="153960">
+    <test started-at="2021-10-13T00:18:20 CDT" name="Default test" finished-at="2021-10-13T00:50:03 CDT" duration-ms="1902943">
       <class name="runner.Runner">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:runner.Runner@65b104b9]" started-at="2021-09-25T08:23:50 IST" name="setUpClass" finished-at="2021-09-25T08:23:52 IST" duration-ms="1778" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:18:20 CDT" name="setUpClass" finished-at="2021-10-13T00:18:22 CDT" duration-ms="2010" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@65b104b9]" started-at="2021-09-25T08:23:52 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-09-25T08:24:43 IST" duration-ms="51378" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:18:22 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:18:33 CDT" duration-ms="10912" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login to Connect with invalid Username and invalid Password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Connect Login Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:18:33 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:18:39 CDT" duration-ms="6211" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login to Connect with valid Username and Password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Connect Login Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:18:39 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:18:45 CDT" duration-ms="5970" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Logout option"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Connect Login Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:18:45 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:18:55 CDT" duration-ms="10176" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Single SSO with Endeavour"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Connect Login Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:18:55 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:19:01 CDT" duration-ms="5773" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login to Endeavour with valid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Connect Login Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:19:01 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:19:08 CDT" duration-ms="7110" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add a Company"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Edit,Enable,Disable,Export Companies records]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:19:08 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:19:15 CDT" duration-ms="6433" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search a Company"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Edit,Enable,Disable,Export Companies records]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:19:15 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:19:23 CDT" duration-ms="8093" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Disable a Company"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Edit,Enable,Disable,Export Companies records]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:19:23 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:19:28 CDT" duration-ms="5776" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Enable a Company"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Edit,Enable,Disable,Export Companies records]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index 7 out of bounds for length 7]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IndexOutOfBoundsException: Index 7 out of bounds for length 7
+at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+at java.base/java.util.Objects.checkIndex(Objects.java:359)
+at java.base/java.util.ArrayList.get(ArrayList.java:427)
+at stepDefinitions.ManageCompanies.verifyThatTheCompanyIsEnabled(ManageCompanies.java:117)
+at ?.Verify that the Company is Enabled(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/ManageCompanies.feature:46)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:19:28 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:19:36 CDT" duration-ms="7244" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Edit a Company"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Edit,Enable,Disable,Export Companies records]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:19:36 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:19:44 CDT" duration-ms="8634" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Export Company records to XML file"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Edit,Enable,Disable,Export Companies records]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:19:44 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:19:51 CDT" duration-ms="6445" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add a Responsibility"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Enable,Disable,Export responsibilities]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:19:51 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:19:57 CDT" duration-ms="6201" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search a Responsibility"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Enable,Disable,Export responsibilities]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:19:57 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:20:04 CDT" duration-ms="6743" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Disable a Responsibility bility"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Enable,Disable,Export responsibilities]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:20:04 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:20:11 CDT" duration-ms="7128" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Enable a Responsibility"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Enable,Disable,Export responsibilities]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:20:11 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:20:18 CDT" duration-ms="6808" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Edit a Responsibility"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Enable,Disable,Export responsibilities]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:20:18 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:20:24 CDT" duration-ms="6473" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add a Role"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Enable,Disable Roles]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:20:24 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:20:30 CDT" duration-ms="6293" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search a Role"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Enable,Disable Roles]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:20:30 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:20:37 CDT" duration-ms="6724" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Disable a Role"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Enable,Disable Roles]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:20:37 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:20:44 CDT" duration-ms="6740" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Enable a Role"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Enable,Disable Roles]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:20:44 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:20:51 CDT" duration-ms="7133" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Grouping multiple responsibilities into a Role"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Enable,Disable Roles]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:20:51 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:20:58 CDT" duration-ms="6876" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Edit a Role"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Enable,Disable Roles]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:20:58 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:21:06 CDT" duration-ms="7751" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add a User"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Enable,Disable,Export Users records]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:21:06 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:21:12 CDT" duration-ms="6743" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search a User"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Enable,Disable,Export Users records]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:21:12 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:21:20 CDT" duration-ms="7928" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Disable a User"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Enable,Disable,Export Users records]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:21:20 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:21:29 CDT" duration-ms="8851" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Enable a User"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Enable,Disable,Export Users records]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:21:29 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:21:38 CDT" duration-ms="8396" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Edit a User"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Enable,Disable,Export Users records]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.cucumber.testng.UndefinedStepException">
+            <message>
+              <![CDATA[The step 'Verify user details updated successfully' is undefined.
+You can implement this step using the snippet(s) below:
+
+Then("Verify user details updated successfully", () -> {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java8.PendingException();
+});
+@Then("Verify user details updated successfully")
+public void verify_user_details_updated_successfully() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'Verify user details updated successfully' is undefined.
+You can implement this step using the snippet(s) below:
+
+Then("Verify user details updated successfully", () -> {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java8.PendingException();
+});
+@Then("Verify user details updated successfully")
+public void verify_user_details_updated_successfully() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:135)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:131)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31)
+at jdk.internal.reflect.GeneratedMethodAccessor155.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:21:38 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:21:53 CDT" duration-ms="15412" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Export User records to XML file"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Enable,Disable,Export Users records]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:21:53 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:22:00 CDT" duration-ms="7356" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add a Carousel"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Carousels]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:22:00 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:22:07 CDT" duration-ms="6931" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search a Carousel"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Carousels]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:22:07 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:22:16 CDT" duration-ms="8726" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Edit a Carousel"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Carousels]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:22:16 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:22:24 CDT" duration-ms="7754" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Export Carousel recods"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Carousels]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:22:24 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:22:31 CDT" duration-ms="7430" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Delete Carousel"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Carousels]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:22:31 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:22:38 CDT" duration-ms="7009" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add a PLC"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete PLCs]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:22:38 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:22:46 CDT" duration-ms="7452" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search a PLC"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete PLCs]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:22:46 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:22:54 CDT" duration-ms="8009" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Edit a PLC"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete PLCs]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:22:54 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:23:01 CDT" duration-ms="7664" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Export PLC recods"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete PLCs]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:23:01 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:23:08 CDT" duration-ms="6794" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Delete PLC"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete PLCs]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:23:08 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:23:43 CDT" duration-ms="34231" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add a Printer"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Printers]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"input[value=Add]"}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
+System info: host: 'JUMPBOX-WIN2016', ip: '10.228.0.127', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55345}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f89b6ebaf76f73637e2fb0d19c15962a
+*** Element info: {Using=css selector, value=input[value=Add]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"input[value=Add]"}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
+System info: host: 'JUMPBOX-WIN2016', ip: '10.228.0.127', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55345}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f89b6ebaf76f73637e2fb0d19c15962a
+*** Element info: {Using=css selector, value=input[value=Add]}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:435)
+at org.openqa.selenium.By$ByCssSelector.findElement(By.java:496)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy26.click(Unknown Source)
+at stepDefinitions.devices.ManagePrinters.userClicksOnAddButtonToAddPrinter(ManagePrinters.java:40)
+at ?.User clicks on Add button to add Printer(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/devices/ManagePrinters.feature:17)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:23:43 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:24:16 CDT" duration-ms="33956" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search a Printer"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Printers]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"*[name='search_name']"}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
+System info: host: 'JUMPBOX-WIN2016', ip: '10.228.0.127', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55051}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 36d80770e608b918ede1206b24f5f48a
+*** Element info: {Using=name, value=search_name}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='search_name']"}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
+System info: host: 'JUMPBOX-WIN2016', ip: '10.228.0.127', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55051}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 36d80770e608b918ede1206b24f5f48a
+*** Element info: {Using=name, value=search_name}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:415)
+at org.openqa.selenium.By$ByName.findElement(By.java:313)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy26.clear(Unknown Source)
+at stepDefinitions.devices.ManagePrinters.userEntersPrinter_nameToSearchAPrinter(ManagePrinters.java:101)
+at ?.User enters Printer_name[0] to search a Printer(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/devices/ManagePrinters.feature:32)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:24:16 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:24:50 CDT" duration-ms="33976" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Edit a Printer"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Printers]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"*[name='search_name']"}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
+System info: host: 'JUMPBOX-WIN2016', ip: '10.228.0.127', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64622}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b1b40c7dd6b67809be90bf8f32cb308d
+*** Element info: {Using=name, value=search_name}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='search_name']"}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
+System info: host: 'JUMPBOX-WIN2016', ip: '10.228.0.127', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64622}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b1b40c7dd6b67809be90bf8f32cb308d
+*** Element info: {Using=name, value=search_name}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:415)
+at org.openqa.selenium.By$ByName.findElement(By.java:313)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy26.clear(Unknown Source)
+at stepDefinitions.devices.ManagePrinters.userEntersPrinter_nameToSearchAPrinter(ManagePrinters.java:101)
+at ?.User enters Printer_name[0] to search a Printer(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/devices/ManagePrinters.feature:40)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:24:50 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:25:25 CDT" duration-ms="34042" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Export Printer recods"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Printers]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"input[value=Search]"}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
+System info: host: 'JUMPBOX-WIN2016', ip: '10.228.0.127', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59289}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3207be30fa1fa87867b3654b121490a2
+*** Element info: {Using=css selector, value=input[value=Search]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"input[value=Search]"}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
+System info: host: 'JUMPBOX-WIN2016', ip: '10.228.0.127', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59289}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3207be30fa1fa87867b3654b121490a2
+*** Element info: {Using=css selector, value=input[value=Search]}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:435)
+at org.openqa.selenium.By$ByCssSelector.findElement(By.java:496)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy26.click(Unknown Source)
+at stepDefinitions.devices.ManagePrinters.userClicksOnSearchButtonToSearchPrinters(ManagePrinters.java:141)
+at ?.User clicks on Search button to search Printers(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/devices/ManagePrinters.feature:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:25:25 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:25:59 CDT" duration-ms="33991" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Delete Printer"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Printers]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"*[name='search_name']"}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
+System info: host: 'JUMPBOX-WIN2016', ip: '10.228.0.127', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51218}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 181fa125b214286e20c758722ead15ea
+*** Element info: {Using=name, value=search_name}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='search_name']"}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
+System info: host: 'JUMPBOX-WIN2016', ip: '10.228.0.127', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51218}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 181fa125b214286e20c758722ead15ea
+*** Element info: {Using=name, value=search_name}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:415)
+at org.openqa.selenium.By$ByName.findElement(By.java:313)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy26.clear(Unknown Source)
+at stepDefinitions.devices.ManagePrinters.userEntersPrinter_nameToSearchAPrinter(ManagePrinters.java:101)
+at ?.User enters Printer_name[1] to search a Printer(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/devices/ManagePrinters.feature:71)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:25:59 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:26:06 CDT" duration-ms="7478" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add a Scale"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Scales]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:26:06 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:26:12 CDT" duration-ms="6385" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search a Scale"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Scales]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:26:12 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:26:20 CDT" duration-ms="7415" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Edit a Scale"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Scales]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:26:20 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:26:28 CDT" duration-ms="7724" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Export Scale recods"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Scales]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:26:28 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:26:34 CDT" duration-ms="6718" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Delete Scale"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Scales]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:26:34 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:26:56 CDT" duration-ms="21588" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Import Carousels Data to create new Records"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Pages]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:26:56 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:27:17 CDT" duration-ms="20703" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Import Carousels Data to Update Matched Records"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Pages]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:27:17 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:27:51 CDT" duration-ms="34096" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Import Lookups Data to create new lookup Record"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Pages]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:27:51 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:28:50 CDT" duration-ms="58888" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Import Lookups Data to update existing lookup Record"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Pages]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:28:50 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:28:58 CDT" duration-ms="8766" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -30,7 +1169,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@65b104b9]" started-at="2021-09-25T08:24:44 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-09-25T08:25:02 IST" duration-ms="18387" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:28:58 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:29:05 CDT" duration-ms="7123" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -46,7 +1185,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@65b104b9]" started-at="2021-09-25T08:25:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-09-25T08:25:17 IST" duration-ms="14994" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:29:05 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:29:12 CDT" duration-ms="6356" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -62,7 +1201,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@65b104b9]" started-at="2021-09-25T08:25:17 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-09-25T08:25:38 IST" duration-ms="21336" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:29:12 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:29:21 CDT" duration-ms="8719" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -78,7 +1217,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@65b104b9]" started-at="2021-09-25T08:25:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-09-25T08:25:57 IST" duration-ms="18277" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:29:21 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:29:27 CDT" duration-ms="6968" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -94,7 +1233,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@65b104b9]" started-at="2021-09-25T08:25:57 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-09-25T08:26:17 IST" duration-ms="19675" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:29:27 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:29:35 CDT" duration-ms="7789" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -110,7 +1249,1403 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.Runner@65b104b9]" started-at="2021-09-25T08:26:17 IST" name="tearDownClass" finished-at="2021-09-25T08:26:24 IST" duration-ms="7045" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:29:35 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:29:43 CDT" duration-ms="7906" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add a Field"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Fields]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:29:43 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:29:50 CDT" duration-ms="6406" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search a Field"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Fields]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:29:50 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:29:58 CDT" duration-ms="8510" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Edit a Field"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Fields]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:29:58 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:30:07 CDT" duration-ms="8418" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Assign  a specific responsibility to a Field"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Fields]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:30:07 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:30:55 CDT" duration-ms="48545" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Assign  all responsibilities to a Field"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Fields]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:30:55 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:42:05 CDT" duration-ms="669927" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Export Field recods"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Fields]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:819)
+at org.testng.Assert.assertEquals(Assert.java:829)
+at stepDefinitions.setup.ManageFields.verifyThatTheFieldRecordsXmlFileWasSuccessfullyDownloaded(ManageFields.java:235)
+at ?.Verify that the Field records xml file was successfully downloaded(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/setup/ManageFields.feature:79)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:42:05 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:42:13 CDT" duration-ms="7717" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Delete Field"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Fields]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:42:13 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:42:20 CDT" duration-ms="7599" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add a Flex Field"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Flex Fields]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:42:20 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:42:27 CDT" duration-ms="6743" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search a Flex Field"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Flex Fields]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:42:27 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:42:35 CDT" duration-ms="7994" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Edit a Flex Field"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Flex Fields]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:42:35 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:42:44 CDT" duration-ms="8869" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Export Field recods"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Flex Fields]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:42:44 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:42:52 CDT" duration-ms="8366" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Delete Flex Field"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Flex Fields]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:42:52 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:43:04 CDT" duration-ms="11454" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add a Folder"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Folders]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:43:04 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:43:11 CDT" duration-ms="6826" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search a Folder"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Folders]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:43:11 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:43:24 CDT" duration-ms="13398" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify folder is seen in Endeavour"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Folders]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:43:24 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:43:36 CDT" duration-ms="11902" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Edit a Folder"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Folders]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:43:36 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:43:48 CDT" duration-ms="12325" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Assign a Buyer company to a Folder"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Folders]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:43:48 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:44:01 CDT" duration-ms="12436" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Assign a Supplier company to  a Folder"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Folders]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:44:01 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:44:09 CDT" duration-ms="8172" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Copy folder"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Folders]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:44:09 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:44:24 CDT" duration-ms="15500" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Export Folder recods"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Folders]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:44:24 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:44:32 CDT" duration-ms="7246" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Delete Folder"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Folders]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:44:32 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:44:39 CDT" duration-ms="7415" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Delete copy of the Folder"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Folders]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:44:39 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:44:47 CDT" duration-ms="7668" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add a Lookup"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Lookups]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:44:47 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:44:54 CDT" duration-ms="6912" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search a Lookup"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Lookups]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:44:54 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:45:02 CDT" duration-ms="8480" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Edit a Lookup"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Lookups]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:45:02 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:45:13 CDT" duration-ms="10930" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Lookup functions properly"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Lookups]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.UnhandledAlertException">
+            <message>
+              <![CDATA[unexpected alert open: {Alert text : Service message: Error in PurchaseOrderLineDAO
+DAO message: Error executing: select * from (SELECT 
+poll.line_location_id POL_key,
+1 POL_erpCode,
+DECODE(epoa.status, NULL, 'New', 'New', 'New', DECODE(epoa.po_price, poll.price_override, DECODE(TRUNC(epoa.po_promised_date), TRUNC(NVL(poll.promised_date, poll.need_by_date)),DECODE(epoa.po_quantity, poll.quantity,DECODE(epoa.po_item_revision, pol.item_revision, epoa.status, 'Revised'), 'Revised'), 'Revised'), 'Revised')) POLS_status,
+epoa.mrp_status POLS_mrpStatus,
+poll.promised_date POL_promisedDate,
+poll.price_override POL_price,
+epoa.attachments POLS_attachments,
+epoa.invoice_tran_fail POLS_invoiceTranFail,
+epoa.ship_tran_fail POLS_shipTranFail,
+poh.vendor_site_id||':'||poh.org_id POL_vendorLocationKey,
+poll.quantity POL_quantity,
+poll.closed_code POL_closedCode,
+DECODE(NVL(poll.closed_code, 'OPEN'),'CLOSED', 'Closed', 'CLOSED FOR RECEIVING', 'Closed', 'FINALLY CLOSED', 'Closed', DECODE(poh.frozen_flag, 'Y', 'Pending', DECODE(DECODE(por.po_release_id,NULL,poh.authorization_status,por.authorization_status),'REQUIRES REAPPROVAL','Pending', 'IN PROCESS', 'Pending', 'PRE-APPROVED','Pending', 'Open'))) POL_erpPoStatusCode,
+XXXL_IS_PO_BLIND(poh.po_header_id, por.po_release_id) POL_maskData,
+poh.type_lookup_code POL_poType,
+poh.segment1 POL_poNumber,
+por.release_num POL_releaseNumber,
+pol.line_num POL_lineNumber,
+poll.shipment_num POL_shipmentNumber,
+end_erp_shared.get_printable_qty(poll.line_location_id,poll.quantity_received, epoa.quantity, epoa.shipped_quantity)  POL_printableQuantity,
+haou2.attribute14 POL_businessCode,
+pol.vendor_product_num POL_polVendorProductNum,
+end_erp_shared.invoicable_quantity(poll.line_location_id,cqc.value) POL_invoicable,
+poh.attribute14 POL_businessName,
+DECODE(SIGN(poll.quantity - NVL(poll.quantity_received, 0) - NVL(poll.quantity_cancelled, 0)),-1,0,0,0,1,poll.quantity - NVL(poll.quantity_received, 0) - NVL(poll.quantity_cancelled, 0)) POL_quantityOpen,
+poll.need_by_date POL_needByDate,
+(SELECT pa.full_name FROM po_distributions_all pda, po_line_locations_all lineloc, per_all_people_f pa WHERE pa.person_id = pda.deliver_to_person_id AND pa.effective_end_date > SYSDATE AND pda.line_location_id = lineloc.line_location_id AND poll.line_location_id = lineloc.line_location_id AND rownum = 1) POL_requestor,
+end_erp_shared.get_project_number(poll.line_location_id) POL_erpProjectNumber,
+end_erp_shared.is_open_sdr_exists(poll.line_location_id) POL_openSDR,
+pol.item_description POL_lineDescription,
+pol.attribute3 POL_poLineType,
+pv.segment1 POL_vendorNumber,
+epoa.created_by_name POLS_createdByName,
+pv.vendor_name V_name,
+pvsa.attribute16 VL_locationNumber,
+papfb.full_name PO_buyerName,
+pvsa.vendor_site_code VL_name,
+pol.po_line_id POL_poLineId,
+poh.po_header_id POL_poHeaderId,
+poh.po_header_id PO_key,
+poh.org_id POL_hostId 
+, poll.line_location_id, epoa.status, epoa.approval_id, epoa.po_price, epoa.po_promised_date, epoa.po_quantity, epoa.po_item_revision, epoa.po_update_date, poll.price_override, NVL(poll.promised_date, poll.need_by_date), poll.quantity, NVL(pol.item_revision, (SELECT MAX(mir.revision) FROM mtl_item_revisions mir WHERE mir.inventory_item_id = pol.item_id AND mir.organization_id = poll.ship_to_organization_id AND msi.revision_qty_control_code = 2)), poll.last_update_date,
+COUNT(1) OVER() as totalSearchCount, row_number() over (  ORDER BY poh.type_lookup_code,
+poh.segment1,
+por.release_num,
+pol.line_num,
+poll.shipment_num,
+end_erp_shared.get_printable_qty(poll.line_location_id,poll.quantity_received, epoa.quantity, epoa.shipped_quantity) ,
+DECODE(NVL(poll.closed_code, 'OPEN'),'CLOSED', 'Closed', 'CLOSED FOR RECEIVING', 'Closed', 'FINALLY CLOSED', 'Closed', DECODE(poh.frozen_flag, 'Y', 'Pending', DECODE(DECODE(por.po_release_id,NULL,poh.authorization_status,por.authorization_status),'REQUIRES REAPPROVAL','Pending', 'IN PROCESS', 'Pending', 'PRE-APPROVED','Pending', 'Open'))),
+DECODE(epoa.status, NULL, 'New', 'New', 'New', DECODE(epoa.po_price, poll.price_override, DECODE(TRUNC(epoa.po_promised_date), TRUNC(NVL(poll.promised_date, poll.need_by_date)),DECODE(epoa.po_quantity, poll.quantity,DECODE(epoa.po_item_revision, pol.item_revision, epoa.status, 'Revised'), 'Revised'), 'Revised'), 'Revised')),
+haou2.attribute14,
+pol.vendor_product_num,
+end_erp_shared.invoicable_quantity(poll.line_location_id,cqc.value),
+poh.attribute14,
+poll.quantity,
+DECODE(SIGN(poll.quantity - NVL(poll.quantity_received, 0) - NVL(poll.quantity_cancelled, 0)),-1,0,0,0,1,poll.quantity - NVL(poll.quantity_received, 0) - NVL(poll.quantity_cancelled, 0)),
+poll.need_by_date,
+(SELECT pa.full_name FROM po_distributions_all pda, po_line_locations_all lineloc, per_all_people_f pa WHERE pa.person_id = pda.deliver_to_person_id AND pa.effective_end_date > SYSDATE AND pda.line_location_id = lineloc.line_location_id AND poll.line_location_id = lineloc.line_location_id AND rownum = 1),
+end_erp_shared.get_project_number(poll.line_location_id),
+end_erp_shared.is_open_sdr_exists(poll.line_location_id),
+pol.item_description,
+pol.attribute3,
+pv.segment1,
+epoa.created_by_name,
+pv.vendor_name,
+pvsa.attribute16,
+papfb.full_name,
+pvsa.vendor_site_code,
+poll.line_location_id,
+1,
+DECODE(epoa.status, NULL, 'New', 'New', 'New', DECODE(epoa.po_price, poll.price_override, DECODE(TRUNC(epoa.po_promised_date), TRUNC(NVL(poll.promised_date, poll.need_by_date)),DECODE(epoa.po_quantity, poll.quantity,DECODE(epoa.po_item_revision, pol.item_revision, epoa.status, 'Revised'), 'Revised'), 'Revised'), 'Revised')),
+epoa.mrp_status,
+poll.promised_date,
+poll.price_override,
+epoa.attachments,
+epoa.invoice_tran_fail,
+epoa.ship_tran_fail,
+poh.vendor_site_id||':'||poh.org_id,
+poll.quantity,
+poll.closed_code,
+DECODE(NVL(poll.closed_code, 'OPEN'),'CLOSED', 'Closed', 'CLOSED FOR RECEIVING', 'Closed', 'FINALLY CLOSED', 'Closed', DECODE(poh.frozen_flag, 'Y', 'Pending', DECODE(DECODE(por.po_release_id,NULL,poh.authorization_status,por.authorization_status),'REQUIRES REAPPROVAL','Pending', 'IN PROCESS', 'Pending', 'PRE-APPROVED','Pending', 'Open'))),
+XXXL_IS_PO_BLIND(poh.po_header_id, por.po_release_id) ) as row_number FROM ap_terms apt,end_poc_ora_approvals epoa,end_poc_ora_header_status epohs,mtl_system_items_b_kfv msi,hr_all_organization_units haou,hr_all_organization_units haou2,(SELECT * 
+   FROM (SELECT ROW_NUMBER() OVER (PARTITION BY person_id ORDER BY effective_start_date DESC) AS record_num_desc, 
+           papfb.* 
+      FROM per_all_people_f papfb) 
+     WHERE record_num_desc = 1) papfb,po_headers_all poh,po_line_locations_all poll,po_lines_all pol,po_releases_all por,rcv_parameters rcv,po_vendor_contacts pvc,po_vendors pv,po_vendor_sites_all pvsa,
+       ap_tax_codes_all atc, (SELECT 'N' value FROM dual) cqc WHERE poh.terms_id=apt.term_id(+) AND poll.po_release_id=por.po_release_id(+) AND poh.vendor_contact_id=pvc.vendor_contact_id(+) AND poh.vendor_site_id=pvc.vendor_site_id(+) AND NVL(por.agent_id, poh.agent_id) = papfb.person_id AND poll.po_line_id=pol.po_line_id AND poll.po_header_id=poh.po_header_id AND rcv.organization_id=poll.ship_to_organization_id AND msi.inventory_item_id(+)=pol.item_id AND poll.ship_to_organization_id = NVL(msi.organization_id, poll.ship_to_organization_id) AND haou.organization_id=poll.ship_to_organization_id AND haou2.organization_id=poh.org_id AND poll.line_location_id=epoa.po_line_location_id(+) AND poh.po_header_id=epohs.po_header_id(+) AND poh.vendor_id=pv.vendor_id AND pvsa.vendor_site_id=poh.vendor_site_id AND pvsa.vendor_id=pv.vendor_id AND poh.authorization_status in ('APPROVED', 'REQUIRES REAPPROVAL', 'IN PROCESS', 'PRE-APPROVED') AND NVL(por.authorization_status,'APPROVED') in ('APPROVED', 'REQUIRES REAPPROVAL', 'IN PROCESS', 'PRE-APPROVED') AND poh.type_lookup_code IN ('STANDARD', 'BLANKET', 'PLANNED') AND NVL(poll.approved_flag, 'N') IN ('Y', 'R', 'N') AND poll.shipment_type IN ('STANDARD', 'BLANKET', 'SCHEDULED')
+   AND atc.tax_id(+)=poll.tax_code_id AND poh.org_id=poll.org_id AND pol.org_id=poll.org_id AND por.org_id(+)=poll.org_id
+   AND (poll.org_id IN (?,?)) AND  ROWNUM <= 2 ) where row_number between 1 and 26 order by row_number
+Message: ORA-00904: "PVSA"."ATTRIBUTE16": invalid identifier
+
+Message: ORA-00904: "PVSA"."ATTRIBUTE16": invalid identifier
+
+}
+  (Session info: chrome=94.0.4606.71): Service message: Error in PurchaseOrderLineDAO
+DAO message: Error executing: select * from (SELECT 
+poll.line_location_id POL_key,
+1 POL_erpCode,
+DECODE(epoa.status, NULL, 'New', 'New', 'New', DECODE(epoa.po_price, poll.price_override, DECODE(TRUNC(epoa.po_promised_date), TRUNC(NVL(poll.promised_date, poll.need_by_date)),DECODE(epoa.po_quantity, poll.quantity,DECODE(epoa.po_item_revision, pol.item_revision, epoa.status, 'Revised'), 'Revised'), 'Revised'), 'Revised')) POLS_status,
+epoa.mrp_status POLS_mrpStatus,
+poll.promised_date POL_promisedDate,
+poll.price_override POL_price,
+epoa.attachments POLS_attachments,
+epoa.invoice_tran_fail POLS_invoiceTranFail,
+epoa.ship_tran_fail POLS_shipTranFail,
+poh.vendor_site_id||':'||poh.org_id POL_vendorLocationKey,
+poll.quantity POL_quantity,
+poll.closed_code POL_closedCode,
+DECODE(NVL(poll.closed_code, 'OPEN'),'CLOSED', 'Closed', 'CLOSED FOR RECEIVING', 'Closed', 'FINALLY CLOSED', 'Closed', DECODE(poh.frozen_flag, 'Y', 'Pending', DECODE(DECODE(por.po_release_id,NULL,poh.authorization_status,por.authorization_status),'REQUIRES REAPPROVAL','Pending', 'IN PROCESS', 'Pending', 'PRE-APPROVED','Pending', 'Open'))) POL_erpPoStatusCode,
+XXXL_IS_PO_BLIND(poh.po_header_id, por.po_release_id) POL_maskData,
+poh.type_lookup_code POL_poType,
+poh.segment1 POL_poNumber,
+por.release_num POL_releaseNumber,
+pol.line_num POL_lineNumber,
+poll.shipment_num POL_shipmentNumber,
+end_erp_shared.get_printable_qty(poll.line_location_id,poll.quantity_received, epoa.quantity, epoa.shipped_quantity)  POL_printableQuantity,
+haou2.attribute14 POL_businessCode,
+pol.vendor_product_num POL_polVendorProductNum,
+end_erp_shared.invoicable_quantity(poll.line_location_id,cqc.value) POL_invoicable,
+poh.attribute14 POL_businessName,
+DECODE(SIGN(poll.quantity - NVL(poll.quantity_received, 0) - NVL(poll.quantity_cancelled, 0)),-1,0,0,0,1,poll.quantity - NVL(poll.quantity_received, 0) - NVL(poll.quantity_cancelled, 0)) POL_quantityOpen,
+poll.need_by_date POL_needByDate,
+(SELECT pa.full_name FROM po_distributions_all pda, po_line_locations_all lineloc, per_all_people_f pa WHERE pa.person_id = pda.deliver_to_person_id AND pa.effective_end_date > SYSDATE AND pda.line_location_id = lineloc.line_location_id AND poll.line_location_id = lineloc.line_location_id AND rownum = 1) POL_requestor,
+end_erp_shared.get_project_number(poll.line_location_id) POL_erpProjectNumber,
+end_erp_shared.is_open_sdr_exists(poll.line_location_id) POL_openSDR,
+pol.item_description POL_lineDescription,
+pol.attribute3 POL_poLineType,
+pv.segment1 POL_vendorNumber,
+epoa.created_by_name POLS_createdByName,
+pv.vendor_name V_name,
+pvsa.attribute16 VL_locationNumber,
+papfb.full_name PO_buyerName,
+pvsa.vendor_site_code VL_name,
+pol.po_line_id POL_poLineId,
+poh.po_header_id POL_poHeaderId,
+poh.po_header_id PO_key,
+poh.org_id POL_hostId 
+, poll.line_location_id, epoa.status, epoa.approval_id, epoa.po_price, epoa.po_promised_date, epoa.po_quantity, epoa.po_item_revision, epoa.po_update_date, poll.price_override, NVL(poll.promised_date, poll.need_by_date), poll.quantity, NVL(pol.item_revision, (SELECT MAX(mir.revision) FROM mtl_item_revisions mir WHERE mir.inventory_item_id = pol.item_id AND mir.organization_id = poll.ship_to_organization_id AND msi.revision_qty_control_code = 2)), poll.last_update_date,
+COUNT(1) OVER() as totalSearchCount, row_number() over (  ORDER BY poh.type_lookup_code,
+poh.segment1,
+por.release_num,
+pol.line_num,
+poll.shipment_num,
+end_erp_shared.get_printable_qty(poll.line_location_id,poll.quantity_received, epoa.quantity, epoa.shipped_quantity) ,
+DECODE(NVL(poll.closed_code, 'OPEN'),'CLOSED', 'Closed', 'CLOSED FOR RECEIVING', 'Closed', 'FINALLY CLOSED', 'Closed', DECODE(poh.frozen_flag, 'Y', 'Pending', DECODE(DECODE(por.po_release_id,NULL,poh.authorization_status,por.authorization_status),'REQUIRES REAPPROVAL','Pending', 'IN PROCESS', 'Pending', 'PRE-APPROVED','Pending', 'Open'))),
+DECODE(epoa.status, NULL, 'New', 'New', 'New', DECODE(epoa.po_price, poll.price_override, DECODE(TRUNC(epoa.po_promised_date), TRUNC(NVL(poll.promised_date, poll.need_by_date)),DECODE(epoa.po_quantity, poll.quantity,DECODE(epoa.po_item_revision, pol.item_revision, epoa.status, 'Revised'), 'Revised'), 'Revised'), 'Revised')),
+haou2.attribute14,
+pol.vendor_product_num,
+end_erp_shared.invoicable_quantity(poll.line_location_id,cqc.value),
+poh.attribute14,
+poll.quantity,
+DECODE(SIGN(poll.quantity - NVL(poll.quantity_received, 0) - NVL(poll.quantity_cancelled, 0)),-1,0,0,0,1,poll.quantity - NVL(poll.quantity_received, 0) - NVL(poll.quantity_cancelled, 0)),
+poll.need_by_date,
+(SELECT pa.full_name FROM po_distributions_all pda, po_line_locations_all lineloc, per_all_people_f pa WHERE pa.person_id = pda.deliver_to_person_id AND pa.effective_end_date > SYSDATE AND pda.line_location_id = lineloc.line_location_id AND poll.line_location_id = lineloc.line_location_id AND rownum = 1),
+end_erp_shared.get_project_number(poll.line_location_id),
+end_erp_shared.is_open_sdr_exists(poll.line_location_id),
+pol.item_description,
+pol.attribute3,
+pv.segment1,
+epoa.created_by_name,
+pv.vendor_name,
+pvsa.attribute16,
+papfb.full_name,
+pvsa.vendor_site_code,
+poll.line_location_id,
+1,
+DECODE(epoa.status, NULL, 'New', 'New', 'New', DECODE(epoa.po_price, poll.price_override, DECODE(TRUNC(epoa.po_promised_date), TRUNC(NVL(poll.promised_date, poll.need_by_date)),DECODE(epoa.po_quantity, poll.quantity,DECODE(epoa.po_item_revision, pol.item_revision, epoa.status, 'Revised'), 'Revised'), 'Revised'), 'Revised')),
+epoa.mrp_status,
+poll.promised_date,
+poll.price_override,
+epoa.attachments,
+epoa.invoice_tran_fail,
+epoa.ship_tran_fail,
+poh.vendor_site_id||':'||poh.org_id,
+poll.quantity,
+poll.closed_code,
+DECODE(NVL(poll.closed_code, 'OPEN'),'CLOSED', 'Closed', 'CLOSED FOR RECEIVING', 'Closed', 'FINALLY CLOSED', 'Closed', DECODE(poh.frozen_flag, 'Y', 'Pending', DECODE(DECODE(por.po_release_id,NULL,poh.authorization_status,por.authorization_status),'REQUIRES REAPPROVAL','Pending', 'IN PROCESS', 'Pending', 'PRE-APPROVED','Pending', 'Open'))),
+XXXL_IS_PO_BLIND(poh.po_header_id, por.po_release_id) ) as row_number FROM ap_terms apt,end_poc_ora_approvals epoa,end_poc_ora_header_status epohs,mtl_system_items_b_kfv msi,hr_all_organization_units haou,hr_all_organization_units haou2,(SELECT * 
+   FROM (SELECT ROW_NUMBER() OVER (PARTITION BY person_id ORDER BY effective_start_date DESC) AS record_num_desc, 
+           papfb.* 
+      FROM per_all_people_f papfb) 
+     WHERE record_num_desc = 1) papfb,po_headers_all poh,po_line_locations_all poll,po_lines_all pol,po_releases_all por,rcv_parameters rcv,po_vendor_contacts pvc,po_vendors pv,po_vendor_sites_all pvsa,
+       ap_tax_codes_all atc, (SELECT 'N' value FROM dual) cqc WHERE poh.terms_id=apt.term_id(+) AND poll.po_release_id=por.po_release_id(+) AND poh.vendor_contact_id=pvc.vendor_contact_id(+) AND poh.vendor_site_id=pvc.vendor_site_id(+) AND NVL(por.agent_id, poh.agent_id) = papfb.person_id AND poll.po_line_id=pol.po_line_id AND poll.po_header_id=poh.po_header_id AND rcv.organization_id=poll.ship_to_organization_id AND msi.inventory_item_id(+)=pol.item_id AND poll.ship_to_organization_id = NVL(msi.organization_id, poll.ship_to_organization_id) AND haou.organization_id=poll.ship_to_organization_id AND haou2.organization_id=poh.org_id AND poll.line_location_id=epoa.po_line_location_id(+) AND poh.po_header_id=epohs.po_header_id(+) AND poh.vendor_id=pv.vendor_id AND pvsa.vendor_site_id=poh.vendor_site_id AND pvsa.vendor_id=pv.vendor_id AND poh.authorization_status in ('APPROVED', 'REQUIRES REAPPROVAL', 'IN PROCESS', 'PRE-APPROVED') AND NVL(por.authorization_status,'APPROVED') in ('APPROVED', 'REQUIRES REAPPROVAL', 'IN PROCESS', 'PRE-APPROVED') AND poh.type_lookup_code IN ('STANDARD', 'BLANKET', 'PLANNED') AND NVL(poll.approved_flag, 'N') IN ('Y', 'R', 'N') AND poll.shipment_type IN ('STANDARD', 'BLANKET', 'SCHEDULED')
+   AND atc.tax_id(+)=poll.tax_code_id AND poh.org_id=poll.org_id AND pol.org_id=poll.org_id AND por.org_id(+)=poll.org_id
+   AND (poll.org_id IN (?,?)) AND  ROWNUM <= 2 ) where row_number between 1 and 26 order by row_number
+Message: ORA-00904: "PVSA"."ATTRIBUTE16": invalid identifier
+
+Message: ORA-00904: "PVSA"."ATTRIBUTE16": invalid identifier
+
+
+Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
+System info: host: 'JUMPBOX-WIN2016', ip: '10.228.0.127', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52927}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: dbc1939a054e068f99c1f7053f3817dd
+*** Element info: {Using=xpath, value=//*[@id='searchResultsFormId']/table[1]/tbody/tr[1]/td/table/tbody/tr/td[3]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Service message: Error in PurchaseOrderLineDAO
+DAO message: Error executing: select * from (SELECT 
+poll.line_location_id POL_key,
+1 POL_erpCode,
+DECODE(epoa.status, NULL, 'New', 'New', 'New', DECODE(epoa.po_price, poll.price_override, DECODE(TRUNC(epoa.po_promised_date), TRUNC(NVL(poll.promised_date, poll.need_by_date)),DECODE(epoa.po_quantity, poll.quantity,DECODE(epoa.po_item_revision, pol.item_revision, epoa.status, 'Revised'), 'Revised'), 'Revised'), 'Revised')) POLS_status,
+epoa.mrp_status POLS_mrpStatus,
+poll.promised_date POL_promisedDate,
+poll.price_override POL_price,
+epoa.attachments POLS_attachments,
+epoa.invoice_tran_fail POLS_invoiceTranFail,
+epoa.ship_tran_fail POLS_shipTranFail,
+poh.vendor_site_id||':'||poh.org_id POL_vendorLocationKey,
+poll.quantity POL_quantity,
+poll.closed_code POL_closedCode,
+DECODE(NVL(poll.closed_code, 'OPEN'),'CLOSED', 'Closed', 'CLOSED FOR RECEIVING', 'Closed', 'FINALLY CLOSED', 'Closed', DECODE(poh.frozen_flag, 'Y', 'Pending', DECODE(DECODE(por.po_release_id,NULL,poh.authorization_status,por.authorization_status),'REQUIRES REAPPROVAL','Pending', 'IN PROCESS', 'Pending', 'PRE-APPROVED','Pending', 'Open'))) POL_erpPoStatusCode,
+XXXL_IS_PO_BLIND(poh.po_header_id, por.po_release_id) POL_maskData,
+poh.type_lookup_code POL_poType,
+poh.segment1 POL_poNumber,
+por.release_num POL_releaseNumber,
+pol.line_num POL_lineNumber,
+poll.shipment_num POL_shipmentNumber,
+end_erp_shared.get_printable_qty(poll.line_location_id,poll.quantity_received, epoa.quantity, epoa.shipped_quantity)  POL_printableQuantity,
+haou2.attribute14 POL_businessCode,
+pol.vendor_product_num POL_polVendorProductNum,
+end_erp_shared.invoicable_quantity(poll.line_location_id,cqc.value) POL_invoicable,
+poh.attribute14 POL_businessName,
+DECODE(SIGN(poll.quantity - NVL(poll.quantity_received, 0) - NVL(poll.quantity_cancelled, 0)),-1,0,0,0,1,poll.quantity - NVL(poll.quantity_received, 0) - NVL(poll.quantity_cancelled, 0)) POL_quantityOpen,
+poll.need_by_date POL_needByDate,
+(SELECT pa.full_name FROM po_distributions_all pda, po_line_locations_all lineloc, per_all_people_f pa WHERE pa.person_id = pda.deliver_to_person_id AND pa.effective_end_date > SYSDATE AND pda.line_location_id = lineloc.line_location_id AND poll.line_location_id = lineloc.line_location_id AND rownum = 1) POL_requestor,
+end_erp_shared.get_project_number(poll.line_location_id) POL_erpProjectNumber,
+end_erp_shared.is_open_sdr_exists(poll.line_location_id) POL_openSDR,
+pol.item_description POL_lineDescription,
+pol.attribute3 POL_poLineType,
+pv.segment1 POL_vendorNumber,
+epoa.created_by_name POLS_createdByName,
+pv.vendor_name V_name,
+pvsa.attribute16 VL_locationNumber,
+papfb.full_name PO_buyerName,
+pvsa.vendor_site_code VL_name,
+pol.po_line_id POL_poLineId,
+poh.po_header_id POL_poHeaderId,
+poh.po_header_id PO_key,
+poh.org_id POL_hostId 
+, poll.line_location_id, epoa.status, epoa.approval_id, epoa.po_price, epoa.po_promised_date, epoa.po_quantity, epoa.po_item_revision, epoa.po_update_date, poll.price_override, NVL(poll.promised_date, poll.need_by_date), poll.quantity, NVL(pol.item_revision, (SELECT MAX(mir.revision) FROM mtl_item_revisions mir WHERE mir.inventory_item_id = pol.item_id AND mir.organization_id = poll.ship_to_organization_id AND msi.revision_qty_control_code = 2)), poll.last_update_date,
+COUNT(1) OVER() as totalSearchCount, row_number() over (  ORDER BY poh.type_lookup_code,
+poh.segment1,
+por.release_num,
+pol.line_num,
+poll.shipment_num,
+end_erp_shared.get_printable_qty(poll.line_location_id,poll.quantity_received, epoa.quantity, epoa.shipped_quantity) ,
+DECODE(NVL(poll.closed_code, 'OPEN'),'CLOSED', 'Closed', 'CLOSED FOR RECEIVING', 'Closed', 'FINALLY CLOSED', 'Closed', DECODE(poh.frozen_flag, 'Y', 'Pending', DECODE(DECODE(por.po_release_id,NULL,poh.authorization_status,por.authorization_status),'REQUIRES REAPPROVAL','Pending', 'IN PROCESS', 'Pending', 'PRE-APPROVED','Pending', 'Open'))),
+DECODE(epoa.status, NULL, 'New', 'New', 'New', DECODE(epoa.po_price, poll.price_override, DECODE(TRUNC(epoa.po_promised_date), TRUNC(NVL(poll.promised_date, poll.need_by_date)),DECODE(epoa.po_quantity, poll.quantity,DECODE(epoa.po_item_revision, pol.item_revision, epoa.status, 'Revised'), 'Revised'), 'Revised'), 'Revised')),
+haou2.attribute14,
+pol.vendor_product_num,
+end_erp_shared.invoicable_quantity(poll.line_location_id,cqc.value),
+poh.attribute14,
+poll.quantity,
+DECODE(SIGN(poll.quantity - NVL(poll.quantity_received, 0) - NVL(poll.quantity_cancelled, 0)),-1,0,0,0,1,poll.quantity - NVL(poll.quantity_received, 0) - NVL(poll.quantity_cancelled, 0)),
+poll.need_by_date,
+(SELECT pa.full_name FROM po_distributions_all pda, po_line_locations_all lineloc, per_all_people_f pa WHERE pa.person_id = pda.deliver_to_person_id AND pa.effective_end_date > SYSDATE AND pda.line_location_id = lineloc.line_location_id AND poll.line_location_id = lineloc.line_location_id AND rownum = 1),
+end_erp_shared.get_project_number(poll.line_location_id),
+end_erp_shared.is_open_sdr_exists(poll.line_location_id),
+pol.item_description,
+pol.attribute3,
+pv.segment1,
+epoa.created_by_name,
+pv.vendor_name,
+pvsa.attribute16,
+papfb.full_name,
+pvsa.vendor_site_code,
+poll.line_location_id,
+1,
+DECODE(epoa.status, NULL, 'New', 'New', 'New', DECODE(epoa.po_price, poll.price_override, DECODE(TRUNC(epoa.po_promised_date), TRUNC(NVL(poll.promised_date, poll.need_by_date)),DECODE(epoa.po_quantity, poll.quantity,DECODE(epoa.po_item_revision, pol.item_revision, epoa.status, 'Revised'), 'Revised'), 'Revised'), 'Revised')),
+epoa.mrp_status,
+poll.promised_date,
+poll.price_override,
+epoa.attachments,
+epoa.invoice_tran_fail,
+epoa.ship_tran_fail,
+poh.vendor_site_id||':'||poh.org_id,
+poll.quantity,
+poll.closed_code,
+DECODE(NVL(poll.closed_code, 'OPEN'),'CLOSED', 'Closed', 'CLOSED FOR RECEIVING', 'Closed', 'FINALLY CLOSED', 'Closed', DECODE(poh.frozen_flag, 'Y', 'Pending', DECODE(DECODE(por.po_release_id,NULL,poh.authorization_status,por.authorization_status),'REQUIRES REAPPROVAL','Pending', 'IN PROCESS', 'Pending', 'PRE-APPROVED','Pending', 'Open'))),
+XXXL_IS_PO_BLIND(poh.po_header_id, por.po_release_id) ) as row_number FROM ap_terms apt,end_poc_ora_approvals epoa,end_poc_ora_header_status epohs,mtl_system_items_b_kfv msi,hr_all_organization_units haou,hr_all_organization_units haou2,(SELECT * 
+   FROM (SELECT ROW_NUMBER() OVER (PARTITION BY person_id ORDER BY effective_start_date DESC) AS record_num_desc, 
+           papfb.* 
+      FROM per_all_people_f papfb) 
+     WHERE record_num_desc = 1) papfb,po_headers_all poh,po_line_locations_all poll,po_lines_all pol,po_releases_all por,rcv_parameters rcv,po_vendor_contacts pvc,po_vendors pv,po_vendor_sites_all pvsa,
+       ap_tax_codes_all atc, (SELECT 'N' value FROM dual) cqc WHERE poh.terms_id=apt.term_id(+) AND poll.po_release_id=por.po_release_id(+) AND poh.vendor_contact_id=pvc.vendor_contact_id(+) AND poh.vendor_site_id=pvc.vendor_site_id(+) AND NVL(por.agent_id, poh.agent_id) = papfb.person_id AND poll.po_line_id=pol.po_line_id AND poll.po_header_id=poh.po_header_id AND rcv.organization_id=poll.ship_to_organization_id AND msi.inventory_item_id(+)=pol.item_id AND poll.ship_to_organization_id = NVL(msi.organization_id, poll.ship_to_organization_id) AND haou.organization_id=poll.ship_to_organization_id AND haou2.organization_id=poh.org_id AND poll.line_location_id=epoa.po_line_location_id(+) AND poh.po_header_id=epohs.po_header_id(+) AND poh.vendor_id=pv.vendor_id AND pvsa.vendor_site_id=poh.vendor_site_id AND pvsa.vendor_id=pv.vendor_id AND poh.authorization_status in ('APPROVED', 'REQUIRES REAPPROVAL', 'IN PROCESS', 'PRE-APPROVED') AND NVL(por.authorization_status,'APPROVED') in ('APPROVED', 'REQUIRES REAPPROVAL', 'IN PROCESS', 'PRE-APPROVED') AND poh.type_lookup_code IN ('STANDARD', 'BLANKET', 'PLANNED') AND NVL(poll.approved_flag, 'N') IN ('Y', 'R', 'N') AND poll.shipment_type IN ('STANDARD', 'BLANKET', 'SCHEDULED')
+   AND atc.tax_id(+)=poll.tax_code_id AND poh.org_id=poll.org_id AND pol.org_id=poll.org_id AND por.org_id(+)=poll.org_id
+   AND (poll.org_id IN (?,?)) AND  ROWNUM <= 2 ) where row_number between 1 and 26 order by row_number
+Message: ORA-00904: "PVSA"."ATTRIBUTE16": invalid identifier
+
+Message: ORA-00904: "PVSA"."ATTRIBUTE16": invalid identifier
+
+}
+  (Session info: chrome=94.0.4606.71): Service message: Error in PurchaseOrderLineDAO
+DAO message: Error executing: select * from (SELECT 
+poll.line_location_id POL_key,
+1 POL_erpCode,
+DECODE(epoa.status, NULL, 'New', 'New', 'New', DECODE(epoa.po_price, poll.price_override, DECODE(TRUNC(epoa.po_promised_date), TRUNC(NVL(poll.promised_date, poll.need_by_date)),DECODE(epoa.po_quantity, poll.quantity,DECODE(epoa.po_item_revision, pol.item_revision, epoa.status, 'Revised'), 'Revised'), 'Revised'), 'Revised')) POLS_status,
+epoa.mrp_status POLS_mrpStatus,
+poll.promised_date POL_promisedDate,
+poll.price_override POL_price,
+epoa.attachments POLS_attachments,
+epoa.invoice_tran_fail POLS_invoiceTranFail,
+epoa.ship_tran_fail POLS_shipTranFail,
+poh.vendor_site_id||':'||poh.org_id POL_vendorLocationKey,
+poll.quantity POL_quantity,
+poll.closed_code POL_closedCode,
+DECODE(NVL(poll.closed_code, 'OPEN'),'CLOSED', 'Closed', 'CLOSED FOR RECEIVING', 'Closed', 'FINALLY CLOSED', 'Closed', DECODE(poh.frozen_flag, 'Y', 'Pending', DECODE(DECODE(por.po_release_id,NULL,poh.authorization_status,por.authorization_status),'REQUIRES REAPPROVAL','Pending', 'IN PROCESS', 'Pending', 'PRE-APPROVED','Pending', 'Open'))) POL_erpPoStatusCode,
+XXXL_IS_PO_BLIND(poh.po_header_id, por.po_release_id) POL_maskData,
+poh.type_lookup_code POL_poType,
+poh.segment1 POL_poNumber,
+por.release_num POL_releaseNumber,
+pol.line_num POL_lineNumber,
+poll.shipment_num POL_shipmentNumber,
+end_erp_shared.get_printable_qty(poll.line_location_id,poll.quantity_received, epoa.quantity, epoa.shipped_quantity)  POL_printableQuantity,
+haou2.attribute14 POL_businessCode,
+pol.vendor_product_num POL_polVendorProductNum,
+end_erp_shared.invoicable_quantity(poll.line_location_id,cqc.value) POL_invoicable,
+poh.attribute14 POL_businessName,
+DECODE(SIGN(poll.quantity - NVL(poll.quantity_received, 0) - NVL(poll.quantity_cancelled, 0)),-1,0,0,0,1,poll.quantity - NVL(poll.quantity_received, 0) - NVL(poll.quantity_cancelled, 0)) POL_quantityOpen,
+poll.need_by_date POL_needByDate,
+(SELECT pa.full_name FROM po_distributions_all pda, po_line_locations_all lineloc, per_all_people_f pa WHERE pa.person_id = pda.deliver_to_person_id AND pa.effective_end_date > SYSDATE AND pda.line_location_id = lineloc.line_location_id AND poll.line_location_id = lineloc.line_location_id AND rownum = 1) POL_requestor,
+end_erp_shared.get_project_number(poll.line_location_id) POL_erpProjectNumber,
+end_erp_shared.is_open_sdr_exists(poll.line_location_id) POL_openSDR,
+pol.item_description POL_lineDescription,
+pol.attribute3 POL_poLineType,
+pv.segment1 POL_vendorNumber,
+epoa.created_by_name POLS_createdByName,
+pv.vendor_name V_name,
+pvsa.attribute16 VL_locationNumber,
+papfb.full_name PO_buyerName,
+pvsa.vendor_site_code VL_name,
+pol.po_line_id POL_poLineId,
+poh.po_header_id POL_poHeaderId,
+poh.po_header_id PO_key,
+poh.org_id POL_hostId 
+, poll.line_location_id, epoa.status, epoa.approval_id, epoa.po_price, epoa.po_promised_date, epoa.po_quantity, epoa.po_item_revision, epoa.po_update_date, poll.price_override, NVL(poll.promised_date, poll.need_by_date), poll.quantity, NVL(pol.item_revision, (SELECT MAX(mir.revision) FROM mtl_item_revisions mir WHERE mir.inventory_item_id = pol.item_id AND mir.organization_id = poll.ship_to_organization_id AND msi.revision_qty_control_code = 2)), poll.last_update_date,
+COUNT(1) OVER() as totalSearchCount, row_number() over (  ORDER BY poh.type_lookup_code,
+poh.segment1,
+por.release_num,
+pol.line_num,
+poll.shipment_num,
+end_erp_shared.get_printable_qty(poll.line_location_id,poll.quantity_received, epoa.quantity, epoa.shipped_quantity) ,
+DECODE(NVL(poll.closed_code, 'OPEN'),'CLOSED', 'Closed', 'CLOSED FOR RECEIVING', 'Closed', 'FINALLY CLOSED', 'Closed', DECODE(poh.frozen_flag, 'Y', 'Pending', DECODE(DECODE(por.po_release_id,NULL,poh.authorization_status,por.authorization_status),'REQUIRES REAPPROVAL','Pending', 'IN PROCESS', 'Pending', 'PRE-APPROVED','Pending', 'Open'))),
+DECODE(epoa.status, NULL, 'New', 'New', 'New', DECODE(epoa.po_price, poll.price_override, DECODE(TRUNC(epoa.po_promised_date), TRUNC(NVL(poll.promised_date, poll.need_by_date)),DECODE(epoa.po_quantity, poll.quantity,DECODE(epoa.po_item_revision, pol.item_revision, epoa.status, 'Revised'), 'Revised'), 'Revised'), 'Revised')),
+haou2.attribute14,
+pol.vendor_product_num,
+end_erp_shared.invoicable_quantity(poll.line_location_id,cqc.value),
+poh.attribute14,
+poll.quantity,
+DECODE(SIGN(poll.quantity - NVL(poll.quantity_received, 0) - NVL(poll.quantity_cancelled, 0)),-1,0,0,0,1,poll.quantity - NVL(poll.quantity_received, 0) - NVL(poll.quantity_cancelled, 0)),
+poll.need_by_date,
+(SELECT pa.full_name FROM po_distributions_all pda, po_line_locations_all lineloc, per_all_people_f pa WHERE pa.person_id = pda.deliver_to_person_id AND pa.effective_end_date > SYSDATE AND pda.line_location_id = lineloc.line_location_id AND poll.line_location_id = lineloc.line_location_id AND rownum = 1),
+end_erp_shared.get_project_number(poll.line_location_id),
+end_erp_shared.is_open_sdr_exists(poll.line_location_id),
+pol.item_description,
+pol.attribute3,
+pv.segment1,
+epoa.created_by_name,
+pv.vendor_name,
+pvsa.attribute16,
+papfb.full_name,
+pvsa.vendor_site_code,
+poll.line_location_id,
+1,
+DECODE(epoa.status, NULL, 'New', 'New', 'New', DECODE(epoa.po_price, poll.price_override, DECODE(TRUNC(epoa.po_promised_date), TRUNC(NVL(poll.promised_date, poll.need_by_date)),DECODE(epoa.po_quantity, poll.quantity,DECODE(epoa.po_item_revision, pol.item_revision, epoa.status, 'Revised'), 'Revised'), 'Revised'), 'Revised')),
+epoa.mrp_status,
+poll.promised_date,
+poll.price_override,
+epoa.attachments,
+epoa.invoice_tran_fail,
+epoa.ship_tran_fail,
+poh.vendor_site_id||':'||poh.org_id,
+poll.quantity,
+poll.closed_code,
+DECODE(NVL(poll.closed_code, 'OPEN'),'CLOSED', 'Closed', 'CLOSED FOR RECEIVING', 'Closed', 'FINALLY CLOSED', 'Closed', DECODE(poh.frozen_flag, 'Y', 'Pending', DECODE(DECODE(por.po_release_id,NULL,poh.authorization_status,por.authorization_status),'REQUIRES REAPPROVAL','Pending', 'IN PROCESS', 'Pending', 'PRE-APPROVED','Pending', 'Open'))),
+XXXL_IS_PO_BLIND(poh.po_header_id, por.po_release_id) ) as row_number FROM ap_terms apt,end_poc_ora_approvals epoa,end_poc_ora_header_status epohs,mtl_system_items_b_kfv msi,hr_all_organization_units haou,hr_all_organization_units haou2,(SELECT * 
+   FROM (SELECT ROW_NUMBER() OVER (PARTITION BY person_id ORDER BY effective_start_date DESC) AS record_num_desc, 
+           papfb.* 
+      FROM per_all_people_f papfb) 
+     WHERE record_num_desc = 1) papfb,po_headers_all poh,po_line_locations_all poll,po_lines_all pol,po_releases_all por,rcv_parameters rcv,po_vendor_contacts pvc,po_vendors pv,po_vendor_sites_all pvsa,
+       ap_tax_codes_all atc, (SELECT 'N' value FROM dual) cqc WHERE poh.terms_id=apt.term_id(+) AND poll.po_release_id=por.po_release_id(+) AND poh.vendor_contact_id=pvc.vendor_contact_id(+) AND poh.vendor_site_id=pvc.vendor_site_id(+) AND NVL(por.agent_id, poh.agent_id) = papfb.person_id AND poll.po_line_id=pol.po_line_id AND poll.po_header_id=poh.po_header_id AND rcv.organization_id=poll.ship_to_organization_id AND msi.inventory_item_id(+)=pol.item_id AND poll.ship_to_organization_id = NVL(msi.organization_id, poll.ship_to_organization_id) AND haou.organization_id=poll.ship_to_organization_id AND haou2.organization_id=poh.org_id AND poll.line_location_id=epoa.po_line_location_id(+) AND poh.po_header_id=epohs.po_header_id(+) AND poh.vendor_id=pv.vendor_id AND pvsa.vendor_site_id=poh.vendor_site_id AND pvsa.vendor_id=pv.vendor_id AND poh.authorization_status in ('APPROVED', 'REQUIRES REAPPROVAL', 'IN PROCESS', 'PRE-APPROVED') AND NVL(por.authorization_status,'APPROVED') in ('APPROVED', 'REQUIRES REAPPROVAL', 'IN PROCESS', 'PRE-APPROVED') AND poh.type_lookup_code IN ('STANDARD', 'BLANKET', 'PLANNED') AND NVL(poll.approved_flag, 'N') IN ('Y', 'R', 'N') AND poll.shipment_type IN ('STANDARD', 'BLANKET', 'SCHEDULED')
+   AND atc.tax_id(+)=poll.tax_code_id AND poh.org_id=poll.org_id AND pol.org_id=poll.org_id AND por.org_id(+)=poll.org_id
+   AND (poll.org_id IN (?,?)) AND  ROWNUM <= 2 ) where row_number between 1 and 26 order by row_number
+Message: ORA-00904: "PVSA"."ATTRIBUTE16": invalid identifier
+
+Message: ORA-00904: "PVSA"."ATTRIBUTE16": invalid identifier
+
+
+Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
+System info: host: 'JUMPBOX-WIN2016', ip: '10.228.0.127', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52927}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: dbc1939a054e068f99c1f7053f3817dd
+*** Element info: {Using=xpath, value=//*[@id='searchResultsFormId']/table[1]/tbody/tr[1]/td/table/tbody/tr/td[3]}
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:123)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:396)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+at stepDefinitions.EndeavourCommonSteps.totalSearchResultsShouldBeAsPerTheLookup(EndeavourCommonSteps.java:50)
+at ?.Total search results should be as per the lookup(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/setup/ManageLookups.feature:85)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:45:13 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:45:21 CDT" duration-ms="7806" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Reset the Lookup details"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Lookups]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:45:21 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:45:30 CDT" duration-ms="8725" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Disable a Lookup"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Lookups]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:45:30 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:45:38 CDT" duration-ms="8064" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Enable a Lookup"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Lookups]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:45:38 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:45:45 CDT" duration-ms="7673" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Delete Lookup"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Lookups]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:45:45 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:46:00 CDT" duration-ms="14213" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Export Lookup records to XML File"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Lookups]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:46:00 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:46:12 CDT" duration-ms="12643" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add a Menu"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Menus]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:46:12 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:46:19 CDT" duration-ms="6397" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search a Menu"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Menus]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:46:19 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:46:30 CDT" duration-ms="11565" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Edit  Menu details"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Menus]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:46:30 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:46:37 CDT" duration-ms="6835" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Disable Menu option"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Menus]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:46:37 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:46:44 CDT" duration-ms="6752" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Enable Menu option"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Menus]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:46:44 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:46:57 CDT" duration-ms="13209" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add a child to the menu"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Menus]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:46:57 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:47:05 CDT" duration-ms="8157" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Delete Menu"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Menus]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:47:05 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:47:12 CDT" duration-ms="7109" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Delete Child Menu"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Menus]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:47:12 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:47:17 CDT" duration-ms="4810" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add a Namespace"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Namespaces]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.UnhandledAlertException">
+            <message>
+              <![CDATA[unexpected alert open: {Alert text : Message: A namespace with that name already exists
+}
+  (Session info: chrome=94.0.4606.71): Message: A namespace with that name already exists
+
+Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
+System info: host: 'JUMPBOX-WIN2016', ip: '10.228.0.127', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51020}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a758a1f8354f0a50605850e7d0b85ac9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Message: A namespace with that name already exists
+}
+  (Session info: chrome=94.0.4606.71): Message: A namespace with that name already exists
+
+Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
+System info: host: 'JUMPBOX-WIN2016', ip: '10.228.0.127', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51020}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a758a1f8354f0a50605850e7d0b85ac9
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:123)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.defaultContent(RemoteWebDriver.java:993)
+at stepDefinitions.setup.ManageNamespaces.userEntersNamespace_nameToSearchANamespace(ManageNamespaces.java:63)
+at ?.User enters Namespace_name[0] to search a Namespace(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/setup/ManageNamespaces.feature:21)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:47:17 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:47:52 CDT" duration-ms="34571" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search for namespace belonging to a specific class"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Namespaces]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='unique_id']/tbody/tr[2]/td[4]"}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
+System info: host: 'JUMPBOX-WIN2016', ip: '10.228.0.127', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64924}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 51166dd611799d1a2222e808b0dfa859
+*** Element info: {Using=xpath, value=//*[@id='unique_id']/tbody/tr[2]/td[4]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='unique_id']/tbody/tr[2]/td[4]"}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
+System info: host: 'JUMPBOX-WIN2016', ip: '10.228.0.127', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64924}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 51166dd611799d1a2222e808b0dfa859
+*** Element info: {Using=xpath, value=//*[@id='unique_id']/tbody/tr[2]/td[4]}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:396)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+at stepDefinitions.setup.ManageNamespaces.namespaceWithClass_nameShouldBeDisplayedInSearchResults(ManageNamespaces.java:89)
+at ?.Namespace with Class_name[0] should be displayed in search results(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/setup/ManageNamespaces.feature:29)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:47:52 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:48:26 CDT" duration-ms="34564" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Edit a Namespace"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Namespaces]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='unique_id']/tbody/tr[2]/td[3]"}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
+System info: host: 'JUMPBOX-WIN2016', ip: '10.228.0.127', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60864}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7d4a481d37eb881f5cc6eb0efd08a7e9
+*** Element info: {Using=xpath, value=//*[@id='unique_id']/tbody/tr[2]/td[3]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='unique_id']/tbody/tr[2]/td[3]"}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
+System info: host: 'JUMPBOX-WIN2016', ip: '10.228.0.127', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60864}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7d4a481d37eb881f5cc6eb0efd08a7e9
+*** Element info: {Using=xpath, value=//*[@id='unique_id']/tbody/tr[2]/td[3]}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:396)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy26.getText(Unknown Source)
+at stepDefinitions.setup.ManageNamespaces.namespaceWithNamespace_nameShouldBeDisplayedInSearchResults(ManageNamespaces.java:76)
+at ?.Namespace with Namespace_name[0] should be displayed in search results(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/setup/ManageNamespaces.feature:35)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:48:26 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:49:01 CDT" duration-ms="34911" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Delete Namespace"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Namespaces]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='unique_id']/tbody/tr[2]/td[3]"}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
+System info: host: 'JUMPBOX-WIN2016', ip: '10.228.0.127', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58238}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a26af9fdd4b084d6526dcf331d84196e
+*** Element info: {Using=xpath, value=//*[@id='unique_id']/tbody/tr[2]/td[3]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='unique_id']/tbody/tr[2]/td[3]"}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
+System info: host: 'JUMPBOX-WIN2016', ip: '10.228.0.127', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58238}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a26af9fdd4b084d6526dcf331d84196e
+*** Element info: {Using=xpath, value=//*[@id='unique_id']/tbody/tr[2]/td[3]}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:396)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy26.getText(Unknown Source)
+at stepDefinitions.setup.ManageNamespaces.namespaceWithNamespace_nameShouldBeDisplayedInSearchResults(ManageNamespaces.java:76)
+at ?.Namespace with Namespace_name[1] should be displayed in search results(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/setup/ManageNamespaces.feature:47)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:49:01 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:49:09 CDT" duration-ms="7508" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add a Page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Pages]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:49:09 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:49:17 CDT" duration-ms="7997" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search a Page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Pages]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:49:17 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:49:26 CDT" duration-ms="8978" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Edit a Page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Pages]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:49:26 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:49:34 CDT" duration-ms="7888" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Assign  a specific responsibility to a Page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Pages]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:49:34 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:49:42 CDT" duration-ms="8710" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Assign  a specific Namespace to a Page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Pages]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:49:42 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:49:51 CDT" duration-ms="9025" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Export Page recods"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Pages]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:49:51 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:49:59 CDT" duration-ms="7409" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Delete Page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add,Search,Edit,Export,Delete Pages]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:49:59 CDT" name="tearDownClass" finished-at="2021-10-13T00:50:03 CDT" duration-ms="4010" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

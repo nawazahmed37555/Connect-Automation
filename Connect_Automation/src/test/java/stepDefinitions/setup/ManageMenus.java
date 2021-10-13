@@ -103,6 +103,7 @@ public class ManageMenus extends DriverFactory {
 		menusPageObjects.saveBtn.click();
 		try {
 			driver.switchTo().alert().accept();
+			Thread.sleep(3000);
 		}
 		catch(Exception e) {
 		 //do nothing

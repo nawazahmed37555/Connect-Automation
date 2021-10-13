@@ -186,7 +186,9 @@ import org.openqa.selenium.By;
 
 		@Then("^Verify Printer deleted successfully$")
 		public void verifyPrinterDeletedSuccessfully()  {
-					Assert.assertEquals(driver.findElement(By.xpath("//*[@id='unique_id']/tbody/tr[2]/td")).getText(), "No results Found");
+					//Assert.assertEquals(driver.findElement(By.xpath("//*[@id='unique_id']/tbody/tr[2]/td")).getText(), "No results Found");
+					String actualText = driver.findElement(By.xpath("//*[@id='unique_id']/tbody/tr[2]/td")).getText();
+					Assert.assertTrue(actualText.equalsIgnoreCase("No Results Found"));
 		}
 
 	

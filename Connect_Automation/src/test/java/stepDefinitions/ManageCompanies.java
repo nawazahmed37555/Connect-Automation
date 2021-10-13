@@ -1,7 +1,10 @@
 package stepDefinitions;
 
 
+import java.util.List;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
@@ -44,25 +47,23 @@ public class ManageCompanies extends DriverFactory {
 		
 		companiesPageObjects.edit_companyName.sendKeys(companiesPageObjects.company_name[0]);
 		companiesPageObjects.edit_companyCode.sendKeys(companiesPageObjects.company_code[0]);
-		companiesPageObjects.edit_companyPrintToPDF.click();
+		//companiesPageObjects.edit_companyPrintToPDF.click();
 		
 	}
 
 	
 	@And("^User clicks on Save button to add company$")
 	public void user_clicks_on_Save_button() {
-	  //There is no way to delete a company record,That is why I am not adding new records . If you want to add a company, then uncomment below line.
-	  //companiesPageObjects.saveBtn.click();
-		System.out.println("There is no way to delete a company record,That is why I am not adding new records .");
+	    companiesPageObjects.saveBtn.click();
+		//System.out.println("There is no way to delete a company record,That is why adding new records is not feasible.");
 		
 	}
 
 	
 	@Then("^Company record is created successfully$")
 	public void company_record_is_created_successfully() {
-		//Assert.assertEquals(companiesPageObjects.company_name[0], companiesPageObjects.edit_companyName.getAttribute("value"));
-		System.out.println("Uncomment the code to create company successfully.");
-	}
+		Assert.assertEquals(companiesPageObjects.company_name[0], companiesPageObjects.edit_companyName.getAttribute("value"));
+			}
 
 	@And("^User enters search criteria to search a company$")
 	public void userEntersSearchCriteriaToSearchACompany() {
@@ -91,8 +92,16 @@ public class ManageCompanies extends DriverFactory {
 
 	
 	@Then("^Verify that the Company is disabled$")
-	public void verifyThatTheCompanyIsDisabled() throws Throwable {
-		Assert.assertEquals("Yes", companiesPageObjects.companyStatus.getText().trim());
+	public void verifyThatTheCompanyIsDisabled()  {
+		
+		List<WebElement>  headerCoulmns = driver.findElements(By.xpath("//*[@id='unique_id']/tbody/tr[1]/td"));
+		for (int i=0; i<headerCoulmns.size();i++) {
+			if (headerCoulmns.get(i).getText().equalsIgnoreCase("Disabled")){
+				int index = i+1;
+				String CompanyStatus = "//*[@id='unique_id']/tbody/tr[2]/td["+index+"]";
+				Assert.assertEquals(driver.findElement(By.xpath(CompanyStatus)).getText().trim(),"Yes");
+			}
+		}
 	}
 
 	@When("^User clicks on Enable option$")
@@ -103,7 +112,14 @@ public class ManageCompanies extends DriverFactory {
 
 	@Then("^Verify that the Company is Enabled$")
 	public void verifyThatTheCompanyIsEnabled()  {
-		Assert.assertEquals("No", companiesPageObjects.companyStatus.getText().trim());
+		List<WebElement>  headerCoulmns = driver.findElements(By.xpath("//*[@id='unique_id']/tbody/tr[1]/td"));
+		for (int i=0; i<headerCoulmns.size();i++) {
+			if (headerCoulmns.get(i).getText().equalsIgnoreCase("Disabled")){
+				int index = i+1;
+				String CompanyStatus = "//*[@id='unique_id']/tbody/tr[2]/td["+index+"]";
+				Assert.assertEquals(driver.findElement(By.xpath(CompanyStatus)).getText().trim(),"No");
+			}
+		}
 	}
 
 	@Then("^All companies should be displayed in search results$")

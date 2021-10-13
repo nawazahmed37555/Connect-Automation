@@ -112,8 +112,8 @@ public class ManageRoles extends DriverFactory {
 	}
 	@Then("^Verify Role details updated successfully$")
 	public void verifyRoleDetailsUpdatedSuccessfully() {
-		Assert.assertEquals(rolesPageObjects.roleName[1],rolesPageObjects.edit_RoleName.getAttribute("value"));
-		Assert.assertEquals(rolesPageObjects.roleDescription[1],rolesPageObjects.edit_description.getAttribute("value"));
+		Assert.assertEquals(rolesPageObjects.edit_RoleName.getAttribute("value"),rolesPageObjects.roleName[1]);
+		Assert.assertEquals(rolesPageObjects.edit_description.getAttribute("value"),rolesPageObjects.roleDescription[1]);
 	}
 	@And("^User clicks on the Responsibilities tab under edit Role panel$")
 	public void userClicksOnTheResponsibilitiesTabUnderEditRolePanel()  {

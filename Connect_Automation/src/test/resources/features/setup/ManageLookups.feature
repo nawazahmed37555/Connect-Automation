@@ -200,4 +200,5 @@ Feature: Add,Search,Edit,Export,Delete Lookups
     And User selects Export as XML on Lookups page
     And User clicks on Go button on Lookups page
     Then Verify that the Lookups records xml file was successfully downloaded
+    And User deletes the "lookup_export" file
 

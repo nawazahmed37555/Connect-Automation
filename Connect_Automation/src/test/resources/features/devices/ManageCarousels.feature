@@ -33,7 +33,7 @@ Feature: Add,Search,Edit,Export,Delete Carousels
     And User clicks on Search button to search Carousel
     Then Carousel should be displayed in search results
     When User clicks on Edit option to edit Carousel
-    And User changes Carousel details
+    And User changes Carousel[1] details
     And User clicks on Save button to save Carousel details
     Then Verify Carousel details updated successfully
 
