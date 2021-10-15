@@ -1,9 +1,11 @@
 package stepDefinitions.hook;
 
+import java.sql.SQLException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.testng.annotations.BeforeSuite;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -11,11 +13,14 @@ import io.cucumber.java.Scenario;
 import io.qameta.allure.Attachment;
 import utils.DriverFactory;
 import utils.JsonConfigReader;
+import utils.SQLConnector;
 
 public class MasterHook extends DriverFactory {
 
 	
 
+	
+	
 	@Before
 	
 	public void setup() {
@@ -23,6 +28,7 @@ public class MasterHook extends DriverFactory {
 		driver = getDriver(jsonConfigReader.getConfigValue("DriverConfig", "browser"),
 		jsonConfigReader.getConfigValue("DriverConfig", "environment"));
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		
 	}
 
 	@SuppressWarnings("deprecation")

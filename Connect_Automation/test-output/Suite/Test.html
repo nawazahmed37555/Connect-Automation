@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Jul 25 13:28:03 IST 2021</td>
+<td>Started on:</td><td>Fri Oct 15 00:27:53 CDT 2021</td>
 </tr>
-<tr><td>Total time:</td><td>300 seconds (300272 ms)</td>
+<tr><td>Total time:</td><td>64 seconds (64588 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,78 +75,23 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runner.Runner.runScenario()'><b>runScenario</b><br>Test class: runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login to Connect with valid Username and Password", "Connect Login Feature"</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 60.000
-  (Session info: chrome=92.0.4515.107)
-Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
-System info: host: &apos;ADMIN-PC&apos;, ip: &apos;44.175.5.207&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62386}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 1d1f1367ab9b110c8413f4894cf28795
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:308)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at com.sun.proxy.$Proxy26.click(Unknown Source)
-	at stepDefinitions.connectLogin.user_clicks_on_Login_button(connectLogin.java:44)
-	at ?.User clicks on Login button(src/test/resources/features/ConnectLogin.feature:16)
-... Removed 9 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1392482765", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1392482765'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 60.000
-  (Session info: chrome=92.0.4515.107)
-Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
-System info: host: &apos;ADMIN-PC&apos;, ip: &apos;44.175.5.207&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62386}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 1d1f1367ab9b110c8413f4894cf28795
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:308)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at com.sun.proxy.$Proxy26.click(Unknown Source)
-	at stepDefinitions.connectLogin.user_clicks_on_Login_button(connectLogin.java:44)
-	at ?.User clicks on Login button(src/test/resources/features/ConnectLogin.feature:16)
+<td title='runner.Runner.runScenario()'><b>runScenario</b><br>Test class: runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Edit a User", "Optional[Add,Search,Edit,Enable,Disable,Export Users records]"</td>
+<td><div><pre>java.lang.AssertionError: expected [AllVendors] but found [Bush Co]
+	at stepDefinitions.ManageUsers.verifyUserDetailsUpdatedSuccessfully(ManageUsers.java:151)
+	at ?.Verify user[1] details updated successfully(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/ManageUsers.feature:58)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace666596577", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace666596577'><pre>java.lang.AssertionError: expected [AllVendors] but found [Bush Co]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at stepDefinitions.ManageUsers.verifyUserDetailsUpdatedSuccessfully(ManageUsers.java:151)
+	at ?.Verify user[1] details updated successfully(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/ManageUsers.feature:58)
 </pre></div></td>
-<td>67</td>
-<td>runner.Runner@21129f1f</td></tr>
-<tr>
-<td title='runner.Runner.runScenario()'><b>runScenario</b><br>Test class: runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Single SSO with Endeavour", "Connect Login Feature"</td>
-<td><div><pre>junit.framework.AssertionFailedError: expected:&lt;true1&gt; but was:&lt;true&gt;
-	at junit.framework.Assert.fail(Assert.java:50)
-	at junit.framework.Assert.failNotEquals(Assert.java:287)
-	at junit.framework.Assert.assertEquals(Assert.java:67)
-	at junit.framework.Assert.assertEquals(Assert.java:74)
-	at stepDefinitions.connectLogin.userIsAutomaticallyLoggedIntoEndeavour(connectLogin.java:88)
-	at ?.User is automatically logged into Endeavour(src/test/resources/features/ConnectLogin.feature:36)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1489099273", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1489099273'><pre>junit.framework.AssertionFailedError: expected:&lt;true1&gt; but was:&lt;true&gt;
-	at junit.framework.Assert.fail(Assert.java:50)
-	at junit.framework.Assert.failNotEquals(Assert.java:287)
-	at junit.framework.Assert.assertEquals(Assert.java:67)
-	at junit.framework.Assert.assertEquals(Assert.java:74)
-	at stepDefinitions.connectLogin.userIsAutomaticallyLoggedIntoEndeavour(connectLogin.java:88)
-	at ?.User is automatically logged into Endeavour(src/test/resources/features/ConnectLogin.feature:36)
-</pre></div></td>
-<td>94</td>
-<td>runner.Runner@21129f1f</td></tr>
+<td>7</td>
+<td>runner.Runner@2b76ff4e</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -156,15 +101,30 @@ Session ID: 1d1f1367ab9b110c8413f4894cf28795
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runner.Runner.runScenario()'><b>runScenario</b><br>Test class: runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login to Connect with invalid Username and invalid Password", "Connect Login Feature"</td>
+<td title='runner.Runner.runScenario()'><b>runScenario</b><br>Test class: runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add a User", "Optional[Add,Search,Edit,Enable,Disable,Export Users records]"</td>
 <td></td>
-<td>30</td>
-<td>runner.Runner@21129f1f</td></tr>
+<td>10</td>
+<td>runner.Runner@2b76ff4e</td></tr>
 <tr>
-<td title='runner.Runner.runScenario()'><b>runScenario</b><br>Test class: runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Logout option", "Connect Login Feature"</td>
+<td title='runner.Runner.runScenario()'><b>runScenario</b><br>Test class: runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Enable a User", "Optional[Add,Search,Edit,Enable,Disable,Export Users records]"</td>
 <td></td>
-<td>106</td>
-<td>runner.Runner@21129f1f</td></tr>
+<td>8</td>
+<td>runner.Runner@2b76ff4e</td></tr>
+<tr>
+<td title='runner.Runner.runScenario()'><b>runScenario</b><br>Test class: runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Disable a User", "Optional[Add,Search,Edit,Enable,Disable,Export Users records]"</td>
+<td></td>
+<td>8</td>
+<td>runner.Runner@2b76ff4e</td></tr>
+<tr>
+<td title='runner.Runner.runScenario()'><b>runScenario</b><br>Test class: runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Export User records to XML file", "Optional[Add,Search,Edit,Enable,Disable,Export Users records]"</td>
+<td></td>
+<td>16</td>
+<td>runner.Runner@2b76ff4e</td></tr>
+<tr>
+<td title='runner.Runner.runScenario()'><b>runScenario</b><br>Test class: runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search a User", "Optional[Add,Search,Edit,Enable,Disable,Export Users records]"</td>
+<td></td>
+<td>7</td>
+<td>runner.Runner@2b76ff4e</td></tr>
 </table><p>
 </body>
 </html>

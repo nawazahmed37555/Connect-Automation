@@ -14,9 +14,9 @@
 	},
 	"DBcredentials": {
 	
-		"db_url": "jdbc:oracle:thin:@10.112.15.249:1521:VIS"
-		"username": "clr_2020_1_qa1",
-		"password": "clr_2020_1_qa1"
+		"db_url": "jdbc:oracle:thin:@10.112.15.249:1521:VIS",
+		"db_username": "clr_2020_1_qa1",
+		"db_password": "clr_2020_1_qa1"
 	},
 	"IncorrectCredentials": {
 		"username": "ghjdsvdadfvsd",

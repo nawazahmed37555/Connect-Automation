@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="108" passed="95" failed="13" skipped="0">
+<testng-results ignored="0" total="108" passed="96" failed="12" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-10-13T00:18:20 CDT" name="Default suite" finished-at="2021-10-13T00:50:03 CDT" duration-ms="1902943">
+  <suite started-at="2021-10-15T04:52:15 CDT" name="Default suite" finished-at="2021-10-15T05:27:41 CDT" duration-ms="2126293">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2021-10-13T00:18:20 CDT" name="Default test" finished-at="2021-10-13T00:50:03 CDT" duration-ms="1902943">
+    <test started-at="2021-10-15T04:52:15 CDT" name="Default test" finished-at="2021-10-15T05:27:41 CDT" duration-ms="2126293">
       <class name="runner.Runner">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:18:20 CDT" name="setUpClass" finished-at="2021-10-13T00:18:22 CDT" duration-ms="2010" status="PASS">
+        <test-method is-config="true" signature="clearDBBeforeTest()[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T04:52:15 CDT" name="clearDBBeforeTest" finished-at="2021-10-15T04:52:15 CDT" duration-ms="348" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearDBBeforeTest -->
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T04:52:15 CDT" name="setUpClass" finished-at="2021-10-15T04:52:19 CDT" duration-ms="3945" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:18:22 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:18:33 CDT" duration-ms="10912" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T04:52:19 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T04:52:31 CDT" duration-ms="12124" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -30,7 +34,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:18:33 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:18:39 CDT" duration-ms="6211" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T04:52:32 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T04:52:40 CDT" duration-ms="8190" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -46,7 +50,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:18:39 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:18:45 CDT" duration-ms="5970" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T04:52:40 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T04:52:48 CDT" duration-ms="8203" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -62,7 +66,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:18:45 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:18:55 CDT" duration-ms="10176" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T04:52:48 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T04:52:58 CDT" duration-ms="9728" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -78,7 +82,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:18:55 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:19:01 CDT" duration-ms="5773" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T04:52:58 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T04:53:06 CDT" duration-ms="7796" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -94,7 +98,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:19:01 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:19:08 CDT" duration-ms="7110" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T04:53:06 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T04:53:14 CDT" duration-ms="8554" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -110,7 +114,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:19:08 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:19:15 CDT" duration-ms="6433" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T04:53:14 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T04:53:23 CDT" duration-ms="8567" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -126,7 +130,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:19:15 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:19:23 CDT" duration-ms="8093" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T04:53:23 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T04:53:36 CDT" duration-ms="13534" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -142,7 +146,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:19:23 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:19:28 CDT" duration-ms="5776" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T04:53:36 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T04:53:46 CDT" duration-ms="9446" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -155,26 +159,10 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.IndexOutOfBoundsException">
-            <message>
-              <![CDATA[Index 7 out of bounds for length 7]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IndexOutOfBoundsException: Index 7 out of bounds for length 7
-at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
-at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
-at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
-at java.base/java.util.Objects.checkIndex(Objects.java:359)
-at java.base/java.util.ArrayList.get(ArrayList.java:427)
-at stepDefinitions.ManageCompanies.verifyThatTheCompanyIsEnabled(ManageCompanies.java:117)
-at ?.Verify that the Company is Enabled(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/ManageCompanies.feature:46)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IndexOutOfBoundsException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:19:28 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:19:36 CDT" duration-ms="7244" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T04:53:46 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T04:53:56 CDT" duration-ms="9914" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -190,7 +178,7 @@ at ?.Verify that the Company is Enabled(file:///C:/Users/jumpboxadmin/git/Connec
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:19:36 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:19:44 CDT" duration-ms="8634" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T04:53:56 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T04:54:07 CDT" duration-ms="11611" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -206,7 +194,7 @@ at ?.Verify that the Company is Enabled(file:///C:/Users/jumpboxadmin/git/Connec
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:19:44 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:19:51 CDT" duration-ms="6445" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T04:54:07 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T04:54:16 CDT" duration-ms="8645" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -222,7 +210,7 @@ at ?.Verify that the Company is Enabled(file:///C:/Users/jumpboxadmin/git/Connec
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:19:51 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:19:57 CDT" duration-ms="6201" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T04:54:16 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T04:54:24 CDT" duration-ms="8110" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -238,7 +226,7 @@ at ?.Verify that the Company is Enabled(file:///C:/Users/jumpboxadmin/git/Connec
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:19:57 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:20:04 CDT" duration-ms="6743" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T04:54:24 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T04:54:39 CDT" duration-ms="15532" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -254,7 +242,7 @@ at ?.Verify that the Company is Enabled(file:///C:/Users/jumpboxadmin/git/Connec
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:20:04 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:20:11 CDT" duration-ms="7128" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T04:54:39 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T04:54:48 CDT" duration-ms="8846" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -270,7 +258,7 @@ at ?.Verify that the Company is Enabled(file:///C:/Users/jumpboxadmin/git/Connec
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:20:11 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:20:18 CDT" duration-ms="6808" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T04:54:48 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T04:54:57 CDT" duration-ms="9143" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -286,7 +274,7 @@ at ?.Verify that the Company is Enabled(file:///C:/Users/jumpboxadmin/git/Connec
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:20:18 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:20:24 CDT" duration-ms="6473" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T04:54:58 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T04:55:18 CDT" duration-ms="20812" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -302,7 +290,7 @@ at ?.Verify that the Company is Enabled(file:///C:/Users/jumpboxadmin/git/Connec
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:20:24 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:20:30 CDT" duration-ms="6293" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T04:55:18 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T04:55:35 CDT" duration-ms="16811" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -318,7 +306,7 @@ at ?.Verify that the Company is Enabled(file:///C:/Users/jumpboxadmin/git/Connec
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:20:30 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:20:37 CDT" duration-ms="6724" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T04:55:35 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T04:55:49 CDT" duration-ms="13635" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -334,7 +322,7 @@ at ?.Verify that the Company is Enabled(file:///C:/Users/jumpboxadmin/git/Connec
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:20:37 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:20:44 CDT" duration-ms="6740" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T04:55:49 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T04:55:58 CDT" duration-ms="8936" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -350,7 +338,7 @@ at ?.Verify that the Company is Enabled(file:///C:/Users/jumpboxadmin/git/Connec
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:20:44 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:20:51 CDT" duration-ms="7133" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T04:55:58 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T04:56:07 CDT" duration-ms="9724" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -366,7 +354,7 @@ at ?.Verify that the Company is Enabled(file:///C:/Users/jumpboxadmin/git/Connec
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:20:51 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:20:58 CDT" duration-ms="6876" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T04:56:07 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T04:56:16 CDT" duration-ms="8688" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -382,7 +370,7 @@ at ?.Verify that the Company is Enabled(file:///C:/Users/jumpboxadmin/git/Connec
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:20:58 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:21:06 CDT" duration-ms="7751" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T04:56:16 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T04:56:26 CDT" duration-ms="9562" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -398,7 +386,7 @@ at ?.Verify that the Company is Enabled(file:///C:/Users/jumpboxadmin/git/Connec
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:21:06 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:21:12 CDT" duration-ms="6743" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T04:56:26 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T04:56:34 CDT" duration-ms="8546" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -414,7 +402,7 @@ at ?.Verify that the Company is Enabled(file:///C:/Users/jumpboxadmin/git/Connec
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:21:12 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:21:20 CDT" duration-ms="7928" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T04:56:34 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T04:56:44 CDT" duration-ms="9969" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -430,7 +418,7 @@ at ?.Verify that the Company is Enabled(file:///C:/Users/jumpboxadmin/git/Connec
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:21:20 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:21:29 CDT" duration-ms="8851" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T04:56:44 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T04:56:54 CDT" duration-ms="9732" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -446,7 +434,7 @@ at ?.Verify that the Company is Enabled(file:///C:/Users/jumpboxadmin/git/Connec
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:21:29 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:21:38 CDT" duration-ms="8396" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T04:56:54 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T04:57:02 CDT" duration-ms="8298" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -459,76 +447,27 @@ at ?.Verify that the Company is Enabled(file:///C:/Users/jumpboxadmin/git/Connec
               </value>
             </param>
           </params>
-          <exception class="io.cucumber.testng.UndefinedStepException">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[The step 'Verify user details updated successfully' is undefined.
-You can implement this step using the snippet(s) below:
-
-Then("Verify user details updated successfully", () -> {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java8.PendingException();
-});
-@Then("Verify user details updated successfully")
-public void verify_user_details_updated_successfully() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-]]>
+              <![CDATA[expected [AllVendors] but found [Automated_company2]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'Verify user details updated successfully' is undefined.
-You can implement this step using the snippet(s) below:
-
-Then("Verify user details updated successfully", () -> {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java8.PendingException();
-});
-@Then("Verify user details updated successfully")
-public void verify_user_details_updated_successfully() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
-at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
-at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:135)
-at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117)
-at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:131)
-at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31)
-at jdk.internal.reflect.GeneratedMethodAccessor155.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+              <![CDATA[java.lang.AssertionError: expected [AllVendors] but found [Automated_company2]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at stepDefinitions.ManageUsers.verifyUserDetailsUpdatedSuccessfully(ManageUsers.java:151)
+at ?.Verify user[1] details updated successfully(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/ManageUsers.feature:58)
 ]]>
             </full-stacktrace>
-          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:21:38 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:21:53 CDT" duration-ms="15412" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T04:57:02 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T04:57:21 CDT" duration-ms="18715" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -544,7 +483,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:21:53 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:22:00 CDT" duration-ms="7356" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T04:57:21 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T04:57:30 CDT" duration-ms="8973" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -560,7 +499,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:22:00 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:22:07 CDT" duration-ms="6931" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T04:57:30 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T04:57:38 CDT" duration-ms="8362" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -576,7 +515,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:22:07 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:22:16 CDT" duration-ms="8726" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T04:57:38 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T04:57:49 CDT" duration-ms="10181" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -592,7 +531,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:22:16 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:22:24 CDT" duration-ms="7754" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T04:57:49 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T04:57:59 CDT" duration-ms="10461" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -608,7 +547,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:22:24 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:22:31 CDT" duration-ms="7430" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T04:57:59 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T04:58:08 CDT" duration-ms="9089" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -624,7 +563,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:22:31 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:22:38 CDT" duration-ms="7009" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T04:58:08 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T04:58:17 CDT" duration-ms="8656" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -640,7 +579,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:22:38 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:22:46 CDT" duration-ms="7452" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T04:58:17 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T04:58:25 CDT" duration-ms="8372" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -656,7 +595,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:22:46 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:22:54 CDT" duration-ms="8009" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T04:58:25 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T04:58:35 CDT" duration-ms="9915" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -672,7 +611,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:22:54 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:23:01 CDT" duration-ms="7664" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T04:58:35 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T04:58:46 CDT" duration-ms="10476" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -688,7 +627,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:23:01 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:23:08 CDT" duration-ms="6794" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T04:58:46 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T04:58:55 CDT" duration-ms="9061" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -704,7 +643,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:23:08 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:23:43 CDT" duration-ms="34231" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T04:58:55 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T04:59:31 CDT" duration-ms="36107" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -720,24 +659,24 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"input[value=Add]"}
-  (Session info: chrome=94.0.4606.71)
+  (Session info: chrome=94.0.4606.81)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
 System info: host: 'JUMPBOX-WIN2016', ip: '10.228.0.127', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55345}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f89b6ebaf76f73637e2fb0d19c15962a
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50354}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 34be8e03a768439f7901cc05196bcc39
 *** Element info: {Using=css selector, value=input[value=Add]}]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"input[value=Add]"}
-  (Session info: chrome=94.0.4606.71)
+  (Session info: chrome=94.0.4606.81)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
 System info: host: 'JUMPBOX-WIN2016', ip: '10.228.0.127', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55345}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f89b6ebaf76f73637e2fb0d19c15962a
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50354}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 34be8e03a768439f7901cc05196bcc39
 *** Element info: {Using=css selector, value=input[value=Add]}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
@@ -756,7 +695,7 @@ at org.openqa.selenium.By$ByCssSelector.findElement(By.java:496)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy26.click(Unknown Source)
+at jdk.proxy2/jdk.proxy2.$Proxy28.click(Unknown Source)
 at stepDefinitions.devices.ManagePrinters.userClicksOnAddButtonToAddPrinter(ManagePrinters.java:40)
 at ?.User clicks on Add button to add Printer(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/devices/ManagePrinters.feature:17)
 ]]>
@@ -765,7 +704,7 @@ at ?.User clicks on Add button to add Printer(file:///C:/Users/jumpboxadmin/git/
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:23:43 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:24:16 CDT" duration-ms="33956" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T04:59:31 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:00:06 CDT" duration-ms="35449" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -781,24 +720,24 @@ at ?.User clicks on Add button to add Printer(file:///C:/Users/jumpboxadmin/git/
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"*[name='search_name']"}
-  (Session info: chrome=94.0.4606.71)
+  (Session info: chrome=94.0.4606.81)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
 System info: host: 'JUMPBOX-WIN2016', ip: '10.228.0.127', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55051}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 36d80770e608b918ede1206b24f5f48a
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60546}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 023a33729b13a02ac8a4c6c71408171c
 *** Element info: {Using=name, value=search_name}]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='search_name']"}
-  (Session info: chrome=94.0.4606.71)
+  (Session info: chrome=94.0.4606.81)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
 System info: host: 'JUMPBOX-WIN2016', ip: '10.228.0.127', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55051}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 36d80770e608b918ede1206b24f5f48a
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60546}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 023a33729b13a02ac8a4c6c71408171c
 *** Element info: {Using=name, value=search_name}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
@@ -817,7 +756,7 @@ at org.openqa.selenium.By$ByName.findElement(By.java:313)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy26.clear(Unknown Source)
+at jdk.proxy2/jdk.proxy2.$Proxy28.clear(Unknown Source)
 at stepDefinitions.devices.ManagePrinters.userEntersPrinter_nameToSearchAPrinter(ManagePrinters.java:101)
 at ?.User enters Printer_name[0] to search a Printer(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/devices/ManagePrinters.feature:32)
 ]]>
@@ -826,7 +765,7 @@ at ?.User enters Printer_name[0] to search a Printer(file:///C:/Users/jumpboxadm
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:24:16 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:24:50 CDT" duration-ms="33976" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:00:06 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:00:42 CDT" duration-ms="35744" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -842,24 +781,24 @@ at ?.User enters Printer_name[0] to search a Printer(file:///C:/Users/jumpboxadm
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"*[name='search_name']"}
-  (Session info: chrome=94.0.4606.71)
+  (Session info: chrome=94.0.4606.81)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
 System info: host: 'JUMPBOX-WIN2016', ip: '10.228.0.127', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64622}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b1b40c7dd6b67809be90bf8f32cb308d
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50279}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 033397a31aa5429e7d238eb924560cbe
 *** Element info: {Using=name, value=search_name}]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='search_name']"}
-  (Session info: chrome=94.0.4606.71)
+  (Session info: chrome=94.0.4606.81)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
 System info: host: 'JUMPBOX-WIN2016', ip: '10.228.0.127', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64622}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b1b40c7dd6b67809be90bf8f32cb308d
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50279}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 033397a31aa5429e7d238eb924560cbe
 *** Element info: {Using=name, value=search_name}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
@@ -878,7 +817,7 @@ at org.openqa.selenium.By$ByName.findElement(By.java:313)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy26.clear(Unknown Source)
+at jdk.proxy2/jdk.proxy2.$Proxy28.clear(Unknown Source)
 at stepDefinitions.devices.ManagePrinters.userEntersPrinter_nameToSearchAPrinter(ManagePrinters.java:101)
 at ?.User enters Printer_name[0] to search a Printer(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/devices/ManagePrinters.feature:40)
 ]]>
@@ -887,7 +826,7 @@ at ?.User enters Printer_name[0] to search a Printer(file:///C:/Users/jumpboxadm
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:24:50 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:25:25 CDT" duration-ms="34042" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:00:42 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:01:18 CDT" duration-ms="35651" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -903,24 +842,24 @@ at ?.User enters Printer_name[0] to search a Printer(file:///C:/Users/jumpboxadm
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"input[value=Search]"}
-  (Session info: chrome=94.0.4606.71)
+  (Session info: chrome=94.0.4606.81)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
 System info: host: 'JUMPBOX-WIN2016', ip: '10.228.0.127', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59289}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 3207be30fa1fa87867b3654b121490a2
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51086}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 63d1e80e8a3dfa35e31fbe04aa17ff5f
 *** Element info: {Using=css selector, value=input[value=Search]}]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"input[value=Search]"}
-  (Session info: chrome=94.0.4606.71)
+  (Session info: chrome=94.0.4606.81)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
 System info: host: 'JUMPBOX-WIN2016', ip: '10.228.0.127', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59289}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 3207be30fa1fa87867b3654b121490a2
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51086}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 63d1e80e8a3dfa35e31fbe04aa17ff5f
 *** Element info: {Using=css selector, value=input[value=Search]}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
@@ -939,7 +878,7 @@ at org.openqa.selenium.By$ByCssSelector.findElement(By.java:496)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy26.click(Unknown Source)
+at jdk.proxy2/jdk.proxy2.$Proxy28.click(Unknown Source)
 at stepDefinitions.devices.ManagePrinters.userClicksOnSearchButtonToSearchPrinters(ManagePrinters.java:141)
 at ?.User clicks on Search button to search Printers(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/devices/ManagePrinters.feature:58)
 ]]>
@@ -948,7 +887,7 @@ at ?.User clicks on Search button to search Printers(file:///C:/Users/jumpboxadm
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:25:25 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:25:59 CDT" duration-ms="33991" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:01:18 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:01:54 CDT" duration-ms="36094" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -964,24 +903,24 @@ at ?.User clicks on Search button to search Printers(file:///C:/Users/jumpboxadm
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"*[name='search_name']"}
-  (Session info: chrome=94.0.4606.71)
+  (Session info: chrome=94.0.4606.81)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
 System info: host: 'JUMPBOX-WIN2016', ip: '10.228.0.127', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51218}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 181fa125b214286e20c758722ead15ea
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62327}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3aa375bb8861da2b0fbce7441141b0a0
 *** Element info: {Using=name, value=search_name}]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='search_name']"}
-  (Session info: chrome=94.0.4606.71)
+  (Session info: chrome=94.0.4606.81)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
 System info: host: 'JUMPBOX-WIN2016', ip: '10.228.0.127', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51218}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 181fa125b214286e20c758722ead15ea
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62327}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3aa375bb8861da2b0fbce7441141b0a0
 *** Element info: {Using=name, value=search_name}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
@@ -1000,7 +939,7 @@ at org.openqa.selenium.By$ByName.findElement(By.java:313)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy26.clear(Unknown Source)
+at jdk.proxy2/jdk.proxy2.$Proxy28.clear(Unknown Source)
 at stepDefinitions.devices.ManagePrinters.userEntersPrinter_nameToSearchAPrinter(ManagePrinters.java:101)
 at ?.User enters Printer_name[1] to search a Printer(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/devices/ManagePrinters.feature:71)
 ]]>
@@ -1009,7 +948,7 @@ at ?.User enters Printer_name[1] to search a Printer(file:///C:/Users/jumpboxadm
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:25:59 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:26:06 CDT" duration-ms="7478" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:01:54 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:02:03 CDT" duration-ms="9043" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1025,7 +964,7 @@ at ?.User enters Printer_name[1] to search a Printer(file:///C:/Users/jumpboxadm
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:26:06 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:26:12 CDT" duration-ms="6385" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:02:03 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:02:11 CDT" duration-ms="8423" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1041,7 +980,7 @@ at ?.User enters Printer_name[1] to search a Printer(file:///C:/Users/jumpboxadm
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:26:12 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:26:20 CDT" duration-ms="7415" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:02:11 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:02:21 CDT" duration-ms="9823" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1057,7 +996,7 @@ at ?.User enters Printer_name[1] to search a Printer(file:///C:/Users/jumpboxadm
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:26:20 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:26:28 CDT" duration-ms="7724" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:02:21 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:02:31 CDT" duration-ms="9864" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1073,7 +1012,7 @@ at ?.User enters Printer_name[1] to search a Printer(file:///C:/Users/jumpboxadm
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:26:28 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:26:34 CDT" duration-ms="6718" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:02:31 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:02:43 CDT" duration-ms="12052" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1089,7 +1028,7 @@ at ?.User enters Printer_name[1] to search a Printer(file:///C:/Users/jumpboxadm
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:26:34 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:26:56 CDT" duration-ms="21588" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:02:43 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:03:10 CDT" duration-ms="26749" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1105,7 +1044,7 @@ at ?.User enters Printer_name[1] to search a Printer(file:///C:/Users/jumpboxadm
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:26:56 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:27:17 CDT" duration-ms="20703" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:03:10 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:03:35 CDT" duration-ms="25074" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1121,7 +1060,7 @@ at ?.User enters Printer_name[1] to search a Printer(file:///C:/Users/jumpboxadm
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:27:17 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:27:51 CDT" duration-ms="34096" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:03:35 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:04:19 CDT" duration-ms="44117" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1137,7 +1076,7 @@ at ?.User enters Printer_name[1] to search a Printer(file:///C:/Users/jumpboxadm
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:27:51 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:28:50 CDT" duration-ms="58888" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:04:19 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:05:27 CDT" duration-ms="67869" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1153,7 +1092,7 @@ at ?.User enters Printer_name[1] to search a Printer(file:///C:/Users/jumpboxadm
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:28:50 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:28:58 CDT" duration-ms="8766" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:05:27 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:05:46 CDT" duration-ms="18763" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1169,7 +1108,7 @@ at ?.User enters Printer_name[1] to search a Printer(file:///C:/Users/jumpboxadm
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:28:58 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:29:05 CDT" duration-ms="7123" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:05:46 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:05:56 CDT" duration-ms="10518" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1185,7 +1124,7 @@ at ?.User enters Printer_name[1] to search a Printer(file:///C:/Users/jumpboxadm
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:29:05 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:29:12 CDT" duration-ms="6356" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:05:56 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:06:08 CDT" duration-ms="12081" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1201,7 +1140,7 @@ at ?.User enters Printer_name[1] to search a Printer(file:///C:/Users/jumpboxadm
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:29:12 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:29:21 CDT" duration-ms="8719" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:06:08 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:06:18 CDT" duration-ms="9856" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1217,7 +1156,7 @@ at ?.User enters Printer_name[1] to search a Printer(file:///C:/Users/jumpboxadm
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:29:21 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:29:27 CDT" duration-ms="6968" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:06:18 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:06:28 CDT" duration-ms="9487" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1233,7 +1172,7 @@ at ?.User enters Printer_name[1] to search a Printer(file:///C:/Users/jumpboxadm
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:29:27 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:29:35 CDT" duration-ms="7789" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:06:28 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:06:38 CDT" duration-ms="9984" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1249,7 +1188,7 @@ at ?.User enters Printer_name[1] to search a Printer(file:///C:/Users/jumpboxadm
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:29:35 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:29:43 CDT" duration-ms="7906" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:06:38 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:06:48 CDT" duration-ms="10385" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1265,7 +1204,7 @@ at ?.User enters Printer_name[1] to search a Printer(file:///C:/Users/jumpboxadm
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:29:43 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:29:50 CDT" duration-ms="6406" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:06:48 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:06:56 CDT" duration-ms="8223" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1281,7 +1220,7 @@ at ?.User enters Printer_name[1] to search a Printer(file:///C:/Users/jumpboxadm
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:29:50 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:29:58 CDT" duration-ms="8510" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:06:56 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:07:15 CDT" duration-ms="18768" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1297,7 +1236,7 @@ at ?.User enters Printer_name[1] to search a Printer(file:///C:/Users/jumpboxadm
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:29:58 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:30:07 CDT" duration-ms="8418" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:07:15 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:07:31 CDT" duration-ms="16526" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1313,7 +1252,7 @@ at ?.User enters Printer_name[1] to search a Printer(file:///C:/Users/jumpboxadm
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:30:07 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:30:55 CDT" duration-ms="48545" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:07:31 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:08:49 CDT" duration-ms="78004" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1329,7 +1268,7 @@ at ?.User enters Printer_name[1] to search a Printer(file:///C:/Users/jumpboxadm
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:30:55 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:42:05 CDT" duration-ms="669927" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:08:49 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:20:03 CDT" duration-ms="673689" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -1362,7 +1301,7 @@ at ?.Verify that the Field records xml file was successfully downloaded(file:///
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:42:05 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:42:13 CDT" duration-ms="7717" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:20:03 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:20:11 CDT" duration-ms="7388" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1378,7 +1317,7 @@ at ?.Verify that the Field records xml file was successfully downloaded(file:///
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:42:13 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:42:20 CDT" duration-ms="7599" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:20:11 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:20:17 CDT" duration-ms="6735" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1394,7 +1333,7 @@ at ?.Verify that the Field records xml file was successfully downloaded(file:///
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:42:20 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:42:27 CDT" duration-ms="6743" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:20:17 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:20:24 CDT" duration-ms="6242" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1410,7 +1349,7 @@ at ?.Verify that the Field records xml file was successfully downloaded(file:///
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:42:27 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:42:35 CDT" duration-ms="7994" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:20:24 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:20:31 CDT" duration-ms="7419" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1426,7 +1365,7 @@ at ?.Verify that the Field records xml file was successfully downloaded(file:///
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:42:35 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:42:44 CDT" duration-ms="8869" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:20:31 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:20:39 CDT" duration-ms="7712" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1442,7 +1381,7 @@ at ?.Verify that the Field records xml file was successfully downloaded(file:///
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:42:44 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:42:52 CDT" duration-ms="8366" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:20:39 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:20:46 CDT" duration-ms="6897" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1458,7 +1397,7 @@ at ?.Verify that the Field records xml file was successfully downloaded(file:///
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:42:52 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:43:04 CDT" duration-ms="11454" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:20:46 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:20:56 CDT" duration-ms="10227" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1474,7 +1413,7 @@ at ?.Verify that the Field records xml file was successfully downloaded(file:///
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:43:04 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:43:11 CDT" duration-ms="6826" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:20:56 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:21:02 CDT" duration-ms="6304" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1490,7 +1429,7 @@ at ?.Verify that the Field records xml file was successfully downloaded(file:///
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:43:11 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:43:24 CDT" duration-ms="13398" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:21:02 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:21:15 CDT" duration-ms="12638" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1506,7 +1445,7 @@ at ?.Verify that the Field records xml file was successfully downloaded(file:///
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:43:24 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:43:36 CDT" duration-ms="11902" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:21:15 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:21:26 CDT" duration-ms="10791" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1522,7 +1461,7 @@ at ?.Verify that the Field records xml file was successfully downloaded(file:///
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:43:36 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:43:48 CDT" duration-ms="12325" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:21:26 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:21:38 CDT" duration-ms="12189" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1538,7 +1477,7 @@ at ?.Verify that the Field records xml file was successfully downloaded(file:///
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:43:48 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:44:01 CDT" duration-ms="12436" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:21:38 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:21:50 CDT" duration-ms="11892" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1554,7 +1493,7 @@ at ?.Verify that the Field records xml file was successfully downloaded(file:///
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:44:01 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:44:09 CDT" duration-ms="8172" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:21:50 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:21:58 CDT" duration-ms="8057" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1570,7 +1509,7 @@ at ?.Verify that the Field records xml file was successfully downloaded(file:///
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:44:09 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:44:24 CDT" duration-ms="15500" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:21:58 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:22:13 CDT" duration-ms="15262" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1586,7 +1525,7 @@ at ?.Verify that the Field records xml file was successfully downloaded(file:///
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:44:24 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:44:32 CDT" duration-ms="7246" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:22:13 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:22:20 CDT" duration-ms="7010" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1602,7 +1541,7 @@ at ?.Verify that the Field records xml file was successfully downloaded(file:///
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:44:32 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:44:39 CDT" duration-ms="7415" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:22:20 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:22:27 CDT" duration-ms="7490" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1618,7 +1557,7 @@ at ?.Verify that the Field records xml file was successfully downloaded(file:///
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:44:39 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:44:47 CDT" duration-ms="7668" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:22:27 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:22:35 CDT" duration-ms="7572" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1634,7 +1573,7 @@ at ?.Verify that the Field records xml file was successfully downloaded(file:///
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:44:47 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:44:54 CDT" duration-ms="6912" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:22:35 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:22:42 CDT" duration-ms="6641" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1650,7 +1589,7 @@ at ?.Verify that the Field records xml file was successfully downloaded(file:///
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:44:54 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:45:02 CDT" duration-ms="8480" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:22:42 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:22:49 CDT" duration-ms="7651" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1666,7 +1605,7 @@ at ?.Verify that the Field records xml file was successfully downloaded(file:///
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:45:02 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:45:13 CDT" duration-ms="10930" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:22:49 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:23:00 CDT" duration-ms="10225" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -1777,7 +1716,7 @@ Message: ORA-00904: "PVSA"."ATTRIBUTE16": invalid identifier
 Message: ORA-00904: "PVSA"."ATTRIBUTE16": invalid identifier
 
 }
-  (Session info: chrome=94.0.4606.71): Service message: Error in PurchaseOrderLineDAO
+  (Session info: chrome=94.0.4606.81): Service message: Error in PurchaseOrderLineDAO
 DAO message: Error executing: select * from (SELECT 
 poll.line_location_id POL_key,
 1 POL_erpCode,
@@ -1876,8 +1815,8 @@ Message: ORA-00904: "PVSA"."ATTRIBUTE16": invalid identifier
 Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
 System info: host: 'JUMPBOX-WIN2016', ip: '10.228.0.127', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52927}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: dbc1939a054e068f99c1f7053f3817dd
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52050}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: aa7cd400b0bf79914006619e7fe83537
 *** Element info: {Using=xpath, value=//*[@id='searchResultsFormId']/table[1]/tbody/tr[1]/td/table/tbody/tr/td[3]}]]>
             </message>
             <full-stacktrace>
@@ -1977,7 +1916,7 @@ Message: ORA-00904: "PVSA"."ATTRIBUTE16": invalid identifier
 Message: ORA-00904: "PVSA"."ATTRIBUTE16": invalid identifier
 
 }
-  (Session info: chrome=94.0.4606.71): Service message: Error in PurchaseOrderLineDAO
+  (Session info: chrome=94.0.4606.81): Service message: Error in PurchaseOrderLineDAO
 DAO message: Error executing: select * from (SELECT 
 poll.line_location_id POL_key,
 1 POL_erpCode,
@@ -2076,8 +2015,8 @@ Message: ORA-00904: "PVSA"."ATTRIBUTE16": invalid identifier
 Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
 System info: host: 'JUMPBOX-WIN2016', ip: '10.228.0.127', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52927}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: dbc1939a054e068f99c1f7053f3817dd
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52050}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: aa7cd400b0bf79914006619e7fe83537
 *** Element info: {Using=xpath, value=//*[@id='searchResultsFormId']/table[1]/tbody/tr[1]/td/table/tbody/tr/td[3]}
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:123)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -2096,7 +2035,7 @@ at ?.Total search results should be as per the lookup(file:///C:/Users/jumpboxad
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:45:13 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:45:21 CDT" duration-ms="7806" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:23:00 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:23:07 CDT" duration-ms="7716" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2112,7 +2051,7 @@ at ?.Total search results should be as per the lookup(file:///C:/Users/jumpboxad
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:45:21 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:45:30 CDT" duration-ms="8725" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:23:07 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:23:15 CDT" duration-ms="7826" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2128,7 +2067,7 @@ at ?.Total search results should be as per the lookup(file:///C:/Users/jumpboxad
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:45:30 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:45:38 CDT" duration-ms="8064" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:23:15 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:23:23 CDT" duration-ms="7666" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2144,7 +2083,7 @@ at ?.Total search results should be as per the lookup(file:///C:/Users/jumpboxad
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:45:38 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:45:45 CDT" duration-ms="7673" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:23:23 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:23:31 CDT" duration-ms="8151" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2160,7 +2099,7 @@ at ?.Total search results should be as per the lookup(file:///C:/Users/jumpboxad
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:45:45 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:46:00 CDT" duration-ms="14213" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:23:31 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:23:45 CDT" duration-ms="13642" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2176,7 +2115,7 @@ at ?.Total search results should be as per the lookup(file:///C:/Users/jumpboxad
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:46:00 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:46:12 CDT" duration-ms="12643" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:23:45 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:23:57 CDT" duration-ms="12425" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2192,7 +2131,7 @@ at ?.Total search results should be as per the lookup(file:///C:/Users/jumpboxad
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:46:12 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:46:19 CDT" duration-ms="6397" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:23:57 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:24:03 CDT" duration-ms="6384" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2208,7 +2147,7 @@ at ?.Total search results should be as per the lookup(file:///C:/Users/jumpboxad
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:46:19 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:46:30 CDT" duration-ms="11565" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:24:03 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:24:14 CDT" duration-ms="11043" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2224,7 +2163,7 @@ at ?.Total search results should be as per the lookup(file:///C:/Users/jumpboxad
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:46:30 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:46:37 CDT" duration-ms="6835" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:24:14 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:24:21 CDT" duration-ms="6474" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2240,7 +2179,7 @@ at ?.Total search results should be as per the lookup(file:///C:/Users/jumpboxad
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:46:37 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:46:44 CDT" duration-ms="6752" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:24:21 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:24:28 CDT" duration-ms="6623" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2256,7 +2195,7 @@ at ?.Total search results should be as per the lookup(file:///C:/Users/jumpboxad
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:46:44 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:46:57 CDT" duration-ms="13209" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:24:28 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:24:41 CDT" duration-ms="13401" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2272,7 +2211,7 @@ at ?.Total search results should be as per the lookup(file:///C:/Users/jumpboxad
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:46:57 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:47:05 CDT" duration-ms="8157" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:24:41 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:24:48 CDT" duration-ms="7229" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2288,7 +2227,7 @@ at ?.Total search results should be as per the lookup(file:///C:/Users/jumpboxad
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:47:05 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:47:12 CDT" duration-ms="7109" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:24:48 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:24:56 CDT" duration-ms="8143" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2304,7 +2243,7 @@ at ?.Total search results should be as per the lookup(file:///C:/Users/jumpboxad
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:47:12 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:47:17 CDT" duration-ms="4810" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:24:56 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:25:01 CDT" duration-ms="4628" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -2321,24 +2260,24 @@ at ?.Total search results should be as per the lookup(file:///C:/Users/jumpboxad
             <message>
               <![CDATA[unexpected alert open: {Alert text : Message: A namespace with that name already exists
 }
-  (Session info: chrome=94.0.4606.71): Message: A namespace with that name already exists
+  (Session info: chrome=94.0.4606.81): Message: A namespace with that name already exists
 
 Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
 System info: host: 'JUMPBOX-WIN2016', ip: '10.228.0.127', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51020}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a758a1f8354f0a50605850e7d0b85ac9]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49436}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7ac3fbb3c29ccae66cbc1700e211bf0d]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Message: A namespace with that name already exists
 }
-  (Session info: chrome=94.0.4606.71): Message: A namespace with that name already exists
+  (Session info: chrome=94.0.4606.81): Message: A namespace with that name already exists
 
 Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
 System info: host: 'JUMPBOX-WIN2016', ip: '10.228.0.127', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51020}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a758a1f8354f0a50605850e7d0b85ac9
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49436}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7ac3fbb3c29ccae66cbc1700e211bf0d
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:123)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
@@ -2353,7 +2292,7 @@ at ?.User enters Namespace_name[0] to search a Namespace(file:///C:/Users/jumpbo
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:47:17 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:47:52 CDT" duration-ms="34571" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:25:01 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:25:36 CDT" duration-ms="34632" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -2369,24 +2308,24 @@ at ?.User enters Namespace_name[0] to search a Namespace(file:///C:/Users/jumpbo
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='unique_id']/tbody/tr[2]/td[4]"}
-  (Session info: chrome=94.0.4606.71)
+  (Session info: chrome=94.0.4606.81)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
 System info: host: 'JUMPBOX-WIN2016', ip: '10.228.0.127', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64924}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 51166dd611799d1a2222e808b0dfa859
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49159}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ba2a4ba1a926030dad59ee20e555cb8f
 *** Element info: {Using=xpath, value=//*[@id='unique_id']/tbody/tr[2]/td[4]}]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='unique_id']/tbody/tr[2]/td[4]"}
-  (Session info: chrome=94.0.4606.71)
+  (Session info: chrome=94.0.4606.81)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
 System info: host: 'JUMPBOX-WIN2016', ip: '10.228.0.127', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64924}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 51166dd611799d1a2222e808b0dfa859
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49159}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ba2a4ba1a926030dad59ee20e555cb8f
 *** Element info: {Using=xpath, value=//*[@id='unique_id']/tbody/tr[2]/td[4]}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
@@ -2411,7 +2350,7 @@ at ?.Namespace with Class_name[0] should be displayed in search results(file:///
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:47:52 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:48:26 CDT" duration-ms="34564" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:25:36 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:26:10 CDT" duration-ms="34433" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -2427,24 +2366,24 @@ at ?.Namespace with Class_name[0] should be displayed in search results(file:///
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='unique_id']/tbody/tr[2]/td[3]"}
-  (Session info: chrome=94.0.4606.71)
+  (Session info: chrome=94.0.4606.81)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
 System info: host: 'JUMPBOX-WIN2016', ip: '10.228.0.127', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60864}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7d4a481d37eb881f5cc6eb0efd08a7e9
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63799}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7ea640fbcc93419b518dbeae2d67470f
 *** Element info: {Using=xpath, value=//*[@id='unique_id']/tbody/tr[2]/td[3]}]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='unique_id']/tbody/tr[2]/td[3]"}
-  (Session info: chrome=94.0.4606.71)
+  (Session info: chrome=94.0.4606.81)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
 System info: host: 'JUMPBOX-WIN2016', ip: '10.228.0.127', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60864}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7d4a481d37eb881f5cc6eb0efd08a7e9
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63799}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7ea640fbcc93419b518dbeae2d67470f
 *** Element info: {Using=xpath, value=//*[@id='unique_id']/tbody/tr[2]/td[3]}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
@@ -2463,7 +2402,7 @@ at org.openqa.selenium.By$ByXPath.findElement(By.java:396)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy26.getText(Unknown Source)
+at jdk.proxy2/jdk.proxy2.$Proxy28.getText(Unknown Source)
 at stepDefinitions.setup.ManageNamespaces.namespaceWithNamespace_nameShouldBeDisplayedInSearchResults(ManageNamespaces.java:76)
 at ?.Namespace with Namespace_name[0] should be displayed in search results(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/setup/ManageNamespaces.feature:35)
 ]]>
@@ -2472,7 +2411,7 @@ at ?.Namespace with Namespace_name[0] should be displayed in search results(file
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:48:26 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:49:01 CDT" duration-ms="34911" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:26:10 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:26:44 CDT" duration-ms="34314" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -2488,24 +2427,24 @@ at ?.Namespace with Namespace_name[0] should be displayed in search results(file
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='unique_id']/tbody/tr[2]/td[3]"}
-  (Session info: chrome=94.0.4606.71)
+  (Session info: chrome=94.0.4606.81)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
 System info: host: 'JUMPBOX-WIN2016', ip: '10.228.0.127', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58238}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a26af9fdd4b084d6526dcf331d84196e
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64984}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 276cfb73efcff6a63653ec485a0239b3
 *** Element info: {Using=xpath, value=//*[@id='unique_id']/tbody/tr[2]/td[3]}]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='unique_id']/tbody/tr[2]/td[3]"}
-  (Session info: chrome=94.0.4606.71)
+  (Session info: chrome=94.0.4606.81)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
 System info: host: 'JUMPBOX-WIN2016', ip: '10.228.0.127', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58238}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a26af9fdd4b084d6526dcf331d84196e
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64984}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 276cfb73efcff6a63653ec485a0239b3
 *** Element info: {Using=xpath, value=//*[@id='unique_id']/tbody/tr[2]/td[3]}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
@@ -2524,7 +2463,7 @@ at org.openqa.selenium.By$ByXPath.findElement(By.java:396)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy26.getText(Unknown Source)
+at jdk.proxy2/jdk.proxy2.$Proxy28.getText(Unknown Source)
 at stepDefinitions.setup.ManageNamespaces.namespaceWithNamespace_nameShouldBeDisplayedInSearchResults(ManageNamespaces.java:76)
 at ?.Namespace with Namespace_name[1] should be displayed in search results(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/setup/ManageNamespaces.feature:47)
 ]]>
@@ -2533,7 +2472,7 @@ at ?.Namespace with Namespace_name[1] should be displayed in search results(file
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:49:01 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:49:09 CDT" duration-ms="7508" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:26:44 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:26:51 CDT" duration-ms="6882" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2549,7 +2488,7 @@ at ?.Namespace with Namespace_name[1] should be displayed in search results(file
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:49:09 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:49:17 CDT" duration-ms="7997" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:26:51 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:26:58 CDT" duration-ms="6307" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2565,7 +2504,7 @@ at ?.Namespace with Namespace_name[1] should be displayed in search results(file
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:49:17 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:49:26 CDT" duration-ms="8978" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:26:58 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:27:05 CDT" duration-ms="7781" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2581,7 +2520,7 @@ at ?.Namespace with Namespace_name[1] should be displayed in search results(file
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:49:26 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:49:34 CDT" duration-ms="7888" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:27:05 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:27:13 CDT" duration-ms="7438" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2597,7 +2536,7 @@ at ?.Namespace with Namespace_name[1] should be displayed in search results(file
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:49:34 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:49:42 CDT" duration-ms="8710" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:27:13 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:27:21 CDT" duration-ms="8131" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2613,7 +2552,7 @@ at ?.Namespace with Namespace_name[1] should be displayed in search results(file
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:49:42 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:49:51 CDT" duration-ms="9025" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:27:21 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:27:30 CDT" duration-ms="9195" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2629,7 +2568,7 @@ at ?.Namespace with Namespace_name[1] should be displayed in search results(file
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:49:51 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-13T00:49:59 CDT" duration-ms="7409" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:27:30 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-15T05:27:37 CDT" duration-ms="7255" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -2645,10 +2584,14 @@ at ?.Namespace with Namespace_name[1] should be displayed in search results(file
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.Runner@64bce832]" started-at="2021-10-13T00:49:59 CDT" name="tearDownClass" finished-at="2021-10-13T00:50:03 CDT" duration-ms="4010" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:27:37 CDT" name="tearDownClass" finished-at="2021-10-15T05:27:41 CDT" duration-ms="3888" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
+        <test-method is-config="true" signature="clearDBBeforeTest()[pri:0, instance:runner.Runner@c94fd30]" started-at="2021-10-15T05:27:42 CDT" name="clearDBBeforeTest" finished-at="2021-10-15T05:27:42 CDT" duration-ms="71" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearDBBeforeTest -->
       </class> <!-- runner.Runner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
