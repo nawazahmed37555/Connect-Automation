@@ -15,7 +15,7 @@ import utils.SQLConnector;
  	 features = "src/test/resources/features/",
  		 glue = "stepDefinitions",  
  		 monochrome = true,
- 		 tags = "",
+ 		 tags = "@T1720110371",
  		 plugin = {"pretty", "html:target/cucumber/report.html", "json:target/cucumber.json", "html:target/selenium-reports/selenium-reports.html"}
 )
 public class Runner extends AbstractTestNGCucumberTests {	 
@@ -25,7 +25,5 @@ public class Runner extends AbstractTestNGCucumberTests {
 	public void clearDBBeforeTest() throws ClassNotFoundException, SQLException  {
 		SQLConnector sqlConnector = new SQLConnector();
 		sqlConnector.deleteDBrecords();	
-	}
-	
-	
+	}	
 }

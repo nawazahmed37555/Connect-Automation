@@ -13,6 +13,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.Date;
 import java.util.List;
 import java.util.Random;
+import java.util.Set;
 import java.util.TimeZone;
 
 import org.junit.Assert;
@@ -539,11 +540,27 @@ public void deSelectAllDropDownOptions(WebElement element) {
 
 	/**********************************************************************************
 	 ** SWITCH WINDOW
+	 * @return 
 	 *********************************************************************************/
-	public void switchWindow() {
+	@SuppressWarnings("null")
+	public Set<String> getPageTitlesForAllWindows() {
+		Set<String> pageTitles = null;
 		for (String winHandle : driver.getWindowHandles()) {
+			
+			pageTitles.add(driver.getTitle());
 			driver.switchTo().window(winHandle);
 		}
+		return pageTitles;
+	}
+	public  boolean switchToWindow(String pageTitle) {
+	
+		for (String winHandle : driver.getWindowHandles()) {
+				driver.switchTo().window(winHandle);
+				if(driver.getTitle().equalsIgnoreCase(pageTitle)) {
+					return true;
+				}		
+			}	
+		return false;
 	}
 
 	/**********************************************************************************
