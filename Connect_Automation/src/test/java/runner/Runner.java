@@ -15,7 +15,7 @@ import utils.SQLConnector;
  	 features = "src/test/resources/features/",
  		 glue = "stepDefinitions",  
  		 monochrome = true,
- 		 tags = "@T1720110371",
+ 		 tags = "@RuleDefinitions",
  		 plugin = {"pretty", "html:target/cucumber/report.html", "json:target/cucumber.json", "html:target/selenium-reports/selenium-reports.html"}
 )
 public class Runner extends AbstractTestNGCucumberTests {	 

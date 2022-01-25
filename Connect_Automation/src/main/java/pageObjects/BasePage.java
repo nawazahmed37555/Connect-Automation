@@ -383,6 +383,13 @@ public class BasePage extends DriverFactory {
 		return false;
 	}
 
+	public boolean isCheckboxSelected(WebElement checkbox) {
+		if(checkbox.isSelected()){
+			return true;
+		}
+		else return false;
+		
+	}
 	public boolean isAlertPresent() {
 		try {
 			driver.switchTo().alert();
@@ -819,6 +826,20 @@ int count=0;
 		
 	}
 
+	public String getValueForColumn(String columnName) {
+		
+		String value = null;
+		int i=1;
+		
+		while(!driver.findElement(By.xpath("//*[@id='unique_id']/tbody/tr[1]/td["+i+"]")).getText().trim().equals(columnName)) {
+		i++;
+		}
+		value = driver.findElement(By.xpath("//*[@id='unique_id']/tbody/tr[2]/td["+i+"]")).getText().trim();
+	
+		return value;
+		
+		
+	}
 	/**********************************************************************************
 	 ** CLICK ELEMENT AT A PARTICULAR OFFSET
 	 * @return 

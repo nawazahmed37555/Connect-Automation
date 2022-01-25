@@ -54,6 +54,21 @@ public class CommonPageLocators extends BasePage {
 	public @FindBy (linkText="Saved Searches") WebElement menu_Setup_Saved_Searches;
 	public @FindBy (linkText="Caches") WebElement menu_Setup_Caches;
 	
+	//Label management
+	public @FindBy (linkText="Label Management") WebElement menu_Label_Management;
+	public @FindBy (linkText="Labels") WebElement menu_Labels;
+	public @FindBy (linkText="Label Graphics") WebElement menu_Label_Graphics;
+	public @FindBy (linkText="Label History and Reprint") WebElement menu_Label_History_Reprint;
+	
+	//Rules
+	public @FindBy (linkText="Rules") WebElement menu_Rules;
+	public @FindBy (linkText="Rule Definitions") WebElement menu_Rule_Definitions;
+	public @FindBy (linkText="Rule Instances") WebElement menu_Rule_Instances;
+	public @FindBy (linkText="Rule Actions") WebElement menu_Rule_Actions;
+	public @FindBy (linkText="Rule Testing") WebElement menu_Rule_Testing;
+	public @FindBy (linkText="Rule Execute") WebElement menu_Rule_Execute;
+	public @FindBy (linkText="Rule Summary") WebElement menu_Rule_Summary;
+	public @FindBy (linkText="User Rules") WebElement menu_User_Rules;
 	
 	public @FindBy (linkText="Logout") WebElement menu_Logout;
 	

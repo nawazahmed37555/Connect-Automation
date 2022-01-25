@@ -1,44 +1,140 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-11-22T23:12:50 CST" name="Default suite" finished-at="2021-11-22T23:14:01 CST" duration-ms="70420">
+  <suite started-at="2022-01-13T01:46:03 CST" name="Default suite" finished-at="2022-01-13T01:46:44 CST" duration-ms="40879">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@36328d33]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2021-11-22T23:12:50 CST" name="Default test" finished-at="2021-11-22T23:14:01 CST" duration-ms="70420">
+    <test started-at="2022-01-13T01:46:03 CST" name="Default test" finished-at="2022-01-13T01:46:44 CST" duration-ms="40879">
       <class name="runner.Runner">
-        <test-method is-config="true" signature="clearDBBeforeTest()[pri:0, instance:runner.Runner@36328d33]" started-at="2021-11-22T23:12:50 CST" name="clearDBBeforeTest" finished-at="2021-11-22T23:12:50 CST" duration-ms="291" status="PASS">
+        <test-method is-config="true" signature="clearDBBeforeTest()[pri:0, instance:runner.Runner@36328d33]" started-at="2022-01-13T01:46:02 CST" name="clearDBBeforeTest" finished-at="2022-01-13T01:46:03 CST" duration-ms="295" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearDBBeforeTest -->
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:runner.Runner@36328d33]" started-at="2021-11-22T23:12:50 CST" name="setUpClass" finished-at="2021-11-22T23:12:52 CST" duration-ms="2310" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:runner.Runner@36328d33]" started-at="2022-01-13T01:46:03 CST" name="setUpClass" finished-at="2022-01-13T01:46:05 CST" duration-ms="1982" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@36328d33]" started-at="2021-11-22T23:12:53 CST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-11-22T23:13:58 CST" duration-ms="65687" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@36328d33]" started-at="2022-01-13T01:46:05 CST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-13T01:46:16 CST" duration-ms="11572" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Delete a Cache"]]>
+                <![CDATA["Add a rule Definition"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[Manage Caches]"]]>
+                <![CDATA["Optional[Manage Rule Definitions]"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.Runner@36328d33]" started-at="2021-11-22T23:13:58 CST" name="tearDownClass" finished-at="2021-11-22T23:14:01 CST" duration-ms="2223" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@36328d33]" started-at="2022-01-13T01:46:17 CST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-13T01:46:23 CST" duration-ms="6905" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search a Rule Definition"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Manage Rule Definitions]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@36328d33]" started-at="2022-01-13T01:46:23 CST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-13T01:46:32 CST" duration-ms="8872" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Edit Rule Definition"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Manage Rule Definitions]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@36328d33]" started-at="2022-01-13T01:46:32 CST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-13T01:46:40 CST" duration-ms="8124" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add Rule to the rule definition"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Manage Rule Definitions]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@36328d33]" started-at="2022-01-13T01:46:40 CST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-13T01:46:41 CST" duration-ms="46" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["View Rule for the rule definition"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Manage Rule Definitions]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@36328d33]" started-at="2022-01-13T01:46:41 CST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-13T01:46:41 CST" duration-ms="51" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Export Rule Definitions to XML file"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Manage Rule Definitions]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@36328d33]" started-at="2022-01-13T01:46:41 CST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-13T01:46:41 CST" duration-ms="42" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Delete Rule Definitions"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Manage Rule Definitions]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.Runner@36328d33]" started-at="2022-01-13T01:46:41 CST" name="tearDownClass" finished-at="2022-01-13T01:46:44 CST" duration-ms="2948" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-        <test-method is-config="true" signature="clearDBBeforeTest()[pri:0, instance:runner.Runner@36328d33]" started-at="2021-11-22T23:14:01 CST" name="clearDBBeforeTest" finished-at="2021-11-22T23:14:01 CST" duration-ms="52" status="PASS">
+        <test-method is-config="true" signature="clearDBBeforeTest()[pri:0, instance:runner.Runner@36328d33]" started-at="2022-01-13T01:46:44 CST" name="clearDBBeforeTest" finished-at="2022-01-13T01:46:44 CST" duration-ms="48" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearDBBeforeTest -->
