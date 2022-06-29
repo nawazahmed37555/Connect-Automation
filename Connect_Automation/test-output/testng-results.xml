@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-01-13T01:46:03 CST" name="Default suite" finished-at="2022-01-13T01:46:44 CST" duration-ms="40879">
+  <suite started-at="2022-06-29T06:04:29 CDT" name="Default suite" finished-at="2022-06-29T06:05:02 CDT" duration-ms="33150">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@36328d33]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@3899782c]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-01-13T01:46:03 CST" name="Default test" finished-at="2022-01-13T01:46:44 CST" duration-ms="40879">
+    <test started-at="2022-06-29T06:04:29 CDT" name="Default test" finished-at="2022-06-29T06:05:02 CDT" duration-ms="33150">
       <class name="runner.Runner">
-        <test-method is-config="true" signature="clearDBBeforeTest()[pri:0, instance:runner.Runner@36328d33]" started-at="2022-01-13T01:46:02 CST" name="clearDBBeforeTest" finished-at="2022-01-13T01:46:03 CST" duration-ms="295" status="PASS">
+        <test-method is-config="true" signature="clearDBBeforeTest()[pri:0, instance:runner.Runner@3899782c]" started-at="2022-06-29T06:04:29 CDT" name="clearDBBeforeTest" finished-at="2022-06-29T06:04:29 CDT" duration-ms="674" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearDBBeforeTest -->
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:runner.Runner@36328d33]" started-at="2022-01-13T01:46:03 CST" name="setUpClass" finished-at="2022-01-13T01:46:05 CST" duration-ms="1982" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:runner.Runner@3899782c]" started-at="2022-06-29T06:04:29 CDT" name="setUpClass" finished-at="2022-06-29T06:04:33 CDT" duration-ms="4015" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@36328d33]" started-at="2022-01-13T01:46:05 CST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-13T01:46:16 CST" duration-ms="11572" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@3899782c]" started-at="2022-06-29T06:04:33 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-06-29T06:04:58 CDT" duration-ms="24730" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -31,110 +31,52 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.UnhandledAlertException">
+            <message>
+              <![CDATA[unexpected alert open: {Alert text : Message: An object with that name already exists.
+}
+  (Session info: chrome=103.0.5060.66): Message: An object with that name already exists.
+
+Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
+System info: host: 'JUMPBOX-WIN2016', ip: '10.228.0.127', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.66, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50093}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a71f62f9eac5a4baa8950163b576666e
+*** Element info: {Using=xpath, value=//*[@id='unique_id']/tbody/tr[2]/td[3]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Message: An object with that name already exists.
+}
+  (Session info: chrome=103.0.5060.66): Message: An object with that name already exists.
+
+Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
+System info: host: 'JUMPBOX-WIN2016', ip: '10.228.0.127', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.66, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50093}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a71f62f9eac5a4baa8950163b576666e
+*** Element info: {Using=xpath, value=//*[@id='unique_id']/tbody/tr[2]/td[3]}
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:123)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:396)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+at stepDefinitions.rules.RuleDefinitions.verifyThatTheRuleDefinitionIsCreatedSuccessfully(RuleDefinitions.java:72)
+at ✽.Verify that the rule definition[0] is created successfully(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/Rules/RuleDefinitions.feature:20)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@36328d33]" started-at="2022-01-13T01:46:17 CST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-13T01:46:23 CST" duration-ms="6905" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Search a Rule Definition"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Manage Rule Definitions]"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@36328d33]" started-at="2022-01-13T01:46:23 CST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-13T01:46:32 CST" duration-ms="8872" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Edit Rule Definition"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Manage Rule Definitions]"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@36328d33]" started-at="2022-01-13T01:46:32 CST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-13T01:46:40 CST" duration-ms="8124" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Add Rule to the rule definition"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Manage Rule Definitions]"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@36328d33]" started-at="2022-01-13T01:46:40 CST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-13T01:46:41 CST" duration-ms="46" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["View Rule for the rule definition"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Manage Rule Definitions]"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@36328d33]" started-at="2022-01-13T01:46:41 CST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-13T01:46:41 CST" duration-ms="51" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Export Rule Definitions to XML file"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Manage Rule Definitions]"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@36328d33]" started-at="2022-01-13T01:46:41 CST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-01-13T01:46:41 CST" duration-ms="42" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Delete Rule Definitions"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Manage Rule Definitions]"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.Runner@36328d33]" started-at="2022-01-13T01:46:41 CST" name="tearDownClass" finished-at="2022-01-13T01:46:44 CST" duration-ms="2948" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.Runner@3899782c]" started-at="2022-06-29T06:04:59 CDT" name="tearDownClass" finished-at="2022-06-29T06:05:02 CDT" duration-ms="3731" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-        <test-method is-config="true" signature="clearDBBeforeTest()[pri:0, instance:runner.Runner@36328d33]" started-at="2022-01-13T01:46:44 CST" name="clearDBBeforeTest" finished-at="2022-01-13T01:46:44 CST" duration-ms="48" status="PASS">
+        <test-method is-config="true" signature="clearDBBeforeTest()[pri:0, instance:runner.Runner@3899782c]" started-at="2022-06-29T06:05:03 CDT" name="clearDBBeforeTest" finished-at="2022-06-29T06:05:03 CDT" duration-ms="47" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearDBBeforeTest -->
