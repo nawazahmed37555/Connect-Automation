@@ -6,8 +6,9 @@
       <class name="runner.Runner">
         <methods>
           <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="4"/>
+          <include name="runScenario" invocation-numbers="0"/>
           <include name="tearDownClass"/>
+          <include name="clearDBBeforeTest"/>
         </methods>
       </class> <!-- runner.Runner -->
     </classes>
