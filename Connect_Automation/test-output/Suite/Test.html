@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Oct 15 00:27:53 CDT 2021</td>
+<td>Started on:</td><td>Wed Jun 29 23:52:00 CDT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>64 seconds (64588 ms)</td>
+<tr><td>Total time:</td><td>26 seconds (26939 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,56 +75,53 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runner.Runner.runScenario()'><b>runScenario</b><br>Test class: runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Edit a User", "Optional[Add,Search,Edit,Enable,Disable,Export Users records]"</td>
-<td><div><pre>java.lang.AssertionError: expected [AllVendors] but found [Bush Co]
-	at stepDefinitions.ManageUsers.verifyUserDetailsUpdatedSuccessfully(ManageUsers.java:151)
-	at ?.Verify user[1] details updated successfully(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/ManageUsers.feature:58)
-... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace666596577", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace666596577'><pre>java.lang.AssertionError: expected [AllVendors] but found [Bush Co]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at org.testng.Assert.assertEquals(Assert.java:639)
-	at stepDefinitions.ManageUsers.verifyUserDetailsUpdatedSuccessfully(ManageUsers.java:151)
-	at ?.Verify user[1] details updated successfully(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/ManageUsers.feature:58)
+<td title='runner.Runner.runScenario()'><b>runScenario</b><br>Test class: runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add a rule Definition", "Optional[Manage Rule Definitions]"</td>
+<td><div><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Message: An object with that name already exists.
+}
+  (Session info: chrome=103.0.5060.66): Message: An object with that name already exists.
+
+Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
+System info: host: &apos;JUMPBOX-WIN2016&apos;, ip: &apos;10.228.0.127&apos;, os.name: &apos;Windows Server 2016&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.66, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60324}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3c06f6209c452b2f4b848717b13d03f1
+*** Element info: {Using=xpath, value=//*[@id=&apos;unique_id&apos;]/tbody/tr[2]/td[3]}
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:123)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:396)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at stepDefinitions.rules.RuleDefinitions.verifyThatTheRuleDefinitionIsCreatedSuccessfully(RuleDefinitions.java:72)
+	at ?.Verify that the rule definition[0] is created successfully(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/Rules/RuleDefinitions.feature:20)
+</pre></div><a href='#' onClick='toggleBox("stack-trace674925270", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace674925270'><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Message: An object with that name already exists.
+}
+  (Session info: chrome=103.0.5060.66): Message: An object with that name already exists.
+
+Build info: version: &apos;4.0.0-alpha-3&apos;, revision: &apos;8c567de6dc&apos;
+System info: host: &apos;JUMPBOX-WIN2016&apos;, ip: &apos;10.228.0.127&apos;, os.name: &apos;Windows Server 2016&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.66, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60324}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3c06f6209c452b2f4b848717b13d03f1
+*** Element info: {Using=xpath, value=//*[@id=&apos;unique_id&apos;]/tbody/tr[2]/td[3]}
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:123)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:396)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at stepDefinitions.rules.RuleDefinitions.verifyThatTheRuleDefinitionIsCreatedSuccessfully(RuleDefinitions.java:72)
+	at ?.Verify that the rule definition[0] is created successfully(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/Rules/RuleDefinitions.feature:20)
 </pre></div></td>
-<td>7</td>
-<td>runner.Runner@2b76ff4e</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='runner.Runner.runScenario()'><b>runScenario</b><br>Test class: runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add a User", "Optional[Add,Search,Edit,Enable,Disable,Export Users records]"</td>
-<td></td>
-<td>10</td>
-<td>runner.Runner@2b76ff4e</td></tr>
-<tr>
-<td title='runner.Runner.runScenario()'><b>runScenario</b><br>Test class: runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Enable a User", "Optional[Add,Search,Edit,Enable,Disable,Export Users records]"</td>
-<td></td>
-<td>8</td>
-<td>runner.Runner@2b76ff4e</td></tr>
-<tr>
-<td title='runner.Runner.runScenario()'><b>runScenario</b><br>Test class: runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Disable a User", "Optional[Add,Search,Edit,Enable,Disable,Export Users records]"</td>
-<td></td>
-<td>8</td>
-<td>runner.Runner@2b76ff4e</td></tr>
-<tr>
-<td title='runner.Runner.runScenario()'><b>runScenario</b><br>Test class: runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Export User records to XML file", "Optional[Add,Search,Edit,Enable,Disable,Export Users records]"</td>
-<td></td>
-<td>16</td>
-<td>runner.Runner@2b76ff4e</td></tr>
-<tr>
-<td title='runner.Runner.runScenario()'><b>runScenario</b><br>Test class: runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search a User", "Optional[Add,Search,Edit,Enable,Disable,Export Users records]"</td>
-<td></td>
-<td>7</td>
-<td>runner.Runner@2b76ff4e</td></tr>
+<td>19</td>
+<td>runner.Runner@e70f13a</td></tr>
 </table><p>
 </body>
 </html>
