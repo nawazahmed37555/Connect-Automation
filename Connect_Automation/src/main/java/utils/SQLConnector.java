@@ -7,12 +7,12 @@ import java.sql.Statement;
 
 public class SQLConnector {
 
+	JsonConfigReader jsonConfigReader = new JsonConfigReader();
+	public String db_url = jsonConfigReader.getConfigValue("DBcredentials", "db_url");
+	public String db_username = jsonConfigReader.getConfigValue("DBcredentials", "db_username");
+	public String db_password = jsonConfigReader.getConfigValue("DBcredentials", "db_password");
+	
 	public  void deleteDBrecords() throws SQLException, ClassNotFoundException {	
-		
-		JsonConfigReader jsonConfigReader = new JsonConfigReader();
-		String db_url = jsonConfigReader.getConfigValue("DBcredentials", "db_url");
-		String db_username = jsonConfigReader.getConfigValue("DBcredentials", "db_username");
-		String db_password = jsonConfigReader.getConfigValue("DBcredentials", "db_password");
 
 		
 	String deleteUsers = "delete from con_users where user_name like 'Auto%'";

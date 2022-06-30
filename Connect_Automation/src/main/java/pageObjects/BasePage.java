@@ -13,6 +13,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.Date;
 import java.util.List;
 import java.util.Random;
+import java.util.Set;
 import java.util.TimeZone;
 
 import org.junit.Assert;
@@ -382,6 +383,13 @@ public class BasePage extends DriverFactory {
 		return false;
 	}
 
+	public boolean isCheckboxSelected(WebElement checkbox) {
+		if(checkbox.isSelected()){
+			return true;
+		}
+		else return false;
+		
+	}
 	public boolean isAlertPresent() {
 		try {
 			driver.switchTo().alert();
@@ -539,11 +547,27 @@ public void deSelectAllDropDownOptions(WebElement element) {
 
 	/**********************************************************************************
 	 ** SWITCH WINDOW
+	 * @return 
 	 *********************************************************************************/
-	public void switchWindow() {
+	@SuppressWarnings("null")
+	public Set<String> getPageTitlesForAllWindows() {
+		Set<String> pageTitles = null;
 		for (String winHandle : driver.getWindowHandles()) {
+			
+			pageTitles.add(driver.getTitle());
 			driver.switchTo().window(winHandle);
 		}
+		return pageTitles;
+	}
+	public  boolean switchToWindow(String pageTitle) {
+	
+		for (String winHandle : driver.getWindowHandles()) {
+				driver.switchTo().window(winHandle);
+				if(driver.getTitle().equalsIgnoreCase(pageTitle)) {
+					return true;
+				}		
+			}	
+		return false;
 	}
 
 	/**********************************************************************************
@@ -802,6 +826,20 @@ int count=0;
 		
 	}
 
+	public String getValueForColumn(String columnName) {
+		
+		String value = null;
+		int i=1;
+		
+		while(!driver.findElement(By.xpath("//*[@id='unique_id']/tbody/tr[1]/td["+i+"]")).getText().trim().equals(columnName)) {
+		i++;
+		}
+		value = driver.findElement(By.xpath("//*[@id='unique_id']/tbody/tr[2]/td["+i+"]")).getText().trim();
+	
+		return value;
+		
+		
+	}
 	/**********************************************************************************
 	 ** CLICK ELEMENT AT A PARTICULAR OFFSET
 	 * @return 

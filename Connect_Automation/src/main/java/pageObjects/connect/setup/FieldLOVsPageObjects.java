@@ -16,13 +16,11 @@ public class FieldLOVsPageObjects {
 	//Add/edit panel
 	public @FindBy (name= "edit_classNameKey") WebElement edit_className_drpdown;
 	public @FindBy (name= "edit_displayName") WebElement edit_displayName;
-	public @FindBy (name= "edit_FlexfieldAttribute_flexfieldAttribute") WebElement edit_index_drpDown;
-	public @FindBy (name= "edit_FlexfieldAttribute_lovQuery") WebElement edit_LOV_query;
+	public @FindBy (name= "edit_fieldLovClassName") WebElement edit_fieldLovClassName;
+	
 		
 	//Search Results or details panel
 	public @FindBy (css = "input[value=Save]") WebElement saveBtn;
-	
-	
 	public @FindBy (css = "input[value=Go]" ) WebElement Go_Btn;
 	public @FindBy (className= "menuButton") WebElement contextMenuBtn;
 	public @FindBy (linkText= "Edit") WebElement contextMenu_Edit_Btn;

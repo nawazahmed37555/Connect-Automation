@@ -13,6 +13,7 @@ import org.openqa.selenium.remote.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.opera.OperaDriver;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class DriverFactory {
 
@@ -44,7 +45,7 @@ public class DriverFactory {
 
 			case "chrome":
 				if (null == driver) {
-					System.setProperty("webdriver.chrome.driver", Constant.CHROME_DRIVER_DIRECTORY);
+						
 					ChromeOptions options = new ChromeOptions();
 					Map<String, Object> prefs = new HashMap<String, Object>();
 					prefs.put("safebrowsing.enabled", true);
@@ -52,7 +53,9 @@ public class DriverFactory {
 					options.setExperimentalOption("prefs", prefs);
 					options.addArguments("start-maximized");
 					//options.addArguments("window-size=1280x1024");
-					driver = new ChromeDriver(options);
+					WebDriverManager.chromedriver().setup();
+					 driver = new ChromeDriver(options);
+			
 				}
 				break;
 			case "chrome-headless":
