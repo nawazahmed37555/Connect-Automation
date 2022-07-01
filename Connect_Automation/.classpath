@@ -37,7 +37,6 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
-	<classpathentry kind="lib" path="src/main/resources/jdbc-oracle.jar"/>
 	<classpathentry kind="lib" path="src/main/resources/WebdriverManager jar files/bcpkix-jdk15on-1.64.jar"/>
 	<classpathentry kind="lib" path="src/main/resources/WebdriverManager jar files/bcprov-jdk15on-1.64.jar"/>
 	<classpathentry kind="lib" path="src/main/resources/WebdriverManager jar files/checker-qual-3.8.0.jar"/>

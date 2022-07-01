@@ -2,23 +2,23 @@
 <testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-30T05:10:41 CDT" name="Default suite" finished-at="2022-06-30T05:12:55 CDT" duration-ms="133630">
+  <suite started-at="2022-06-30T17:40:03 IST" name="Suite" finished-at="2022-06-30T17:43:21 IST" duration-ms="198074">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@1e097d59]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5be46f9d]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-06-30T05:10:41 CDT" name="Default test" finished-at="2022-06-30T05:12:55 CDT" duration-ms="133630">
+    <test started-at="2022-06-30T17:40:03 IST" name="Test" finished-at="2022-06-30T17:43:21 IST" duration-ms="198074">
       <class name="runner.Runner">
-        <test-method is-config="true" signature="clearDBBeforeTest()[pri:0, instance:runner.Runner@1e097d59]" started-at="2022-06-30T05:10:41 CDT" name="clearDBBeforeTest" finished-at="2022-06-30T05:10:41 CDT" duration-ms="475" status="PASS">
+        <test-method is-config="true" signature="clearDBBeforeTest()[pri:0, instance:runner.Runner@5be46f9d]" started-at="2022-06-30T17:39:58 IST" name="clearDBBeforeTest" finished-at="2022-06-30T17:40:03 IST" duration-ms="5466" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearDBBeforeTest -->
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:runner.Runner@1e097d59]" started-at="2022-06-30T05:10:41 CDT" name="setUpClass" finished-at="2022-06-30T05:10:44 CDT" duration-ms="2550" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:runner.Runner@5be46f9d]" started-at="2022-06-30T17:40:03 IST" name="setUpClass" finished-at="2022-06-30T17:40:06 IST" duration-ms="3209" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@1e097d59]" started-at="2022-06-30T05:10:44 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-06-30T05:10:59 CDT" duration-ms="15158" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5be46f9d]" started-at="2022-06-30T17:40:06 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-06-30T17:40:39 IST" duration-ms="32851" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -34,7 +34,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@1e097d59]" started-at="2022-06-30T05:10:59 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-06-30T05:11:10 CDT" duration-ms="10448" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5be46f9d]" started-at="2022-06-30T17:40:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-06-30T17:40:57 IST" duration-ms="17194" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -50,7 +50,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@1e097d59]" started-at="2022-06-30T05:11:10 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-06-30T05:11:20 CDT" duration-ms="10617" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5be46f9d]" started-at="2022-06-30T17:40:57 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-06-30T17:41:18 IST" duration-ms="21005" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -66,7 +66,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@1e097d59]" started-at="2022-06-30T05:11:20 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-06-30T05:11:30 CDT" duration-ms="9269" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5be46f9d]" started-at="2022-06-30T17:41:18 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-06-30T17:41:38 IST" duration-ms="20114" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -82,7 +82,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@1e097d59]" started-at="2022-06-30T05:11:30 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-06-30T05:11:46 CDT" duration-ms="16449" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5be46f9d]" started-at="2022-06-30T17:41:38 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-06-30T17:42:00 IST" duration-ms="21979" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -98,7 +98,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@1e097d59]" started-at="2022-06-30T05:11:46 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-06-30T05:12:53 CDT" duration-ms="66747" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@5be46f9d]" started-at="2022-06-30T17:42:00 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-06-30T17:43:17 IST" duration-ms="77225" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -114,26 +114,26 @@
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[timeout: Timed out receiving message from renderer: 60.000
-  (Session info: chrome=103.0.5060.66)
+  (Session info: chrome=103.0.5060.53)
 Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
-System info: host: 'JUMPBOX-WIN2016', ip: '10.228.0.127', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+System info: host: 'ADMIN-PC', ip: '44.175.0.192', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.66, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63918}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e59031668de593e23b0411ae6dcf350b]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.53, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52921}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 70ed347f4f9b85398531c0cdfa7b698a]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 60.000
-  (Session info: chrome=103.0.5060.66)
+  (Session info: chrome=103.0.5060.53)
 Build info: version: '4.0.0-alpha-3', revision: '8c567de6dc'
-System info: host: 'JUMPBOX-WIN2016', ip: '10.228.0.127', os.name: 'Windows Server 2016', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+System info: host: 'ADMIN-PC', ip: '44.175.0.192', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.66, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\JUMPBO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63918}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e59031668de593e23b0411ae6dcf350b
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.53, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52921}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 70ed347f4f9b85398531c0cdfa7b698a
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -144,26 +144,26 @@ at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:308
 at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
 at jdk.internal.reflect.GeneratedMethodAccessor138.invoke(Unknown Source)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-at jdk.proxy2/jdk.proxy2.$Proxy28.click(Unknown Source)
+at com.sun.proxy.$Proxy28.click(Unknown Source)
 at stepDefinitions.ManageUsers.userClicksOnGoButtonOnUsersPage(ManageUsers.java:180)
-at ✽.User clicks on Go button on Users page(file:///C:/Users/jumpboxadmin/git/Connect-Automation/Connect_Automation/src/test/resources/features/ManageUsers.feature:68)
+at ✽.User clicks on Go button on Users page(file:///C:/Users/admin/git/Connect-Automation/Connect_Automation/src/test/resources/features/ManageUsers.feature:68)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.Runner@1e097d59]" started-at="2022-06-30T05:12:53 CDT" name="tearDownClass" finished-at="2022-06-30T05:12:55 CDT" duration-ms="2158" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.Runner@5be46f9d]" started-at="2022-06-30T17:43:17 IST" name="tearDownClass" finished-at="2022-06-30T17:43:21 IST" duration-ms="3981" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-        <test-method is-config="true" signature="clearDBBeforeTest()[pri:0, instance:runner.Runner@1e097d59]" started-at="2022-06-30T05:12:55 CDT" name="clearDBBeforeTest" finished-at="2022-06-30T05:12:55 CDT" duration-ms="36" status="PASS">
+        <test-method is-config="true" signature="clearDBBeforeTest()[pri:0, instance:runner.Runner@5be46f9d]" started-at="2022-06-30T17:43:21 IST" name="clearDBBeforeTest" finished-at="2022-06-30T17:43:26 IST" duration-ms="4801" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearDBBeforeTest -->
       </class> <!-- runner.Runner -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
